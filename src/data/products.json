@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1",
+    "name": "건설기계용 와이퍼 모터 WM-100",
+    "slug": "wiper-motor-wm-100",
+    "sku": "WM-100",
+    "description": "<p>WM-100은 건설기계 및 산업차량용으로 설계된 고성능 와이퍼 모터입니다.</p><p>극한 환경에서도 안정적인 작동을 보장하며, 방수 및 방진 등급 IP67을 충족합니다. 12V/24V 겸용으로 다양한 차량에 적용 가능합니다.</p>",
+    "shortDescription": "건설기계용 고성능 와이퍼 모터. IP67 방수/방진.",
+    "categories": [
+      { "id": "1", "name": "와이퍼 어셈블리", "slug": "wiper-assembly" }
+    ],
+    "images": [
+      { "id": "1", "src": "/ktech/images/products/placeholder.jpg", "alt": "와이퍼 모터 WM-100", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "작동 전압", "value": "12V / 24V" },
+      { "name": "방수 등급", "value": "IP67" },
+      { "name": "작동 각도", "value": "110°" },
+      { "name": "와이핑 속도", "value": "45회/분" },
+      { "name": "작동 온도", "value": "-40°C ~ +80°C" }
+    ],
+    "dimensions": {
+      "length": "180",
+      "width": "120",
+      "height": "100",
+      "weight": "1.2"
+    },
+    "features": [
+      "IP67 방수/방진",
+      "극한 환경 대응",
+      "12V/24V 겸용",
+      "저소음 설계",
+      "장수명 브러시"
+    ],
+    "featured": true
+  },
+  {
+    "id": "2",
+    "name": "와이퍼 블레이드 세트 WB-500",
+    "slug": "wiper-blade-wb-500",
+    "sku": "WB-500",
+    "description": "<p>WB-500 와이퍼 블레이드는 건설기계 전용으로 개발된 고내구성 제품입니다.</p><p>특수 고무 재질로 UV와 오존에 강하며, 모래와 먼지가 많은 작업 환경에서도 우수한 닦임 성능을 유지합니다.</p>",
+    "shortDescription": "건설기계 전용 고내구성 와이퍼 블레이드.",
+    "categories": [
+      { "id": "1", "name": "와이퍼 어셈블리", "slug": "wiper-assembly" }
+    ],
+    "images": [
+      { "id": "2", "src": "/ktech/images/products/placeholder.jpg", "alt": "와이퍼 블레이드 WB-500", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "길이", "value": "500mm / 600mm / 700mm" },
+      { "name": "재질", "value": "EPDM 고무" },
+      { "name": "내열 온도", "value": "-50°C ~ +120°C" },
+      { "name": "호환성", "value": "범용 J-Hook" }
+    ],
+    "dimensions": {
+      "length": "500-700",
+      "width": "25",
+      "height": "20",
+      "weight": "0.15"
+    },
+    "features": [
+      "EPDM 특수 고무",
+      "UV/오존 내성",
+      "먼지 환경 최적화",
+      "범용 호환성",
+      "손쉬운 교체"
+    ],
+    "featured": false
+  },
+  {
+    "id": "3",
+    "name": "엔진 와이어링 하네스 EH-200",
+    "slug": "engine-harness-eh-200",
+    "sku": "EH-200",
+    "description": "<p>EH-200은 건설기계 엔진용 메인 와이어링 하네스입니다.</p><p>고온/진동 환경에 최적화된 설계로, 엄격한 품질 테스트를 거쳐 생산됩니다. OEM 사양에 맞춘 맞춤 제작이 가능합니다.</p>",
+    "shortDescription": "건설기계 엔진용 메인 하네스. OEM 맞춤 제작.",
+    "categories": [
+      { "id": "2", "name": "와이어링 하네스 및 케이블", "slug": "wiring-harness" }
+    ],
+    "images": [
+      { "id": "3", "src": "/ktech/images/products/placeholder.jpg", "alt": "엔진 하네스 EH-200", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "커넥터 수", "value": "24핀 / 36핀 / 48핀" },
+      { "name": "전선 규격", "value": "AWG 14-22" },
+      { "name": "내열 등급", "value": "125°C" },
+      { "name": "보호 등급", "value": "IP65" }
+    ],
+    "dimensions": {
+      "length": "가변",
+      "width": "-",
+      "height": "-",
+      "weight": "가변"
+    },
+    "features": [
+      "고온 내열 설계",
+      "진동 저항성",
+      "OEM 맞춤 제작",
+      "엄격한 품질 검사",
+      "방수 커넥터"
+    ],
+    "featured": true
+  },
+  {
+    "id": "4",
+    "name": "컨트롤 케이블 CC-300",
+    "slug": "control-cable-cc-300",
+    "sku": "CC-300",
+    "description": "<p>CC-300은 건설기계 조작 시스템용 컨트롤 케이블입니다.</p><p>정밀한 조작감과 뛰어난 내구성을 제공하며, 다양한 길이와 사양으로 공급 가능합니다.</p>",
+    "shortDescription": "건설기계 조작용 컨트롤 케이블.",
+    "categories": [
+      { "id": "2", "name": "와이어링 하네스 및 케이블", "slug": "wiring-harness" }
+    ],
+    "images": [
+      { "id": "4", "src": "/ktech/images/products/placeholder.jpg", "alt": "컨트롤 케이블 CC-300", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "케이블 타입", "value": "푸시-풀 / 스로틀" },
+      { "name": "외피 재질", "value": "PVC / PE" },
+      { "name": "내경", "value": "1.5mm / 2.0mm" },
+      { "name": "작동 하중", "value": "최대 50kg" }
+    ],
+    "dimensions": {
+      "length": "500-5000",
+      "width": "-",
+      "height": "-",
+      "weight": "가변"
+    },
+    "features": [
+      "정밀 조작감",
+      "고내구성",
+      "맞춤 길이 제작",
+      "방청 처리",
+      "부드러운 작동"
+    ],
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "산업용 에어컴프레서 AC-500",
+    "slug": "air-compressor-ac-500",
+    "sku": "AC-500",
+    "description": "<p>AC-500은 건설기계 및 산업차량용 에어컴프레서입니다.</p><p>컴팩트한 설계와 높은 출력으로 브레이크 시스템, 공압 장비 등에 안정적인 압축공기를 공급합니다.</p>",
+    "shortDescription": "건설기계용 컴팩트 에어컴프레서.",
+    "categories": [
+      { "id": "3", "name": "에어컴프레서", "slug": "air-compressor" }
+    ],
+    "images": [
+      { "id": "5", "src": "/ktech/images/products/placeholder.jpg", "alt": "에어컴프레서 AC-500", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "토출 용량", "value": "500 L/min" },
+      { "name": "최대 압력", "value": "8 bar" },
+      { "name": "구동 방식", "value": "엔진 직결 / 전동" },
+      { "name": "냉각 방식", "value": "공랭식" }
+    ],
+    "dimensions": {
+      "length": "350",
+      "width": "280",
+      "height": "300",
+      "weight": "25"
+    },
+    "features": [
+      "컴팩트 설계",
+      "고출력",
+      "저진동",
+      "오일 윤활식",
+      "장수명 설계"
+    ],
+    "featured": true
+  },
+  {
+    "id": "6",
+    "name": "연료 레벨 센서 FS-100",
+    "slug": "fuel-sensor-fs-100",
+    "sku": "FS-100",
+    "description": "<p>FS-100은 건설기계 및 산업차량용 연료량 측정 센서입니다.</p><p>정확한 연료량 측정으로 효율적인 연료 관리가 가능하며, 다양한 탱크 형태에 맞춤 적용 가능합니다.</p>",
+    "shortDescription": "정밀 연료량 측정 센서.",
+    "categories": [
+      { "id": "4", "name": "연료센서", "slug": "fuel-sensor" }
+    ],
+    "images": [
+      { "id": "6", "src": "/ktech/images/products/placeholder.jpg", "alt": "연료센서 FS-100", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "측정 방식", "value": "저항식 / 용량식" },
+      { "name": "출력 신호", "value": "0-90Ω / 4-20mA" },
+      { "name": "측정 정확도", "value": "±2%" },
+      { "name": "작동 온도", "value": "-40°C ~ +85°C" }
+    ],
+    "dimensions": {
+      "length": "150-500",
+      "width": "60",
+      "height": "60",
+      "weight": "0.3"
+    },
+    "features": [
+      "고정밀 측정",
+      "내연료성 재질",
+      "맞춤 길이 제작",
+      "다양한 출력 옵션",
+      "방폭 설계"
+    ],
+    "featured": true
+  },
+  {
+    "id": "7",
+    "name": "경고등 사이렌앰프 SA-200",
+    "slug": "siren-amp-sa-200",
+    "sku": "SA-200",
+    "description": "<p>SA-200은 건설기계 및 특수차량용 사이렌앰프 시스템입니다.</p><p>강력한 출력과 다양한 경고음 패턴으로 작업 현장의 안전을 확보합니다. LED 경고등과 연동 가능합니다.</p>",
+    "shortDescription": "건설기계용 사이렌앰프 시스템.",
+    "categories": [
+      { "id": "5", "name": "사이렌앰프 및 램프", "slug": "siren-amp" }
+    ],
+    "images": [
+      { "id": "7", "src": "/ktech/images/products/placeholder.jpg", "alt": "사이렌앰프 SA-200", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "출력", "value": "100W / 200W" },
+      { "name": "경고음 패턴", "value": "8가지" },
+      { "name": "작동 전압", "value": "12V / 24V" },
+      { "name": "방수 등급", "value": "IP65" }
+    ],
+    "dimensions": {
+      "length": "200",
+      "width": "150",
+      "height": "100",
+      "weight": "1.5"
+    },
+    "features": [
+      "고출력 스피커",
+      "다양한 경고음",
+      "LED 연동 가능",
+      "방수 설계",
+      "손쉬운 설치"
+    ],
+    "featured": false
+  },
+  {
+    "id": "8",
+    "name": "LED 경고등 WL-300",
+    "slug": "warning-lamp-wl-300",
+    "sku": "WL-300",
+    "description": "<p>WL-300은 고휘도 LED 경고등으로, 건설기계 및 작업차량의 안전 가시성을 높입니다.</p><p>다양한 점멸 패턴과 색상 옵션이 있으며, 충격에 강한 폴리카보네이트 렌즈를 사용합니다.</p>",
+    "shortDescription": "고휘도 LED 경고등. 다양한 색상 옵션.",
+    "categories": [
+      { "id": "5", "name": "사이렌앰프 및 램프", "slug": "siren-amp" }
+    ],
+    "images": [
+      { "id": "8", "src": "/ktech/images/products/placeholder.jpg", "alt": "LED 경고등 WL-300", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "LED 타입", "value": "고휘도 SMD" },
+      { "name": "색상", "value": "황색 / 청색 / 적색" },
+      { "name": "점멸 패턴", "value": "12가지" },
+      { "name": "방수 등급", "value": "IP67" }
+    ],
+    "dimensions": {
+      "length": "150",
+      "width": "150",
+      "height": "80",
+      "weight": "0.5"
+    },
+    "features": [
+      "고휘도 LED",
+      "IP67 방수",
+      "다양한 점멸 패턴",
+      "충격 저항 렌즈",
+      "자석/볼트 장착"
+    ],
+    "featured": true
+  },
+  {
+    "id": "9",
+    "name": "범용 릴레이 박스 RB-100",
+    "slug": "relay-box-rb-100",
+    "sku": "RB-100",
+    "description": "<p>RB-100은 건설기계 전장 시스템용 범용 릴레이 박스입니다.</p><p>다양한 전장 부품을 안전하게 제어할 수 있으며, 방수 설계로 외부 장착이 가능합니다.</p>",
+    "shortDescription": "전장 시스템용 범용 릴레이 박스.",
+    "categories": [
+      { "id": "6", "name": "액세서리", "slug": "accessories" }
+    ],
+    "images": [
+      { "id": "9", "src": "/ktech/images/products/placeholder.jpg", "alt": "릴레이 박스 RB-100", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "릴레이 수", "value": "4개 / 6개 / 8개" },
+      { "name": "정격 전류", "value": "30A / 40A" },
+      { "name": "작동 전압", "value": "12V / 24V" },
+      { "name": "방수 등급", "value": "IP65" }
+    ],
+    "dimensions": {
+      "length": "150",
+      "width": "100",
+      "height": "80",
+      "weight": "0.4"
+    },
+    "features": [
+      "방수 설계",
+      "과부하 보호",
+      "LED 상태 표시",
+      "손쉬운 배선",
+      "범용 호환"
+    ],
+    "featured": false
+  },
+  {
+    "id": "10",
+    "name": "방수 커넥터 세트 WC-50",
+    "slug": "waterproof-connector-wc-50",
+    "sku": "WC-50",
+    "description": "<p>WC-50은 건설기계 전장 시스템용 방수 커넥터 세트입니다.</p><p>IP67 등급의 완벽한 방수 성능과 탈착 편의성을 제공합니다. 다양한 핀 수 옵션이 있습니다.</p>",
+    "shortDescription": "IP67 방수 커넥터 세트.",
+    "categories": [
+      { "id": "6", "name": "액세서리", "slug": "accessories" }
+    ],
+    "images": [
+      { "id": "10", "src": "/ktech/images/products/placeholder.jpg", "alt": "방수 커넥터 WC-50", "width": 800, "height": 600 }
+    ],
+    "specifications": [
+      { "name": "핀 수", "value": "2P / 4P / 6P / 8P" },
+      { "name": "정격 전류", "value": "10A / 20A" },
+      { "name": "방수 등급", "value": "IP67" },
+      { "name": "재질", "value": "나일론 / 황동" }
+    ],
+    "dimensions": {
+      "length": "40-80",
+      "width": "20-40",
+      "height": "20-40",
+      "weight": "0.02-0.05"
+    },
+    "features": [
+      "IP67 방수",
+      "간편한 탈착",
+      "내진동 설계",
+      "다양한 핀 옵션",
+      "내구성 재질"
+    ],
+    "featured": false
+  }
+]
