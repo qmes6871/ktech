@@ -5,12 +5,20 @@ import { motion } from 'framer-motion';
 import { Product } from '@/lib/types';
 import { ProductGallery } from './ProductGallery';
 import { ProductSpecs } from './ProductSpecs';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { resolveLocalized } from '@/lib/localized';
 
 interface ProductDetailClientProps {
   product: Product;
 }
 
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
+  const { language } = useLanguage();
+  const name = resolveLocalized(product.name, language);
+  const description = resolveLocalized(product.description, language);
+  const descriptionHtml = resolveLocalized(product.descriptionHtml, language);
+  const specificationsText = resolveLocalized(product.specificationsText, language);
+  const specificationsHtml = resolveLocalized(product.specificationsHtml, language);
   return (
     <div className="pt-16 lg:pt-24 min-h-screen bg-gray-50">
       {/* Hero Section with Breadcrumb */}
@@ -59,7 +67,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               </>
             )}
             <span className="text-blue-300">/</span>
-            <span className="text-white">{product.name}</span>
+            <span className="text-white">{name}</span>
           </motion.nav>
 
           {/* Category Tags */}
@@ -86,7 +94,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white break-keep"
           >
-            {product.name}
+            {name}
           </motion.h1>
         </div>
       </section>
@@ -102,7 +110,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
             {/* Image Gallery */}
             <div className="p-6 lg:p-8 bg-gradient-to-br from-gray-50 to-gray-100">
-              <ProductGallery images={product.images} productName={product.name} />
+              <ProductGallery images={product.images} productName={name} />
             </div>
 
             {/* Product Details */}
@@ -115,26 +123,28 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 className="mb-4"
               >
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 break-keep">
-                  {product.name}
+                  {name}
                 </h2>
               </motion.div>
 
               {/* Features (was Description) */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="mb-6"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                  <span className="w-1 h-5 bg-blue-600 rounded-full"></span>
-                  제품 특징
-                </h3>
-                <div
-                  className="prose prose-gray max-w-none text-gray-600"
-                  dangerouslySetInnerHTML={{ __html: product.description }}
-                />
-              </motion.div>
+              {(description || descriptionHtml) && (
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="mb-6"
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-1 h-5 bg-blue-600 rounded-full"></span>
+                    제품 특징
+                  </h3>
+                  <div
+                    className="text-gray-600 leading-relaxed prose prose-sm max-w-none"
+                    dangerouslySetInnerHTML={{ __html: descriptionHtml || description || '' }}
+                  />
+                </motion.div>
+              )}
 
               {/* CTA Buttons */}
               <motion.div
@@ -167,7 +177,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
         </motion.div>
 
         {/* Specifications Section */}
-        {product.specifications.length > 0 && (
+        {(product.specifications.length > 0 || specificationsText) && (
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -186,7 +196,8 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               </h2>
               <ProductSpecs
                 specs={product.specifications}
-                dimensions={product.dimensions}
+                specificationsText={specificationsText}
+                specificationsHtml={specificationsHtml}
               />
             </div>
           </motion.div>

@@ -3,38 +3,41 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-
-const navigation = [
-  {
-    name: '기업정보',
-    href: '/about',
-    children: [
-      { name: '회사소개', href: '/about' },
-      { name: '연혁', href: '/about/history' },
-      { name: '인증 및 특허', href: '/about/certifications' },
-    ],
-  },
-  {
-    name: '제품소개',
-    href: '/products',
-    children: [
-      { name: '와이퍼 어셈블리', href: '/products?category=wiper-assembly' },
-      { name: '와이어링 하네스 및 케이블', href: '/products?category=wiring-harness' },
-      { name: '에어컴프레서', href: '/products?category=air-compressor' },
-      { name: '연료센서', href: '/products?category=fuel-sensor' },
-      { name: '사이렌앰프 및 램프', href: '/products?category=siren-amp' },
-      { name: '액세서리', href: '/products?category=accessories' },
-    ],
-  },
-  { name: '제품개발', href: '/development' },
-  { name: '고객지원', href: '/support' },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
+import { LanguageSwitcher, LanguageSwitcherMobile } from '@/components/LanguageSwitcher';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileOpenSubmenu, setMobileOpenSubmenu] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
+
+  const navigation = [
+    {
+      name: t('nav.about'),
+      href: '/about',
+      children: [
+        { name: t('nav.companyInfo'), href: '/about' },
+        { name: t('nav.history'), href: '/about/history' },
+        { name: t('nav.certifications'), href: '/about/certifications' },
+      ],
+    },
+    {
+      name: t('nav.products'),
+      href: '/products',
+      children: [
+        { name: t('nav.wiperAssembly'), href: '/products?category=wiper-assembly' },
+        { name: t('nav.wiringHarness'), href: '/products?category=wiring-harness' },
+        { name: t('nav.airCompressor'), href: '/products?category=air-compressor' },
+        { name: t('nav.fuelSensor'), href: '/products?category=fuel-sensor' },
+        { name: t('nav.sirenAmp'), href: '/products?category=siren-amp' },
+        { name: t('nav.accessories'), href: '/products?category=accessories' },
+      ],
+    },
+    { name: t('nav.development'), href: '/development' },
+    { name: t('nav.support'), href: '/support' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -116,17 +119,9 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Button - Desktop */}
+          {/* Language Switcher - Desktop */}
           <div className="hidden lg:block">
-            <Link
-              href="/support"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all duration-300 bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-500/25"
-            >
-              문의하기
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button - larger touch target */}
@@ -206,23 +201,15 @@ export function Header() {
                 ))}
               </div>
 
-              {/* CTA Button */}
+              {/* Language Switcher - Mobile */}
               <div className="mt-8 pt-6 border-t border-gray-200">
-                <Link
-                  href="/support"
-                  className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 active:bg-blue-800 transition-colors shadow-lg shadow-blue-500/30"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  문의하기
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
+                <p className="text-sm text-gray-500 mb-3">{t('language.ko') === '한국어' ? '언어 선택' : 'Language'}</p>
+                <LanguageSwitcherMobile />
               </div>
 
               {/* Contact Info */}
-              <div className="mt-8 p-5 bg-gray-50 rounded-2xl">
-                <p className="text-sm text-gray-500 mb-3">빠른 상담</p>
+              <div className="mt-6 p-5 bg-gray-50 rounded-2xl">
+                <p className="text-sm text-gray-500 mb-3">{t('common.quickConsult')}</p>
                 <a href="tel:042-000-0000" className="flex items-center gap-3 text-gray-900 font-semibold text-lg">
                   <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                     <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

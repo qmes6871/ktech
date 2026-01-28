@@ -1,343 +1,462 @@
 [
   {
     "id": "1",
-    "name": "건설기계용 와이퍼 모터 WM-100",
-    "slug": "wiper-motor-wm-100",
-    "sku": "WM-100",
-    "description": "<p>WM-100은 건설기계 및 산업차량용으로 설계된 고성능 와이퍼 모터입니다.</p><p>극한 환경에서도 안정적인 작동을 보장하며, 방수 및 방진 등급 IP67을 충족합니다. 12V/24V 겸용으로 다양한 차량에 적용 가능합니다.</p>",
-    "shortDescription": "건설기계용 고성능 와이퍼 모터. IP67 방수/방진.",
+    "name": {
+      "ko": "DC 12/24V 에어컴프레서 탱크리스 타입",
+      "en": "DC 12/24V Tankless Air Compressor",
+      "zh": "直流12/24V无罐式空气压缩机"
+    },
+    "slug": "product-1",
+    "sku": "SKU-1",
+    "description": {
+      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. ",
+      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness.",
+      "zh": "无需储气罐，使空间效率突出且经济型。"
+    },
+    "shortDescription": {
+      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. ",
+      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness.",
+      "zh": "无需储气罐，使空间效率突出且经济型。"
+    },
     "categories": [
-      { "id": "1", "name": "와이퍼 어셈블리", "slug": "wiper-assembly" }
+      {
+        "id": "3",
+        "name": "에어컴프레서",
+        "slug": "air-compressor",
+        "description": "산업용 압축공기 시스템",
+        "icon": "compressor"
+      }
     ],
     "images": [
-      { "id": "1", "src": "/ktech/images/products/placeholder.jpg", "alt": "와이퍼 모터 WM-100", "width": 800, "height": 600 }
+      {
+        "id": "1769567759346",
+        "src": "/ktech/images/products/1769567746843-______1.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759368",
+        "src": "/ktech/images/products/1769567746874-______2.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759392",
+        "src": "/ktech/images/products/1769567746897-______3.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759419",
+        "src": "/ktech/images/products/1769567746921-______4.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759463",
+        "src": "/ktech/images/products/1769567746960-______5.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759490",
+        "src": "/ktech/images/products/1769567746991-______6.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759514",
+        "src": "/ktech/images/products/1769567747015-______7.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769567759539",
+        "src": "/ktech/images/products/1769567747042-______8.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "작동 전압", "value": "12V / 24V" },
-      { "name": "방수 등급", "value": "IP67" },
-      { "name": "작동 각도", "value": "110°" },
-      { "name": "와이핑 속도", "value": "45회/분" },
-      { "name": "작동 온도", "value": "-40°C ~ +80°C" }
-    ],
-    "dimensions": {
-      "length": "180",
-      "width": "120",
-      "height": "100",
-      "weight": "1.2"
+    "specifications": [],
+    "specificationsText": {
+      "ko": "에어압축방식: 오일프리 타입\n\n정격전압: DC 12V / DC 24V\n\n정격전류: 33A (12V) / 18A (24V)\n\n작동압력: 9.0(±0.5) kgf/kg\n\n최대회전수: 1600 rpm (12V) / 2000 rpm (24V)",
+      "en": "Air compression type: Oil-Free (Oil-Less)\n\nRated voltage: DC 12V / DC 24V\n\nRated current: 33A (12V) / 18A (24V)\n\nOperating pressure: 9.0 (±0.5) kgf/kg\n\nMaximum speed: 1600 rpm (12V) / 2000 rpm (24V)",
+      "zh": "空气压缩法：无油型\n\n电压：直流12V / 直流24V\n\n电流：33A（12V）/ 18A（24V）\n\n工作压力：9.0(±0.5) kgf/kg\n\n最高速度：1600转/分（12V）/ 2000转/分（24V）"
     },
-    "features": [
-      "IP67 방수/방진",
-      "극한 환경 대응",
-      "12V/24V 겸용",
-      "저소음 설계",
-      "장수명 브러시"
-    ],
-    "featured": true
+    "dimensions": {},
+    "features": [],
+    "featured": false
   },
   {
     "id": "2",
-    "name": "와이퍼 블레이드 세트 WB-500",
-    "slug": "wiper-blade-wb-500",
-    "sku": "WB-500",
-    "description": "<p>WB-500 와이퍼 블레이드는 건설기계 전용으로 개발된 고내구성 제품입니다.</p><p>특수 고무 재질로 UV와 오존에 강하며, 모래와 먼지가 많은 작업 환경에서도 우수한 닦임 성능을 유지합니다.</p>",
-    "shortDescription": "건설기계 전용 고내구성 와이퍼 블레이드.",
+    "name": {
+      "ko": "워크 램프",
+      "zh": "工作灯",
+      "en": "Work Lamp"
+    },
+    "slug": "product-2",
+    "sku": "SKU-2",
+    "description": {
+      "ko": "첨단 조명 기술 및 고품질 광원을 적용하여 균일한 조도를 구현하며, 고객 요구에 맞춘 맞춤형 제품을 제공합니다.",
+      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。",
+      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements."
+    },
+    "shortDescription": {
+      "ko": "첨단 조명 기술 및 고품질 광원을 적용하여 균일한 조도를 구현하며, 고객 요구에 맞춘 맞춤형 제품을 제공합니다.",
+      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。",
+      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements."
+    },
     "categories": [
-      { "id": "1", "name": "와이퍼 어셈블리", "slug": "wiper-assembly" }
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
     ],
     "images": [
-      { "id": "2", "src": "/ktech/images/products/placeholder.jpg", "alt": "와이퍼 블레이드 WB-500", "width": 800, "height": 600 }
+      {
+        "id": "1769568108463",
+        "src": "/ktech/images/products/1769568095965-____1.JPG",
+        "alt": "워크램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769568108489",
+        "src": "/ktech/images/products/1769568095991-____2.JPG",
+        "alt": "워크램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769568108514",
+        "src": "/ktech/images/products/1769568096017-____3.JPG",
+        "alt": "워크램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769568108545",
+        "src": "/ktech/images/products/1769568096043-____4.JPG",
+        "alt": "워크램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769568108577",
+        "src": "/ktech/images/products/1769568096070-____5.JPG",
+        "alt": "워크램프",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "길이", "value": "500mm / 600mm / 700mm" },
-      { "name": "재질", "value": "EPDM 고무" },
-      { "name": "내열 온도", "value": "-50°C ~ +120°C" },
-      { "name": "호환성", "value": "범용 J-Hook" }
-    ],
-    "dimensions": {
-      "length": "500-700",
-      "width": "25",
-      "height": "20",
-      "weight": "0.15"
+    "specifications": [],
+    "specificationsText": {
+      "ko": "전압: 24V\n\n소비전력: 70W\n\n광원종류: H3(할로겐)\n\n염수 분무 시험: 300H\n\n방수·방진등급: IP55",
+      "en": "Voltage: 24V\n\nPower: 70W\n\nBulb Type: H3(Halogen)\n\nSalt Spray Test: 300H\n\nIP Rating: IP55\n",
+      "zh": "电压：24V\n\n功率：70W\n\n灯泡类型：H3 （卤素）\n\n盐雾测试：300H\n\n防护等级：IP55"
     },
-    "features": [
-      "EPDM 특수 고무",
-      "UV/오존 내성",
-      "먼지 환경 최적화",
-      "범용 호환성",
-      "손쉬운 교체"
-    ],
+    "dimensions": {},
+    "features": [],
     "featured": false
   },
   {
     "id": "3",
-    "name": "엔진 와이어링 하네스 EH-200",
-    "slug": "engine-harness-eh-200",
-    "sku": "EH-200",
-    "description": "<p>EH-200은 건설기계 엔진용 메인 와이어링 하네스입니다.</p><p>고온/진동 환경에 최적화된 설계로, 엄격한 품질 테스트를 거쳐 생산됩니다. OEM 사양에 맞춘 맞춤 제작이 가능합니다.</p>",
-    "shortDescription": "건설기계 엔진용 메인 하네스. OEM 맞춤 제작.",
+    "name": {
+      "ko": "비콘 램프",
+      "zh": "警示灯",
+      "en": " Beacon Lamp"
+    },
+    "slug": "product-3",
+    "sku": "SKU-3",
+    "description": {
+      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection."
+    },
+    "shortDescription": {
+      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection."
+    },
     "categories": [
-      { "id": "2", "name": "와이어링 하네스 및 케이블", "slug": "wiring-harness" }
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
     ],
     "images": [
-      { "id": "3", "src": "/ktech/images/products/placeholder.jpg", "alt": "엔진 하네스 EH-200", "width": 800, "height": 600 }
+      {
+        "id": "1769573925865",
+        "src": "/ktech/images/products/1769573913326-____1.JPG",
+        "alt": "비콘 램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769573925887",
+        "src": "/ktech/images/products/1769573913350-____2.JPG",
+        "alt": "비콘 램프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769573925910",
+        "src": "/ktech/images/products/1769573913372-____3.JPG",
+        "alt": "비콘 램프",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "커넥터 수", "value": "24핀 / 36핀 / 48핀" },
-      { "name": "전선 규격", "value": "AWG 14-22" },
-      { "name": "내열 등급", "value": "125°C" },
-      { "name": "보호 등급", "value": "IP65" }
-    ],
-    "dimensions": {
-      "length": "가변",
-      "width": "-",
-      "height": "-",
-      "weight": "가변"
+    "specifications": [],
+    "specificationsText": {
+      "en": "Operating Voltage Range: 9–32V\n\nRated Voltage: 12V / 24V\n\nLight Source Type: LED\n\nMaximum Current: 2.8A / 1.3A\n\nMaximum Power Consumption: 20W\n\nOperating Temperature: –30 to 85°C\n\nIngress Protection Rating: IP67\n\nIllumination Color: Amber\n\nFlashing Mode: Double Flash\n\nFlashing Frequency: 120–240 flashes/min\n\nCertification: ECE R10 / R65 TA1",
+      "zh": "工作范围：9~32V  \n\n额定电压：12V/24V\n\n灯泡类型：LED\n\n最大电流：2.8A/1.3A\n\n最大功率：20W\n\n工作温度：-30~85℃\n\n防护等级：IP67  \n\n照明颜色：琥珀色\n\n闪烁类型：双闪\n\n闪烁频率：120~240/分钟\n\n认证： ECE R10/R65 TA1",
+      "ko": "작동 전압 범위: 9–32V\n\n정격 전압: 12V / 24V\n\n광원 종류: LED\n\n최대 전류: 2.8A / 1.3A\n\n최대 소비전력: 20W\n\n작동 온도: –30 ~ 85℃\n\n보호 등급: IP67\n\n조명 색상: 앰버(Amber)\n\n점멸 방식: 이중 점멸 (Double Flash)\n\n점멸 빈도: 분당 120–240회\n\n인증: ECE R10 / R65 TA1"
     },
-    "features": [
-      "고온 내열 설계",
-      "진동 저항성",
-      "OEM 맞춤 제작",
-      "엄격한 품질 검사",
-      "방수 커넥터"
-    ],
-    "featured": true
+    "dimensions": {},
+    "features": [],
+    "featured": false
   },
   {
     "id": "4",
-    "name": "컨트롤 케이블 CC-300",
-    "slug": "control-cable-cc-300",
-    "sku": "CC-300",
-    "description": "<p>CC-300은 건설기계 조작 시스템용 컨트롤 케이블입니다.</p><p>정밀한 조작감과 뛰어난 내구성을 제공하며, 다양한 길이와 사양으로 공급 가능합니다.</p>",
-    "shortDescription": "건설기계 조작용 컨트롤 케이블.",
+    "name": {
+      "ko": "경고등",
+      "en": "Warning Light",
+      "zh": "警示灯"
+    },
+    "slug": "product-4",
+    "sku": "SKU-4",
+    "description": {
+      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
+    },
+    "shortDescription": {
+      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
+    },
     "categories": [
-      { "id": "2", "name": "와이어링 하네스 및 케이블", "slug": "wiring-harness" }
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
     ],
     "images": [
-      { "id": "4", "src": "/ktech/images/products/placeholder.jpg", "alt": "컨트롤 케이블 CC-300", "width": 800, "height": 600 }
+      {
+        "id": "1769574258483",
+        "src": "/ktech/images/products/1769574245944-___1.JPG",
+        "alt": "경고등",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574258503",
+        "src": "/ktech/images/products/1769574245965-___2.JPG",
+        "alt": "경고등",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574258552",
+        "src": "/ktech/images/products/1769574246012-___3.JPG",
+        "alt": "경고등",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "케이블 타입", "value": "푸시-풀 / 스로틀" },
-      { "name": "외피 재질", "value": "PVC / PE" },
-      { "name": "내경", "value": "1.5mm / 2.0mm" },
-      { "name": "작동 하중", "value": "최대 50kg" }
-    ],
-    "dimensions": {
-      "length": "500-5000",
-      "width": "-",
-      "height": "-",
-      "weight": "가변"
+    "specifications": [],
+    "specificationsText": {
+      "ko": "작동 전압 범위: 932V\n\n정격 전압: 12V / 24V\n\n광원 종류: LED\n\n최대 전류: 3.5A\n\n최대 소비전력: 40W\n\n작동 온도: -4085℃\n\n보호 등급: IP67\n\n충격 보호 등급: IK08 (렌즈부 한정)\n\n조명 색상: 앰버(Amber)\n\n점멸 방식: 단일 점멸\n\n점멸 빈도: 분당 120~240회\n\n인증: ECE R10 / R65 TA1",
+      "en": "Operating Voltage Range: 9–32V\n\nRated Voltage: 12V / 24V\n\nLight Source Type: LED\n\nMaximum Current: 3.5A\n\nMaximum Power Consumption: 40W\n\nOperating Temperature: -40 to 85°C\n\nIngress Protection Rating: IP67\n\nImpact Protection Rating: IK08 (Lens only)\n\nIllumination Color: Amber\n\nFlashing Mode: Single Flash\n\nFlashing Frequency: 120–240 flashes/min\n\nCertification: ECE R10 / R65 TA1",
+      "zh": "工作范围：9~32V\n\n额定电压：12V/24V \n\n灯泡类型：LED\n\n最大电流：3.5A\n\n最大功率：40W\n\n工作温度：-40~85℃\n\n防护等级：IP67\n\n防护等级：IK08 (仅镜片)\n\n照明颜色：琥珀色\n\n闪烁类型：单闪 \n\n闪烁频率：120~240/分钟\n\n认证： ECE R10/R65 TA1"
     },
-    "features": [
-      "정밀 조작감",
-      "고내구성",
-      "맞춤 길이 제작",
-      "방청 처리",
-      "부드러운 작동"
-    ],
+    "dimensions": {},
+    "features": [],
     "featured": false
   },
   {
     "id": "5",
-    "name": "산업용 에어컴프레서 AC-500",
-    "slug": "air-compressor-ac-500",
-    "sku": "AC-500",
-    "description": "<p>AC-500은 건설기계 및 산업차량용 에어컴프레서입니다.</p><p>컴팩트한 설계와 높은 출력으로 브레이크 시스템, 공압 장비 등에 안정적인 압축공기를 공급합니다.</p>",
-    "shortDescription": "건설기계용 컴팩트 에어컴프레서.",
+    "name": {
+      "ko": "Strap-earth",
+      "en": "Strap-earth",
+      "zh": "接地线"
+    },
+    "slug": "product-5",
+    "sku": "SKU-5",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "对研发/试验/量产的全过程,保有20年之间的基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "对研发/试验/量产的全过程,保有20年之间的基础技术与专有技术。"
+    },
     "categories": [
-      { "id": "3", "name": "에어컴프레서", "slug": "air-compressor" }
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
     ],
     "images": [
-      { "id": "5", "src": "/ktech/images/products/placeholder.jpg", "alt": "에어컴프레서 AC-500", "width": 800, "height": 600 }
+      {
+        "id": "1769574578985",
+        "src": "/ktech/images/products/1769574566443-Strap-Earth_1.JPG",
+        "alt": "Strap-Earth 1.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574579004",
+        "src": "/ktech/images/products/1769574566463-Strap-Earth_2.JPG",
+        "alt": "Strap-Earth 2.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574579025",
+        "src": "/ktech/images/products/1769574566485-Strap-Earth_3.JPG",
+        "alt": "Strap-Earth 3.JPG",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "토출 용량", "value": "500 L/min" },
-      { "name": "최대 압력", "value": "8 bar" },
-      { "name": "구동 방식", "value": "엔진 직결 / 전동" },
-      { "name": "냉각 방식", "value": "공랭식" }
-    ],
-    "dimensions": {
-      "length": "350",
-      "width": "280",
-      "height": "300",
-      "weight": "25"
+    "specifications": [],
+    "specificationsText": {
+      "zh": "/",
+      "en": "/",
+      "ko": "/"
     },
-    "features": [
-      "컴팩트 설계",
-      "고출력",
-      "저진동",
-      "오일 윤활식",
-      "장수명 설계"
-    ],
-    "featured": true
+    "dimensions": {},
+    "features": [],
+    "featured": false
   },
   {
     "id": "6",
-    "name": "연료 레벨 센서 FS-100",
-    "slug": "fuel-sensor-fs-100",
-    "sku": "FS-100",
-    "description": "<p>FS-100은 건설기계 및 산업차량용 연료량 측정 센서입니다.</p><p>정확한 연료량 측정으로 효율적인 연료 관리가 가능하며, 다양한 탱크 형태에 맞춤 적용 가능합니다.</p>",
-    "shortDescription": "정밀 연료량 측정 센서.",
+    "name": {
+      "ko": "사이렌 앰프",
+      "en": "Siren Amp",
+      "zh": "扬声器组件"
+    },
+    "slug": "product-6",
+    "sku": "SKU-6",
+    "description": {
+      "ko": "다양한 장비에 적용 가능합니다.",
+      "en": "Compatible with a wide range of equipment applications.",
+      "zh": "适配多种设备应用。"
+    },
+    "shortDescription": {
+      "ko": "다양한 장비에 적용 가능합니다.",
+      "en": "Compatible with a wide range of equipment applications.",
+      "zh": "适配多种设备应用。"
+    },
     "categories": [
-      { "id": "4", "name": "연료센서", "slug": "fuel-sensor" }
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
     ],
     "images": [
-      { "id": "6", "src": "/ktech/images/products/placeholder.jpg", "alt": "연료센서 FS-100", "width": 800, "height": 600 }
+      {
+        "id": "1769574766238",
+        "src": "/ktech/images/products/1769574753696-_____1.JPG",
+        "alt": "사이렌앰프1.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574766257",
+        "src": "/ktech/images/products/1769574753716-_____2.JPG",
+        "alt": "사이렌앰프2.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574766295",
+        "src": "/ktech/images/products/1769574753753-_____3.JPG",
+        "alt": "사이렌앰프3.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574766323",
+        "src": "/ktech/images/products/1769574753778-_____4.JPG",
+        "alt": "사이렌앰프4.JPG",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769574766345",
+        "src": "/ktech/images/products/1769574753802-_____5.JPG",
+        "alt": "사이렌앰프5.JPG",
+        "width": 800,
+        "height": 600
+      }
     ],
-    "specifications": [
-      { "name": "측정 방식", "value": "저항식 / 용량식" },
-      { "name": "출력 신호", "value": "0-90Ω / 4-20mA" },
-      { "name": "측정 정확도", "value": "±2%" },
-      { "name": "작동 온도", "value": "-40°C ~ +85°C" }
-    ],
-    "dimensions": {
-      "length": "150-500",
-      "width": "60",
-      "height": "60",
-      "weight": "0.3"
+    "specifications": [],
+    "specificationsText": {
+      "ko": "입력 전압: DC 13.8V / 24V\n\n입력 전압 범위: DC 12V20V / 22V28.5V\n\n최소 전류: DC 100mA\n\n최대 전류: DC 6A / 4A\n\nRMS 출력 전력: 40W / 60W\n\n최대 출력 전력: 60W / 100W\n\n임피던스: 8 Ohm\n\n퓨즈: 10A",
+      "en": "Input Voltage: DC 13.8V / 24V\n\nInput Voltage Range: DC 12V20V / 22V28.5V\n\nMinimum Current: DC 100mA\n\nMaximum Current: DC 6A / 4A\n\nRMS Output Power: 40W / 60W\n\nMaximum Output Power: 60W / 100W\n\nImpedance: 8 Ohm\n\nFuse: 10A",
+      "zh": "输入电压：DC 13.8V /24V\n\n输入电压：DC 12V~20V /22V~28.5V\n\n最小电流：DC 100mA\n\n最大电流： DC 6A /4A\n\nRMS输出功率：40W/60W\n\n最大输出功率：60W/100W\n\n阻抗：8 Ohm\n\n保险丝：10A"
     },
-    "features": [
-      "고정밀 측정",
-      "내연료성 재질",
-      "맞춤 길이 제작",
-      "다양한 출력 옵션",
-      "방폭 설계"
-    ],
-    "featured": true
+    "dimensions": {},
+    "features": [],
+    "featured": false
   },
   {
     "id": "7",
-    "name": "경고등 사이렌앰프 SA-200",
-    "slug": "siren-amp-sa-200",
-    "sku": "SA-200",
-    "description": "<p>SA-200은 건설기계 및 특수차량용 사이렌앰프 시스템입니다.</p><p>강력한 출력과 다양한 경고음 패턴으로 작업 현장의 안전을 확보합니다. LED 경고등과 연동 가능합니다.</p>",
-    "shortDescription": "건설기계용 사이렌앰프 시스템.",
-    "categories": [
-      { "id": "5", "name": "사이렌앰프 및 램프", "slug": "siren-amp" }
-    ],
-    "images": [
-      { "id": "7", "src": "/ktech/images/products/placeholder.jpg", "alt": "사이렌앰프 SA-200", "width": 800, "height": 600 }
-    ],
-    "specifications": [
-      { "name": "출력", "value": "100W / 200W" },
-      { "name": "경고음 패턴", "value": "8가지" },
-      { "name": "작동 전압", "value": "12V / 24V" },
-      { "name": "방수 등급", "value": "IP65" }
-    ],
-    "dimensions": {
-      "length": "200",
-      "width": "150",
-      "height": "100",
-      "weight": "1.5"
+    "name": {
+      "ko": "테스트"
     },
-    "features": [
-      "고출력 스피커",
-      "다양한 경고음",
-      "LED 연동 가능",
-      "방수 설계",
-      "손쉬운 설치"
-    ],
-    "featured": false
-  },
-  {
-    "id": "8",
-    "name": "LED 경고등 WL-300",
-    "slug": "warning-lamp-wl-300",
-    "sku": "WL-300",
-    "description": "<p>WL-300은 고휘도 LED 경고등으로, 건설기계 및 작업차량의 안전 가시성을 높입니다.</p><p>다양한 점멸 패턴과 색상 옵션이 있으며, 충격에 강한 폴리카보네이트 렌즈를 사용합니다.</p>",
-    "shortDescription": "고휘도 LED 경고등. 다양한 색상 옵션.",
-    "categories": [
-      { "id": "5", "name": "사이렌앰프 및 램프", "slug": "siren-amp" }
-    ],
-    "images": [
-      { "id": "8", "src": "/ktech/images/products/placeholder.jpg", "alt": "LED 경고등 WL-300", "width": 800, "height": 600 }
-    ],
-    "specifications": [
-      { "name": "LED 타입", "value": "고휘도 SMD" },
-      { "name": "색상", "value": "황색 / 청색 / 적색" },
-      { "name": "점멸 패턴", "value": "12가지" },
-      { "name": "방수 등급", "value": "IP67" }
-    ],
-    "dimensions": {
-      "length": "150",
-      "width": "150",
-      "height": "80",
-      "weight": "0.5"
+    "slug": "product-7",
+    "sku": "SKU-7",
+    "description": {
+      "ko": "  <ul>                                                                                                          \n    <li>고품질 소재</li>                                                                                        \n    <li>내구성 우수</li>                                                                                        \n  </ul>                                                                                                         \n  <table border=\"1\">                                                                                            \n    <tr><td>크기</td><td>100x50mm</td></tr>                                                                     \n  </table>    "
     },
-    "features": [
-      "고휘도 LED",
-      "IP67 방수",
-      "다양한 점멸 패턴",
-      "충격 저항 렌즈",
-      "자석/볼트 장착"
+    "shortDescription": {
+      "ko": "테스트"
+    },
+    "categories": [
+      {
+        "id": "1",
+        "name": "와이퍼 어셈블리",
+        "slug": "wiper-assembly",
+        "description": "건설기계 및 산업차량용 와이퍼 시스템",
+        "icon": "wiper"
+      }
     ],
+    "images": [],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "  <ul>                                                                                                          \n    <li>고품질 소재</li>                                                                                        \n    <li>내구성 우수</li>                                                                                        \n  </ul>                                                                                                         \n  <table border=\"1\">                                                                                            \n    <tr><td>크기</td><td>100x50mm</td></tr>                                                                     \n  </table>    "
+    },
+    "dimensions": {},
+    "features": [],
     "featured": true
-  },
-  {
-    "id": "9",
-    "name": "범용 릴레이 박스 RB-100",
-    "slug": "relay-box-rb-100",
-    "sku": "RB-100",
-    "description": "<p>RB-100은 건설기계 전장 시스템용 범용 릴레이 박스입니다.</p><p>다양한 전장 부품을 안전하게 제어할 수 있으며, 방수 설계로 외부 장착이 가능합니다.</p>",
-    "shortDescription": "전장 시스템용 범용 릴레이 박스.",
-    "categories": [
-      { "id": "6", "name": "액세서리", "slug": "accessories" }
-    ],
-    "images": [
-      { "id": "9", "src": "/ktech/images/products/placeholder.jpg", "alt": "릴레이 박스 RB-100", "width": 800, "height": 600 }
-    ],
-    "specifications": [
-      { "name": "릴레이 수", "value": "4개 / 6개 / 8개" },
-      { "name": "정격 전류", "value": "30A / 40A" },
-      { "name": "작동 전압", "value": "12V / 24V" },
-      { "name": "방수 등급", "value": "IP65" }
-    ],
-    "dimensions": {
-      "length": "150",
-      "width": "100",
-      "height": "80",
-      "weight": "0.4"
-    },
-    "features": [
-      "방수 설계",
-      "과부하 보호",
-      "LED 상태 표시",
-      "손쉬운 배선",
-      "범용 호환"
-    ],
-    "featured": false
-  },
-  {
-    "id": "10",
-    "name": "방수 커넥터 세트 WC-50",
-    "slug": "waterproof-connector-wc-50",
-    "sku": "WC-50",
-    "description": "<p>WC-50은 건설기계 전장 시스템용 방수 커넥터 세트입니다.</p><p>IP67 등급의 완벽한 방수 성능과 탈착 편의성을 제공합니다. 다양한 핀 수 옵션이 있습니다.</p>",
-    "shortDescription": "IP67 방수 커넥터 세트.",
-    "categories": [
-      { "id": "6", "name": "액세서리", "slug": "accessories" }
-    ],
-    "images": [
-      { "id": "10", "src": "/ktech/images/products/placeholder.jpg", "alt": "방수 커넥터 WC-50", "width": 800, "height": 600 }
-    ],
-    "specifications": [
-      { "name": "핀 수", "value": "2P / 4P / 6P / 8P" },
-      { "name": "정격 전류", "value": "10A / 20A" },
-      { "name": "방수 등급", "value": "IP67" },
-      { "name": "재질", "value": "나일론 / 황동" }
-    ],
-    "dimensions": {
-      "length": "40-80",
-      "width": "20-40",
-      "height": "20-40",
-      "weight": "0.02-0.05"
-    },
-    "features": [
-      "IP67 방수",
-      "간편한 탈착",
-      "내진동 설계",
-      "다양한 핀 옵션",
-      "내구성 재질"
-    ],
-    "featured": false
   }
 ]

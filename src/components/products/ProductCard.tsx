@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Product } from '@/lib/types';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { resolveLocalized } from '@/lib/localized';
 
 interface ProductCardProps {
   product: Product;
@@ -11,7 +13,10 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, index = 0 }: ProductCardProps) {
+  const { language } = useLanguage();
   const mainImage = product.images[0];
+  const name = resolveLocalized(product.name, language);
+  const shortDesc = resolveLocalized(product.shortDescription, language);
 
   return (
     <motion.div
@@ -30,7 +35,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             {mainImage ? (
               <Image
                 src={mainImage.src}
-                alt={mainImage.alt || product.name}
+                alt={mainImage.alt || name}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -53,10 +58,10 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               ))}
             </div>
             <h3 className="font-semibold text-lg text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
-              {product.name}
+              {name}
             </h3>
             <p className="text-gray-600 mt-2 text-sm line-clamp-2">
-              {product.shortDescription}
+              {shortDesc}
             </p>
             <div className="mt-4 flex items-center text-blue-600 text-sm font-medium">
               자세히 보기

@@ -14,8 +14,11 @@ import {
   StaggerContainer,
   StaggerItem,
 } from '@/components/animations/AnimatedSection';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HomePage() {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* Hero Section - Modern with gradient overlay */}
@@ -29,7 +32,7 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-block mb-4 md:mb-6 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
             >
-              <span className="text-xs md:text-sm font-medium tracking-wider">INDUSTRIAL EQUIPMENT SPECIALIST</span>
+              <span className="text-xs md:text-sm font-medium tracking-wider">{t('home.badge')}</span>
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
@@ -37,9 +40,9 @@ export default function HomePage() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight"
             >
-              기술로 현장을
+              {t('home.heroTitle1')}
               <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                완성하는 기업
+                {t('home.heroTitle2')}
               </span>
             </motion.h1>
             <motion.p
@@ -48,8 +51,8 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
             >
-              산업장비의 품질·안전·생산성을 높이는 핵심 파트너,<br className="hidden md:block" />
-              KTECH 방문을 진심으로 환영합니다.
+              {t('home.heroDesc')}<br className="hidden md:block" />
+              {t('home.heroDesc2')}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -61,7 +64,7 @@ export default function HomePage() {
                 href="/products"
                 className="group inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full font-semibold text-sm md:text-base hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg shadow-blue-500/30"
               >
-                제품 둘러보기
+                {t('home.viewProducts')}
                 <svg className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -70,7 +73,7 @@ export default function HomePage() {
                 href="/about"
                 className="inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold text-sm md:text-base border border-white/30 hover:bg-white/20 transition-all duration-300"
               >
-                회사소개
+                {t('home.aboutUs')}
               </Link>
             </motion.div>
           </div>
@@ -115,21 +118,19 @@ export default function HomePage() {
               <AnimatedText delay={0}>
                 <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
                   <span className="w-8 md:w-12 h-[2px] bg-blue-600"></span>
-                  <span className="text-blue-600 font-semibold tracking-wider text-xs md:text-sm">Quality · Technology · Commitment</span>
+                  <span className="text-blue-600 font-semibold tracking-wider text-xs md:text-sm">{t('home.qualitySection')}</span>
                 </div>
               </AnimatedText>
               <AnimatedText delay={0.1}>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-                  품질 · 기술력 ·<br />
-                  <span className="text-blue-600">고객중심의 신뢰</span>
+                  {t('home.qualityTitle1')}<br />
+                  <span className="text-blue-600">{t('home.qualityTitle2')}</span>
                 </h2>
               </AnimatedText>
               <AnimatedText delay={0.2}>
                 <div className="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
                   <p>
-                    당사는 검증된 제조 경험을 바탕으로
-                    품질 관리, OEM 대응형 기술 고도화,
-                    그리고 공급망 안정성을 책임지는 장기적 파트너십을 제공합니다.
+                    {t('home.qualityDesc')}
                   </p>
                 </div>
               </AnimatedText>
@@ -138,7 +139,7 @@ export default function HomePage() {
                   href="/about"
                   className="group inline-flex items-center mt-6 md:mt-8 text-blue-600 font-semibold text-base md:text-lg hover:text-blue-700 transition-colors"
                 >
-                  자세히 알아보기
+                  {t('common.learnMore')}
                   <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -149,7 +150,7 @@ export default function HomePage() {
               <div className="relative h-[280px] sm:h-[350px] md:h-[500px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/ktech/images/company/construction-site.png"
-                  alt="KTECH 장비"
+                  alt="KTECH"
                   fill
                   className="object-cover"
                 />
@@ -171,7 +172,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <p className="text-xl md:text-2xl font-bold text-gray-900">30+</p>
-                    <p className="text-gray-500 text-xs md:text-sm">Years Experience</p>
+                    <p className="text-gray-500 text-xs md:text-sm">{t('common.yearsExperience')}</p>
                   </div>
                 </div>
               </motion.div>
@@ -203,15 +204,15 @@ export default function HomePage() {
           <AnimatedSection className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="w-12 h-[2px] bg-blue-400"></span>
-              <span className="text-blue-400 font-semibold tracking-wider text-sm">KTECH KEY STRENGTHS</span>
+              <span className="text-blue-400 font-semibold tracking-wider text-sm">{t('home.whyKtechBadge')}</span>
               <span className="w-12 h-[2px] bg-blue-400"></span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              KTECH이 선택받는 이유
+              {t('home.whyKtech')}
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-              산업·건설 장비 현장에서 요구되는 성능, 내구성, 안전성을 기준으로<br className="hidden md:block" />
-              설계부터 생산, 품질 검증의 전 공정을 일관된 기준으로 관리하고 있습니다.
+              {t('home.whyKtechDesc')}<br className="hidden md:block" />
+              {t('home.whyKtechDesc2')}
             </p>
           </AnimatedSection>
 
@@ -229,10 +230,10 @@ export default function HomePage() {
                   </motion.div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-4 leading-snug">
-                      검증된 제조 경험과 韓·中 생산 운영 역량
+                      {t('home.strength1Title')}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
-                      30년 이상 한국과 중국에서 축적된 공장 운영 경험을 바탕으로, 실제 생산 현장에서 검증된 제조 노하우와 안정적인 공급 역량을 보유하고 있습니다.
+                      {t('home.strength1Desc')}
                     </p>
                   </div>
                 </div>
@@ -252,10 +253,10 @@ export default function HomePage() {
                   </motion.div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-4 leading-snug">
-                      핵심 부품에 특화된 품질 관리와 신뢰성 중심 구조
+                      {t('home.strength2Title')}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
-                      와이퍼 모터, 연료 센서, 에어 컴프레서, 사이렌앰프 및 램프, 와이어링 하네스 및 케이블 등 장비 신뢰도에 직결되는 핵심 부품 분야에서 자체 품질 관리 체계와 검증 프로세스를 기반으로 안정성을 확보하고 있습니다.
+                      {t('home.strength2Desc')}
                     </p>
                   </div>
                 </div>
@@ -275,10 +276,10 @@ export default function HomePage() {
                   </motion.div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-4 leading-snug">
-                      OEM 요구에 대응하는 단계적 기술 고도화 역량
+                      {t('home.strength3Title')}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
-                      단순 부품 공급을 넘어 장비 제어 구조와 시스템 연계를 이해하는 기술 파트너로서 전기·전자 부품 설계 역량과 기술 고도화를 단계적으로 추진하고 있습니다.
+                      {t('home.strength3Desc')}
                     </p>
                   </div>
                 </div>
@@ -298,10 +299,10 @@ export default function HomePage() {
                   </motion.div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-4 leading-snug">
-                      공급망 안정성을 책임지는 장기 파트너십 지향
+                      {t('home.strength4Title')}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
-                      일관된 품질과 안정적인 공급 체계를 기반으로, 고객의 장비·시스템 환경에 맞춘 맞춤형 기술 발전을 통해 단기 거래가 아닌 장기 협력 관계를 지향합니다.
+                      {t('home.strength4Desc')}
                     </p>
                   </div>
                 </div>
@@ -325,13 +326,13 @@ export default function HomePage() {
           <AnimatedSection className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="w-12 h-[2px] bg-blue-600"></span>
-              <span className="text-blue-600 font-semibold tracking-wider text-sm">CERTIFICATIONS</span>
+              <span className="text-blue-600 font-semibold tracking-wider text-sm">{t('home.certBadge')}</span>
               <span className="w-12 h-[2px] bg-blue-600"></span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">KTECH 인증서</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{t('home.certTitle')}</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              KTECH은 처음 설계부터 생산·검사·유지관리까지<br className="hidden md:block" />
-              국제 품질 기준에 기반한 종합적인 품질 관리 체계를 운영하고 있습니다.
+              {t('home.certDesc')}<br className="hidden md:block" />
+              {t('home.certDesc2')}
             </p>
           </AnimatedSection>
 
@@ -367,12 +368,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              함께 성장할 파트너를 찾고 계신가요?
+              {t('home.ctaTitle')}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              KTECH의 전문가들이 귀사의 요구사항에 맞는 최적의 솔루션을 제안해 드립니다.
+              {t('home.ctaDesc')}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -381,7 +382,7 @@ export default function HomePage() {
                 href="/support"
                 className="group inline-flex items-center px-10 py-5 bg-white text-blue-600 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-2xl shadow-black/20"
               >
-                문의하기
+                {t('common.contact')}
                 <svg className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

@@ -3,71 +3,81 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { AnimatedSection, AnimatedCard } from '@/components/animations/AnimatedSection';
-
-const historyData = [
-  {
-    year: '현재',
-    title: '글로벌 파트너십 강화',
-    events: [
-      '한국·중국 생산 거점 운영',
-      'ISO 9001 품질경영시스템 인증',
-      'ISO 14001 환경경영시스템 인증',
-      '글로벌 OEM 파트너 납품',
-    ],
-    highlight: true,
-  },
-  {
-    year: '2019',
-    title: '사업 확장',
-    events: [
-      '㈜케이텍(KTECH) 법인명 변경',
-      '건설기계 부품 사업 본격화',
-    ],
-  },
-  {
-    year: '2015',
-    title: '기술력 강화',
-    events: [
-      '와이어링 하네스 생산라인 증설',
-      '품질관리 시스템 고도화',
-    ],
-  },
-  {
-    year: '2010',
-    title: '시장 확대',
-    events: [
-      '산업차량 부품 시장 진출',
-      '국내 주요 OEM 납품 시작',
-    ],
-  },
-  {
-    year: '2007',
-    title: '생산 시설 확충',
-    events: [
-      '중국 공장 생산라인 증설',
-      '에어컴프레서 제품군 추가',
-    ],
-  },
-  {
-    year: '2004',
-    title: '한국 본사 설립',
-    events: [
-      '㈜경복산전(한국 본사) 설립',
-      '국내 영업 및 기술지원 체계 구축',
-    ],
-  },
-  {
-    year: '1998',
-    title: '회사 설립',
-    events: [
-      '중국 장쑤성 창저우에 경복기전유한공사 설립',
-      '건설기계·산업차량 부품 제조 시작',
-    ],
-    isFirst: true,
-  },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HistoryPage() {
+  const { t } = useLanguage();
+
+  const historyData = [
+    {
+      year: t('historyPage.present'),
+      title: t('historyPage.globalPartnership'),
+      events: [
+        t('historyPage.koreaChina'),
+        t('historyPage.iso9001'),
+        t('historyPage.iso14001'),
+        t('historyPage.globalOem'),
+      ],
+      highlight: true,
+    },
+    {
+      year: t('historyPage.year2019'),
+      title: t('historyPage.businessExpansion'),
+      events: [
+        t('historyPage.nameChange'),
+        t('historyPage.constructionParts'),
+      ],
+    },
+    {
+      year: t('historyPage.year2015'),
+      title: t('historyPage.techStrength'),
+      events: [
+        t('historyPage.wiringExpansion'),
+        t('historyPage.qualityUpgrade'),
+      ],
+    },
+    {
+      year: t('historyPage.year2010'),
+      title: t('historyPage.marketExpansion'),
+      events: [
+        t('historyPage.industrialEntry'),
+        t('historyPage.domesticOem'),
+      ],
+    },
+    {
+      year: t('historyPage.year2007'),
+      title: t('historyPage.facilityExpansion'),
+      events: [
+        t('historyPage.chinaExpansion'),
+        t('historyPage.airCompressor'),
+      ],
+    },
+    {
+      year: t('historyPage.year2004'),
+      title: t('historyPage.koreaHq'),
+      events: [
+        t('historyPage.kbEstablished'),
+        t('historyPage.domesticSupport'),
+      ],
+    },
+    {
+      year: t('historyPage.year1998'),
+      title: t('historyPage.companyFounded'),
+      events: [
+        t('historyPage.chinaFounded'),
+        t('historyPage.manufacturingStart'),
+      ],
+      isFirst: true,
+    },
+  ];
+
+  const statsData = [
+    { value: t('historyPage.statsYears'), label: t('historyPage.statsYearsLabel') },
+    { value: t('historyPage.statsSites'), label: t('historyPage.statsSitesLabel') },
+    { value: t('historyPage.statsIso'), label: t('historyPage.statsIsoLabel') },
+    { value: t('historyPage.statsPartners'), label: t('historyPage.statsPartnersLabel') },
+  ];
+
   return (
     <div className="pt-16 lg:pt-24">
       {/* Hero Section */}
@@ -103,7 +113,7 @@ export default function HistoryPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
             >
-              연혁
+              {t('historyPage.heroTitle')}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -111,7 +121,7 @@ export default function HistoryPage() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl md:text-2xl text-blue-100 font-light"
             >
-              30년간의 성장과 혁신의 여정
+              {t('historyPage.heroSubtitle')}
             </motion.p>
           </div>
         </div>
@@ -228,12 +238,7 @@ export default function HistoryPage() {
       <section className="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: '30+', label: 'Years of Experience' },
-              { value: '2', label: 'Production Sites' },
-              { value: 'ISO', label: 'Certified Quality' },
-              { value: '100+', label: 'Global Partners' },
-            ].map((stat, index) => (
+            {statsData.map((stat, index) => (
               <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, y: 30 }}
@@ -276,12 +281,12 @@ export default function HistoryPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              KTECH의 새로운 역사를 함께 만들어가세요
+              {t('historyPage.ctaTitle')}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              30년의 경험과 기술력을 바탕으로 고객과 함께 성장합니다.
+              {t('historyPage.ctaDesc')}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -291,7 +296,7 @@ export default function HistoryPage() {
                   href="/about"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors"
                 >
-                  회사 소개
+                  {t('historyPage.aboutUs')}
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
@@ -299,7 +304,7 @@ export default function HistoryPage() {
                   href="/support"
                   className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white border-2 border-white rounded-full font-semibold hover:bg-white/10 transition-colors"
                 >
-                  문의하기
+                  {t('historyPage.contactUs')}
                 </Link>
               </motion.div>
             </div>

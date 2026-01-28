@@ -1,21 +1,20 @@
-import { Metadata } from 'next';
-import { ContactForm } from '@/components/forms/ContactForm';
+'use client';
 
-export const metadata: Metadata = {
-  title: '문의하기',
-  description: '케이텍에 문의하세요. 제품 상담, 견적 요청, 기술 지원 등 모든 문의에 신속하게 답변 드립니다.',
-};
+import { ContactForm } from '@/components/forms/ContactForm';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Page Header */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold mb-4">문의하기</h1>
+            <h1 className="text-4xl font-bold mb-4">{t('contact.pageTitle')}</h1>
             <p className="text-xl text-gray-300">
-              제품 상담, 견적 요청, 기술 지원 등 어떤 문의든 환영합니다.
+              {t('contact.pageDesc')}
             </p>
           </div>
         </div>
@@ -26,7 +25,7 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-xl shadow-sm p-6 space-y-6">
-              <h2 className="text-xl font-semibold text-gray-900">연락처 정보</h2>
+              <h2 className="text-xl font-semibold text-gray-900">{t('contact.contactInfo')}</h2>
 
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -37,10 +36,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-medium text-gray-900">주소</h3>
+                    <h3 className="font-medium text-gray-900">{t('contact.addressLabel')}</h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      경기도 시흥시 산업단지로 000<br />
-                      케이텍 본사
+                      {t('contact.addressValue')}<br />
+                      {t('contact.addressValue2')}
                     </p>
                   </div>
                 </div>
@@ -52,10 +51,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-medium text-gray-900">전화</h3>
+                    <h3 className="font-medium text-gray-900">{t('contact.phoneLabel')}</h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      대표: 031-000-0000<br />
-                      팩스: 031-000-0001
+                      {t('contact.phoneMain')}: 031-000-0000<br />
+                      {t('contact.faxLabel')}: 031-000-0001
                     </p>
                   </div>
                 </div>
@@ -67,7 +66,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-medium text-gray-900">이메일</h3>
+                    <h3 className="font-medium text-gray-900">{t('contact.emailLabel')}</h3>
                     <p className="text-gray-600 text-sm mt-1">
                       info@ktech.co.kr<br />
                       sales@ktech.co.kr
@@ -82,10 +81,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-medium text-gray-900">영업 시간</h3>
+                    <h3 className="font-medium text-gray-900">{t('contact.hoursLabel')}</h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      평일: 09:00 - 18:00<br />
-                      토요일/일요일: 휴무
+                      {t('contact.weekday')}: 09:00 - 18:00<br />
+                      {t('contact.weekend')}
                     </p>
                   </div>
                 </div>
@@ -93,9 +92,9 @@ export default function ContactPage() {
 
               {/* Map Placeholder */}
               <div className="mt-6 pt-6 border-t">
-                <h3 className="font-medium text-gray-900 mb-3">오시는 길</h3>
+                <h3 className="font-medium text-gray-900 mb-3">{t('contact.directions')}</h3>
                 <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">지도 영역</span>
+                  <span className="text-gray-500 text-sm">{t('contact.mapArea')}</span>
                 </div>
               </div>
             </div>
@@ -104,9 +103,9 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl shadow-sm p-6 lg:p-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">문의 양식</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-2">{t('contact.formTitle')}</h2>
               <p className="text-gray-600 mb-6">
-                아래 양식을 작성하시면 담당자가 빠르게 연락드리겠습니다.
+                {t('contact.formDesc')}
               </p>
               <ContactForm />
             </div>

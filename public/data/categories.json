@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "와이퍼 어셈블리",
+    "slug": "wiper-assembly",
+    "description": "건설기계 및 산업차량용 와이퍼 시스템",
+    "icon": "wiper"
+  },
+  {
+    "id": "2",
+    "name": "와이어링 하네스 및 케이블",
+    "slug": "wiring-harness",
+    "description": "전장 케이블 및 커스텀 하네스",
+    "icon": "cable"
+  },
+  {
+    "id": "3",
+    "name": "에어컴프레서",
+    "slug": "air-compressor",
+    "description": "산업용 압축공기 시스템",
+    "icon": "compressor"
+  },
+  {
+    "id": "4",
+    "name": "연료센서",
+    "slug": "fuel-sensor",
+    "description": "연료량 측정 센서 시스템",
+    "icon": "sensor"
+  },
+  {
+    "id": "5",
+    "name": "사이렌앰프 및 램프",
+    "slug": "siren-amp",
+    "description": "경고등 및 사이렌 시스템",
+    "icon": "siren"
+  },
+  {
+    "id": "6",
+    "name": "액세서리",
+    "slug": "accessories",
+    "description": "기타 부품 및 액세서리",
+    "icon": "accessory"
+  }
+]

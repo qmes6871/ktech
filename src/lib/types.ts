@@ -1,3 +1,5 @@
+export type LocalizedString = Partial<Record<'ko' | 'en' | 'zh', string>>;
+
 export interface ProductImage {
   id: string;
   src: string;
@@ -21,14 +23,17 @@ export interface ProductSpec {
 
 export interface Product {
   id: string;
-  name: string;
+  name: LocalizedString;
   slug: string;
   sku: string;
-  description: string;
-  shortDescription: string;
+  description: LocalizedString;
+  descriptionHtml?: LocalizedString;
+  shortDescription: LocalizedString;
   categories: Category[];
   images: ProductImage[];
   specifications: ProductSpec[];
+  specificationsText?: LocalizedString;
+  specificationsHtml?: LocalizedString;
   dimensions?: {
     length?: string;
     width?: string;

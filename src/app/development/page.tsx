@@ -6,8 +6,10 @@ import {
   AnimatedSection,
   AnimatedCard,
 } from '@/components/animations/AnimatedSection';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function DevelopmentPage() {
+  const { t } = useLanguage();
 
   return (
     <div className="pt-16 lg:pt-24">
@@ -52,7 +54,7 @@ export default function DevelopmentPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
               </span>
-              <span className="text-cyan-300 font-medium tracking-wider text-sm">RESEARCH & DEVELOPMENT</span>
+              <span className="text-cyan-300 font-medium tracking-wider text-sm">{t('developmentPage.badge')}</span>
             </motion.div>
 
             <motion.h1
@@ -61,10 +63,10 @@ export default function DevelopmentPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
             >
-              기술 혁신으로
+              {t('developmentPage.heroTitle1')}
               <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                미래를 설계합니다
+                {t('developmentPage.heroTitle2')}
               </span>
             </motion.h1>
 
@@ -74,8 +76,7 @@ export default function DevelopmentPage() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl md:text-2xl text-blue-100/80 max-w-3xl leading-relaxed mb-12"
             >
-              케이텍(KTECH)은 축적된 제조 경험과 품질 관리 역량을 바탕으로,
-              산업·건설기계 분야의 기술 변화에 대응하는 전기·전자 부품 기술 고도화를 추진합니다.
+              {t('developmentPage.heroDesc')}
             </motion.p>
 
             {/* Stats row */}
@@ -111,7 +112,7 @@ export default function DevelopmentPage() {
           className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
         >
           <div className="flex flex-col items-center gap-2 text-white/50">
-            <span className="text-xs tracking-widest">SCROLL</span>
+            <span className="text-xs tracking-widest">{t('developmentPage.scroll')}</span>
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -141,12 +142,12 @@ export default function DevelopmentPage() {
           >
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="w-12 h-[2px] bg-blue-600"></span>
-              <span className="text-blue-600 font-semibold tracking-wider text-sm">CORE CAPABILITIES</span>
+              <span className="text-blue-600 font-semibold tracking-wider text-sm">{t('developmentPage.coreCapabilities')}</span>
               <span className="w-12 h-[2px] bg-blue-600"></span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">축적된 제조 역량</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">{t('developmentPage.coreCapabilitiesTitle')}</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              건설기계 및 산업차량용 핵심 부품 분야에서 축적한 제조 경험과 품질 관리 역량
+              {t('developmentPage.coreCapabilitiesDesc')}
             </p>
           </motion.div>
 
@@ -171,14 +172,14 @@ export default function DevelopmentPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">와이퍼 어셈블리</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{t('developmentPage.wiperTitle')}</h3>
                 <p className="text-blue-100/80 text-lg leading-relaxed">
-                  건설기계 및 산업차량용 고품질 와이퍼 시스템 설계 및 제조
+                  {t('developmentPage.wiperDesc')}
                 </p>
               </div>
 
               <div className="relative z-10 flex items-center gap-2 text-white/70 group-hover:text-white transition-colors mt-6">
-                <span className="text-sm font-medium">자세히 보기</span>
+                <span className="text-sm font-medium">{t('developmentPage.viewDetails')}</span>
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -202,9 +203,9 @@ export default function DevelopmentPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">에어 컴프레서</h3>
+                <h3 className="text-xl font-bold text-white mb-3">{t('developmentPage.airCompressorTitle')}</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  산업용 압축공기 시스템 및 관련 부품 제조
+                  {t('developmentPage.airCompressorDesc')}
                 </p>
               </div>
             </motion.div>
@@ -226,9 +227,9 @@ export default function DevelopmentPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">와이어링 하네스</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{t('developmentPage.wiringTitle')}</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  전장 케이블 조립 및 커스텀 하네스 제작
+                  {t('developmentPage.wiringDesc')}
                 </p>
               </div>
             </motion.div>
@@ -250,9 +251,9 @@ export default function DevelopmentPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">품질 인증 체계</h3>
+                <h3 className="text-xl font-bold text-white mb-3">{t('developmentPage.qualityCertTitle')}</h3>
                 <p className="text-cyan-50/80 leading-relaxed">
-                  ISO 인증 기반 자체 검증 시스템 운영
+                  {t('developmentPage.qualityCertDesc')}
                 </p>
               </div>
             </motion.div>
@@ -275,10 +276,9 @@ export default function DevelopmentPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">향후 발전 방향</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{t('developmentPage.futureTitle')}</h3>
                   <p className="text-gray-400 leading-relaxed">
-                    전기·전자부품 방면의 자체 설계 역량 강화와 기술 고도화를 단계적으로 추진하며,
-                    기존 제품의 안정성과 신뢰성을 유지하기 위한 자체 인증 및 검증 체계를 확장해 나갈 계획입니다.
+                    {t('developmentPage.futureDesc')}
                   </p>
                 </div>
               </div>
@@ -307,14 +307,15 @@ export default function DevelopmentPage() {
           >
             <div className="inline-flex items-center gap-3 mb-6 px-5 py-2.5 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-              <span className="text-cyan-400 font-medium tracking-wider text-sm">STRATEGIC DIRECTION</span>
+              <span className="text-cyan-400 font-medium tracking-wider text-sm">{t('developmentPage.strategyBadge')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
-              중·장기 전략 방향
+              {t('developmentPage.strategyTitle')}
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              케이텍은 단순 부품 공급을 넘어, 장비 제어 구조와 시스템 연계를 이해하는
-              <span className="text-cyan-400 font-semibold"> 기술 파트너</span>로서 역할을 강화해 나가겠습니다.
+              {t('developmentPage.strategyDesc')}
+              <span className="text-cyan-400 font-semibold">{t('developmentPage.strategyHighlight')}</span>
+              {t('developmentPage.strategyDesc2')}
             </p>
           </motion.div>
 
@@ -336,10 +337,10 @@ export default function DevelopmentPage() {
                     </svg>
                   </div>
                   <div>
-                    <span className="text-cyan-400 text-sm font-semibold tracking-wider">01</span>
-                    <h3 className="text-2xl font-bold text-white mt-2 mb-4">지속 가능한 협력 체계</h3>
+                    <span className="text-cyan-400 text-sm font-semibold tracking-wider">{t('developmentPage.strategy1Num')}</span>
+                    <h3 className="text-2xl font-bold text-white mt-2 mb-4">{t('developmentPage.strategy1Title')}</h3>
                     <p className="text-gray-400 leading-relaxed text-lg">
-                      안정적인 품질과 일관된 공급 체계를 기반으로, 고객 환경에 맞춘 단계적 기술 고도화를 통해 장기적인 협력 관계를 구축하겠습니다.
+                      {t('developmentPage.strategy1Desc')}
                     </p>
                   </div>
                 </div>
@@ -363,10 +364,10 @@ export default function DevelopmentPage() {
                     </svg>
                   </div>
                   <div>
-                    <span className="text-blue-400 text-sm font-semibold tracking-wider">02</span>
-                    <h3 className="text-2xl font-bold text-white mt-2 mb-4">기술 변화에 대응하는 파트너</h3>
+                    <span className="text-blue-400 text-sm font-semibold tracking-wider">{t('developmentPage.strategy2Num')}</span>
+                    <h3 className="text-2xl font-bold text-white mt-2 mb-4">{t('developmentPage.strategy2Title')}</h3>
                     <p className="text-gray-400 leading-relaxed text-lg">
-                      케이텍은 현재의 품질을 지키면서, 미래 산업 변화에 대응하는 기술 역량을 지속적으로 확장해 나가겠습니다.
+                      {t('developmentPage.strategy2Desc')}
                     </p>
                   </div>
                 </div>
@@ -402,9 +403,9 @@ export default function DevelopmentPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 break-keep"
             >
-              케이텍은
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"> 신뢰할 수 있는 기술 파트너</span>로서
-              고객과 함께 장기적인 성장을 이어가겠습니다.
+              {t('developmentPage.closingStatement')}
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">{t('developmentPage.closingHighlight')}</span>
+              {t('developmentPage.closingStatement2')}
             </motion.h2>
           </div>
         </div>
@@ -433,7 +434,7 @@ export default function DevelopmentPage() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            기술 파트너십을 시작하세요
+            {t('developmentPage.ctaTitle')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -442,7 +443,7 @@ export default function DevelopmentPage() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-blue-100 text-xl mb-12 max-w-2xl mx-auto"
           >
-            케이텍의 전문가들이 귀사의 요구사항에 맞는 최적의 솔루션을 제안해 드립니다.
+            {t('developmentPage.ctaDesc')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -456,7 +457,7 @@ export default function DevelopmentPage() {
                 href="/products"
                 className="group inline-flex items-center justify-center px-10 py-5 bg-white text-blue-600 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-2xl shadow-black/20"
               >
-                제품 둘러보기
+                {t('developmentPage.viewProducts')}
                 <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -467,7 +468,7 @@ export default function DevelopmentPage() {
                 href="/support"
                 className="group inline-flex items-center justify-center px-10 py-5 bg-transparent text-white border-2 border-white rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300"
               >
-                문의하기
+                {t('developmentPage.contactUs')}
               </Link>
             </motion.div>
           </motion.div>

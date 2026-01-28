@@ -1,9 +1,39 @@
 import { Metadata } from 'next';
-import { getAllProducts, getAllCategories, getProductsByCategory } from '@/lib/products';
+import { unstable_noStore as noStore } from 'next/cache';
 import { ProductGrid } from '@/components/products/ProductGrid';
 import { ProductsHero } from '@/components/products/ProductsHero';
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import fs from 'fs';
+import path from 'path';
+import type { Product, Category } from '@/lib/types';
+import { normalizeProduct } from '@/lib/products';
+
+// 항상 최신 데이터를 가져오도록 동적 렌더링
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+const PRODUCTS_FILE = path.join(process.cwd(), 'src/data/products.json');
+const CATEGORIES_FILE = path.join(process.cwd(), 'src/data/categories.json');
+
+function getAllProducts(): Product[] {
+  noStore();
+  const data = fs.readFileSync(PRODUCTS_FILE, 'utf-8');
+  const raw = JSON.parse(data) as unknown[];
+  return raw.map(normalizeProduct);
+}
+
+function getAllCategories(): Category[] {
+  noStore();
+  const data = fs.readFileSync(CATEGORIES_FILE, 'utf-8');
+  return JSON.parse(data) as Category[];
+}
+
+function getProductsByCategory(categorySlug: string): Product[] {
+  return getAllProducts().filter(product =>
+    product.categories.some(cat => cat.slug === categorySlug)
+  );
+}
 
 export const metadata: Metadata = {
   title: '제품소개 | KTECH',
@@ -49,6 +79,7 @@ const categoryIcons: Record<string, ReactNode> = {
 };
 
 export default async function ProductsPage({ searchParams }: ProductsPageProps) {
+  noStore();
   const params = await searchParams;
   const categorySlug = params.category;
   const categories = getAllCategories();

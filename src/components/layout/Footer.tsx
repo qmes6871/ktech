@@ -1,19 +1,24 @@
-import Link from 'next/link';
+'use client';
 
-const footerLinks = {
-  company: [
-    { name: '회사소개', href: '/about' },
-    { name: '연혁', href: '/about/history' },
-    { name: '인증 및 특허', href: '/about/certifications' },
-  ],
-  support: [
-    { name: '제품개발', href: '/development' },
-    { name: '고객지원', href: '/support' },
-    { name: '문의하기', href: '/support' },
-  ],
-};
+import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Footer() {
+  const { t } = useLanguage();
+
+  const footerLinks = {
+    company: [
+      { name: t('nav.companyInfo'), href: '/about' },
+      { name: t('nav.history'), href: '/about/history' },
+      { name: t('nav.certifications'), href: '/about/certifications' },
+    ],
+    support: [
+      { name: t('nav.development'), href: '/development' },
+      { name: t('nav.support'), href: '/support' },
+      { name: t('common.contact'), href: '/support' },
+    ],
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,18 +28,16 @@ export function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-white text-xl font-bold mb-4">KTECH</h3>
             <p className="text-gray-400 leading-relaxed mb-6">
-              산업용 장비 부품 전문기업 케이텍입니다.<br />
-              고품질 제품과 신뢰할 수 있는 서비스로<br />
-              고객의 생산성 향상에 기여합니다.
+              {t('footer.address')}
             </p>
           </div>
 
           {/* Company Links */}
           <div>
-            <h3 className="text-white font-semibold mb-5">기업정보</h3>
+            <h3 className="text-white font-semibold mb-5">{t('nav.about')}</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
-                <li key={link.name}>
+                <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-white transition-colors"
@@ -48,7 +51,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-5">연락처</h3>
+            <h3 className="text-white font-semibold mb-5">{t('footer.contactUs')}</h3>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-3">
                 <svg className="h-5 w-5 text-gray-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,9 +59,8 @@ export function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span>
-                  대전광역시 대덕구<br />
-                  신일동로 33번길 31<br />
-                  우: 34324
+                  {t('footer.address')}<br />
+                  (34324)
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -80,15 +82,12 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} KTECH. All rights reserved.
+            &copy; {new Date().getFullYear()} KTECH. {t('footer.allRightsReserved')}
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-500">
-            <Link href="/privacy" className="hover:text-white transition-colors">
-              개인정보처리방침
-            </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
-              이용약관
-            </Link>
+            <span className="hover:text-white transition-colors cursor-pointer">
+              {t('support.form.privacyPolicy')}
+            </span>
           </div>
         </div>
       </div>

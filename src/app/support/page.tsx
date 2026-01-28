@@ -4,8 +4,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { AnimatedSection, AnimatedCard } from '@/components/animations/AnimatedSection';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function SupportPage() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -28,8 +30,9 @@ export default function SupportPage() {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
+      const data = await response.json();
+
+      if (data.success) {
         setFormData({
           name: '',
           company: '',
@@ -38,9 +41,13 @@ export default function SupportPage() {
           category: '',
           message: '',
         });
+        setSubmitted(true);
+      } else {
+        alert(data.error || t('support.form.submit'));
       }
     } catch (error) {
       console.error('Error:', error);
+      alert(t('support.form.submit'));
     } finally {
       setIsSubmitting(false);
     }
@@ -83,7 +90,7 @@ export default function SupportPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              <span className="text-green-300 font-medium tracking-wider text-xs">CUSTOMER SUPPORT</span>
+              <span className="text-green-300 font-medium tracking-wider text-xs">{t('support.badge')}</span>
             </motion.div>
 
             <motion.h1
@@ -92,7 +99,7 @@ export default function SupportPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 break-keep"
             >
-              무엇을 도와드릴까요?
+              {t('support.subtitle')}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -100,7 +107,7 @@ export default function SupportPage() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-blue-100/80 max-w-xl mx-auto"
             >
-              케이텍 전문 상담팀이 신속하고 정확하게 답변해 드립니다.
+              {t('support.description')}
             </motion.p>
           </div>
         </div>
@@ -125,7 +132,7 @@ export default function SupportPage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">전화 문의</p>
+                  <p className="text-xs text-gray-500 mb-0.5">{t('support.phoneInquiry')}</p>
                   <p className="font-semibold text-gray-900">042-000-0000</p>
                 </div>
               </motion.a>
@@ -144,7 +151,7 @@ export default function SupportPage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">이메일</p>
+                  <p className="text-xs text-gray-500 mb-0.5">{t('support.emailInquiry')}</p>
                   <p className="font-semibold text-gray-900">info@ktech.co.kr</p>
                 </div>
               </motion.a>
@@ -161,8 +168,8 @@ export default function SupportPage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">운영 시간</p>
-                  <p className="font-semibold text-gray-900">평일 09:00 - 18:00</p>
+                  <p className="text-xs text-gray-500 mb-0.5">{t('common.businessHours')}</p>
+                  <p className="font-semibold text-gray-900">{t('support.location.weekday')} 09:00 - 18:00</p>
                 </div>
               </motion.div>
             </div>
@@ -185,10 +192,10 @@ export default function SupportPage() {
                 {/* Left Info Panel */}
                 <div className="lg:col-span-2 bg-gradient-to-br from-blue-600 to-blue-700 p-8 lg:p-12 text-white">
                   <h2 className="text-2xl lg:text-3xl font-bold mb-4 break-keep">
-                    문의사항을 남겨주세요
+                    {t('support.leaveMessage')}
                   </h2>
                   <p className="text-blue-100 leading-relaxed mb-10">
-                    제품 관련 문의, 견적 요청, 기술 지원 등 어떤 문의든 환영합니다.
+                    {t('support.leaveMessageDesc')}
                   </p>
 
                   {/* Features */}
@@ -199,7 +206,7 @@ export default function SupportPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-blue-50">24시간 내 답변 보장</span>
+                      <span className="text-blue-50">{t('support.responseGuarantee')}</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
@@ -207,7 +214,7 @@ export default function SupportPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-blue-50">전문 상담팀 배정</span>
+                      <span className="text-blue-50">{t('support.expertTeam')}</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
@@ -215,13 +222,13 @@ export default function SupportPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-blue-50">맞춤형 솔루션 제안</span>
+                      <span className="text-blue-50">{t('support.customSolution')}</span>
                     </div>
                   </div>
 
                   {/* Contact Info */}
                   <div className="mt-12 pt-8 border-t border-white/20">
-                    <h3 className="text-sm font-semibold text-blue-200 mb-4">직접 연락하기</h3>
+                    <h3 className="text-sm font-semibold text-blue-200 mb-4">{t('support.directContact')}</h3>
                     <div className="space-y-3 text-sm">
                       <p className="flex items-center gap-2">
                         <svg className="w-4 h-4 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -249,15 +256,15 @@ export default function SupportPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">문의가 접수되었습니다</h3>
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">{t('support.form.success')}</h3>
                         <p className="text-gray-600 mb-6">
-                          담당자 확인 후 빠른 시일 내에 연락드리겠습니다.
+                          {t('support.form.successDesc')}
                         </p>
                         <button
                           onClick={() => setSubmitted(false)}
                           className="inline-flex items-center px-5 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors text-sm"
                         >
-                          새 문의 작성
+                          {t('support.form.newInquiry')}
                         </button>
                       </div>
                     </div>
@@ -266,7 +273,7 @@ export default function SupportPage() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                         <div>
                           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">
-                            이름 <span className="text-red-500">*</span>
+                            {t('support.form.name')} <span className="text-red-500">{t('support.form.required')}</span>
                           </label>
                           <input
                             type="text"
@@ -276,13 +283,12 @@ export default function SupportPage() {
                             value={formData.name}
                             onChange={handleChange}
                             className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all outline-none text-gray-900"
-                            placeholder="홍길동"
                           />
                         </div>
 
                         <div>
                           <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1.5">
-                            회사명
+                            {t('support.form.company')}
                           </label>
                           <input
                             type="text"
@@ -291,13 +297,12 @@ export default function SupportPage() {
                             value={formData.company}
                             onChange={handleChange}
                             className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all outline-none text-gray-900"
-                            placeholder="(주)회사명"
                           />
                         </div>
 
                         <div>
                           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
-                            이메일 <span className="text-red-500">*</span>
+                            {t('support.form.email')} <span className="text-red-500">{t('support.form.required')}</span>
                           </label>
                           <input
                             type="email"
@@ -313,7 +318,7 @@ export default function SupportPage() {
 
                         <div>
                           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5">
-                            연락처 <span className="text-red-500">*</span>
+                            {t('support.form.phone')} <span className="text-red-500">{t('support.form.required')}</span>
                           </label>
                           <input
                             type="tel"
@@ -330,7 +335,7 @@ export default function SupportPage() {
 
                       <div className="mb-5">
                         <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-1.5">
-                          문의 유형 <span className="text-red-500">*</span>
+                          {t('support.form.category')} <span className="text-red-500">{t('support.form.required')}</span>
                         </label>
                         <select
                           id="category"
@@ -340,18 +345,18 @@ export default function SupportPage() {
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all outline-none bg-white text-gray-900"
                         >
-                          <option value="">선택해주세요</option>
-                          <option value="product">제품 문의</option>
-                          <option value="quote">견적 요청</option>
-                          <option value="technical">기술 지원</option>
-                          <option value="partnership">파트너십 제안</option>
-                          <option value="other">기타 문의</option>
+                          <option value="">{t('support.form.categoryPlaceholder')}</option>
+                          <option value="product">{t('support.form.categoryProduct')}</option>
+                          <option value="quote">{t('support.form.categoryQuote')}</option>
+                          <option value="technical">{t('support.form.categoryTechnical')}</option>
+                          <option value="partnership">{t('support.form.categoryPartnership')}</option>
+                          <option value="other">{t('support.form.categoryOther')}</option>
                         </select>
                       </div>
 
                       <div className="mb-6">
                         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
-                          문의 내용 <span className="text-red-500">*</span>
+                          {t('support.form.message')} <span className="text-red-500">{t('support.form.required')}</span>
                         </label>
                         <textarea
                           id="message"
@@ -361,14 +366,14 @@ export default function SupportPage() {
                           value={formData.message}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all outline-none resize-none text-gray-900"
-                          placeholder="문의하실 내용을 자세히 작성해주세요."
+                          placeholder={t('support.form.messagePlaceholder')}
                         ></textarea>
                       </div>
 
                       <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                         <p className="text-sm text-gray-500">
-                          제출하신 정보는 문의 답변 목적으로만 사용되며,
-                          <Link href="/privacy" className="text-blue-600 hover:underline"> 개인정보처리방침</Link>에 따라 관리됩니다.
+                          {t('support.form.privacyNotice')}
+                          <Link href="/privacy" className="text-blue-600 hover:underline"> {t('support.form.privacyPolicy')}</Link>{t('support.form.privacyNotice2')}
                         </p>
                       </div>
 
@@ -383,11 +388,11 @@ export default function SupportPage() {
                               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                             </svg>
-                            전송 중...
+                            {t('support.form.submitting')}
                           </>
                         ) : (
                           <>
-                            문의 보내기
+                            {t('support.form.submit')}
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
@@ -408,8 +413,8 @@ export default function SupportPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <AnimatedSection className="text-center mb-12">
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">오시는 길</h2>
-              <p className="text-gray-600">케이텍 본사를 방문해주세요</p>
+              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">{t('support.location.title')}</h2>
+              <p className="text-gray-600">{t('support.location.subtitle')}</p>
             </AnimatedSection>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -429,11 +434,10 @@ export default function SupportPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">주소</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">{t('support.location.address')}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      대전광역시 대덕구<br />
-                      신일동로 33번길 31<br />
-                      (우) 34324
+                      {t('footer.address')}<br />
+                      (34324)
                     </p>
                   </div>
                 </div>
@@ -454,11 +458,11 @@ export default function SupportPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">연락처</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">{t('support.location.contact')}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      전화: 042-000-0000<br />
-                      팩스: 042-000-0001<br />
-                      이메일: info@ktech.co.kr
+                      {t('common.phone')}: 042-000-0000<br />
+                      {t('support.location.fax')}: 042-000-0001<br />
+                      {t('common.email')}: info@ktech.co.kr
                     </p>
                   </div>
                 </div>
@@ -479,11 +483,11 @@ export default function SupportPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">운영 시간</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">{t('support.location.hours')}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      평일: 09:00 - 18:00<br />
-                      점심: 12:00 - 13:00<br />
-                      주말/공휴일 휴무
+                      {t('support.location.weekday')}: 09:00 - 18:00<br />
+                      {t('support.location.lunch')}: 12:00 - 13:00<br />
+                      {t('support.location.weekend')}
                     </p>
                   </div>
                 </div>
