@@ -146,6 +146,26 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 </motion.div>
               )}
 
+              {/* Specifications - moved here under Features */}
+              {(product.specifications.length > 0 || specificationsText || specificationsHtml) && (
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="mb-6"
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-1 h-5 bg-blue-600 rounded-full"></span>
+                    제품 상세 규격
+                  </h3>
+                  <ProductSpecs
+                    specs={product.specifications}
+                    specificationsText={specificationsText}
+                    specificationsHtml={specificationsHtml}
+                  />
+                </motion.div>
+              )}
+
               {/* CTA Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -175,33 +195,6 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             </div>
           </div>
         </motion.div>
-
-        {/* Specifications Section */}
-        {(product.specifications.length > 0 || specificationsText) && (
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-xl shadow-gray-200/50 overflow-hidden mt-8"
-          >
-            <div className="p-6 lg:p-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                제품 상세 규격
-              </h2>
-              <ProductSpecs
-                specs={product.specifications}
-                specificationsText={specificationsText}
-                specificationsHtml={specificationsHtml}
-              />
-            </div>
-          </motion.div>
-        )}
 
         {/* Related Actions */}
         <motion.div
