@@ -21,87 +21,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section - Modern with gradient overlay */}
-      <section className="relative min-h-[100vh] flex items-center">
-        <HeroSlider />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-block mb-4 md:mb-6 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
-            >
-              <span className="text-xs md:text-sm font-medium tracking-wider">{t('home.badge')}</span>
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight"
-            >
-              {t('home.heroTitle1')}
-              <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                {t('home.heroTitle2')}
-              </span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
-            >
-              {t('home.heroDesc')}<br className="hidden md:block" />
-              {t('home.heroDesc2')}
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4 md:px-0"
-            >
-              <Link
-                href="/products"
-                className="group inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full font-semibold text-sm md:text-base hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg shadow-blue-500/30"
-              >
-                {t('home.viewProducts')}
-                <svg className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                href="/about"
-                className="inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold text-sm md:text-base border border-white/30 hover:bg-white/20 transition-all duration-300"
-              >
-                {t('home.aboutUs')}
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center pt-2"
-          >
-            <motion.div
-              animate={{ opacity: [0.5, 1, 0.5], height: ['8px', '12px', '8px'] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-              className="w-1 bg-white/70 rounded-full"
-            />
-          </motion.div>
-        </motion.div>
-      </section>
-
       {/* Quality · Technology · Commitment Section - Modern glassmorphism */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <section className="pt-24 lg:pt-32 py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50 to-transparent"></div>
         <motion.div
@@ -179,6 +100,85 @@ export default function HomePage() {
             </AnimatedSection>
           </div>
         </div>
+      </section>
+
+      {/* Hero Section - Modern with gradient overlay */}
+      <section className="relative min-h-[100vh] flex items-center">
+        <HeroSlider />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-block mb-4 md:mb-6 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
+            >
+              <span className="text-xs md:text-sm font-medium tracking-wider">{t('home.badge')}</span>
+            </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight"
+            >
+              {t('home.heroTitle1')}
+              <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                {t('home.heroTitle2')}
+              </span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
+            >
+              {t('home.heroDesc')}<br className="hidden md:block" />
+              {t('home.heroDesc2')}
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4 md:px-0"
+            >
+              <Link
+                href="/products"
+                className="group inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full font-semibold text-sm md:text-base hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg shadow-blue-500/30"
+              >
+                {t('home.viewProducts')}
+                <svg className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold text-sm md:text-base border border-white/30 hover:bg-white/20 transition-all duration-300"
+              >
+                {t('home.aboutUs')}
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center pt-2"
+          >
+            <motion.div
+              animate={{ opacity: [0.5, 1, 0.5], height: ['8px', '12px', '8px'] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+              className="w-1 bg-white/70 rounded-full"
+            />
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* KTECH이 선택받는 이유 Section - Modern cards */}

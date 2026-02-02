@@ -37,7 +37,7 @@ function getProductsByCategory(categorySlug: string): Product[] {
 
 export const metadata: Metadata = {
   title: '제품소개 | KTECH',
-  description: '케이텍의 산업·건설기계용 부품을 확인하세요. 와이퍼 어셈블리, 와이어링 하네스, 에어컴프레서, 연료센서 등 다양한 제품을 제공합니다.',
+  description: '케이텍의 산업·건설기계용 부품을 확인하세요. 와이퍼모터 어셈블리, 와이어링 하네스, 에어컴프레서, 연료센서 등 다양한 제품을 제공합니다.',
 };
 
 interface ProductsPageProps {

@@ -9,14 +9,14 @@
     "slug": "product-1",
     "sku": "SKU-1",
     "description": {
-      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. ",
-      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness.",
-      "zh": "无需储气罐，使空间效率突出且经济型。"
+      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. \n고객의 작업 환경과 요구 성능에 따라 에어컴프레서의 주요 사양 및 구조를 맞춤 설계합니다.",
+      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness.\nWe provide customized designs for air compressors, tailoring key specifications and structural configurations to customers’ operating conditions and working environments.",
+      "zh": "无需储气罐，使空间效率突出且经济型。\n根据客户的使用环境与运行条件，对空气压缩机的主要参数及结构进行定制化设计。"
     },
     "shortDescription": {
-      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. ",
-      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness.",
-      "zh": "无需储气罐，使空间效率突出且经济型。"
+      "ko": "별도의 에어탱크가 필요없어 공간 효율성이 뛰어나며 경제적입니다. 고객의 작업 환경과 요구 성능에 따라 에어컴프레서의 주요 사양 및 구조를 맞춤 설계합니다..",
+      "en": "No air tank is required, offering excellent space efficiency and cost-effectiveness. We provide customized designs for air compressors, tailoring key specifications and structural configurations to customers’ operating conditions and working environments.",
+      "zh": "无需储气罐，使空间效率突出且经济型。根据客户的使用环境与运行条件，对空气压缩机的主要参数及结构进行定制化设计。"
     },
     "categories": [
       {
@@ -29,13 +29,6 @@
     ],
     "images": [
       {
-        "id": "1769567759346",
-        "src": "/ktech/images/products/1769567746843-______1.JPG",
-        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
-        "width": 800,
-        "height": 600
-      },
-      {
         "id": "1769567759368",
         "src": "/ktech/images/products/1769567746874-______2.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
@@ -43,43 +36,50 @@
         "height": 600
       },
       {
-        "id": "1769567759392",
-        "src": "/ktech/images/products/1769567746897-______3.JPG",
+        "id": "1769611827978",
+        "src": "/ktech/images/products/1769611815024-__________.jpeg",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769567759419",
-        "src": "/ktech/images/products/1769567746921-______4.JPG",
+        "id": "1769612054411",
+        "src": "/ktech/images/products/1769612041462-______6.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769567759463",
-        "src": "/ktech/images/products/1769567746960-______5.JPG",
+        "id": "1769612054442",
+        "src": "/ktech/images/products/1769612041494-______7.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769567759490",
-        "src": "/ktech/images/products/1769567746991-______6.JPG",
+        "id": "1769612054475",
+        "src": "/ktech/images/products/1769612041528-______8.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769567759514",
-        "src": "/ktech/images/products/1769567747015-______7.JPG",
+        "id": "1769612075099",
+        "src": "/ktech/images/products/1769612062153-______1.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769567759539",
-        "src": "/ktech/images/products/1769567747042-______8.JPG",
+        "id": "1769612075125",
+        "src": "/ktech/images/products/1769612062178-______4.JPG",
+        "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769612075152",
+        "src": "/ktech/images/products/1769612062208-______5.JPG",
         "alt": "DC 12/24V 에어컴프레서 탱크리스 타입",
         "width": 800,
         "height": 600
@@ -87,32 +87,655 @@
     ],
     "specifications": [],
     "specificationsText": {
-      "ko": "에어압축방식: 오일프리 타입\n\n정격전압: DC 12V / DC 24V\n\n정격전류: 33A (12V) / 18A (24V)\n\n작동압력: 9.0(±0.5) kgf/kg\n\n최대회전수: 1600 rpm (12V) / 2000 rpm (24V)",
-      "en": "Air compression type: Oil-Free (Oil-Less)\n\nRated voltage: DC 12V / DC 24V\n\nRated current: 33A (12V) / 18A (24V)\n\nOperating pressure: 9.0 (±0.5) kgf/kg\n\nMaximum speed: 1600 rpm (12V) / 2000 rpm (24V)",
-      "zh": "空气压缩法：无油型\n\n电压：直流12V / 直流24V\n\n电流：33A（12V）/ 18A（24V）\n\n工作压力：9.0(±0.5) kgf/kg\n\n最高速度：1600转/分（12V）/ 2000转/分（24V）"
+      "ko": "<table style=\"border-collapse:collapse; width:100%; font-family:Arial, sans-serif; font-size:14px; table-layout:fixed;\">\n  <thead>\n    <tr>\n      <th style=\"border:1px solid #333; padding:12px;\">에어압축방식</th>\n      <th style=\"border:1px solid #333; padding:12px;\">정격전압</th>\n      <th style=\"border:1px solid #333; padding:12px;\">정격전류</th>\n      <th style=\"border:1px solid #333; padding:12px;\">작동압력</th>\n      <th style=\"border:1px solid #333; padding:12px;\">최대회전수</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">오일프리 타입</td>\n      <td style=\"border:1px solid #333; padding:12px;\">DC 12V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">33A</td>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">9.0(±0.5) kgf/kg</td>\n      <td style=\"border:1px solid #333; padding:12px;\">1600 rpm</td>\n    </tr>\n    <tr>\n      <td style=\"border:1px solid #333; padding:12px;\">DC 24V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">18A</td>\n      <td style=\"border:1px solid #333; padding:12px;\">2000 rpm</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "en": "<table style=\"border-collapse:collapse; width:100%; font-family:Arial, sans-serif; font-size:14px; table-layout:fixed;\">\n  <thead>\n    <tr>\n      <th style=\"border:1px solid #333; padding:12px;\">Air compression type</th>\n      <th style=\"border:1px solid #333; padding:12px;\">Rated Voltage</th>\n      <th style=\"border:1px solid #333; padding:12px;\">Rated Current</th>\n      <th style=\"border:1px solid #333; padding:12px;\">Operating Pressure</th>\n      <th style=\"border:1px solid #333; padding:12px;\">Maximum Speed (RPM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">Oil-Free (Oil-Less)</td>\n      <td style=\"border:1px solid #333; padding:12px;\">DC 12V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">33A</td>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">9.0 (±0.5) kgf/kg</td>\n      <td style=\"border:1px solid #333; padding:12px;\">1600 rpm</td>\n    </tr>\n    <tr>\n      <td style=\"border:1px solid #333; padding:12px;\">DC 24V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">18A</td>\n      <td style=\"border:1px solid #333; padding:12px;\">2000 rpm</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "zh": "<table style=\"border-collapse:collapse; width:100%; font-family:Arial, sans-serif; font-size:14px; table-layout:fixed;\">\n  <thead>\n    <tr>\n      <th style=\"border:1px solid #333; padding:12px;\">空气压缩法</th>\n      <th style=\"border:1px solid #333; padding:12px;\">电压</th>\n      <th style=\"border:1px solid #333; padding:12px;\">电流</th>\n      <th style=\"border:1px solid #333; padding:12px;\">工作压力</th>\n      <th style=\"border:1px solid #333; padding:12px;\">最高速度</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">无油型</td>\n      <td style=\"border:1px solid #333; padding:12px;\">直流12V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">33A</td>\n      <td rowspan=\"2\" style=\"border:1px solid #333; padding:12px;\">9.0(±0.5) kgf/kg</td>\n      <td style=\"border:1px solid #333; padding:12px;\">1600 转/分</td>\n    </tr>\n    <tr>\n      <td style=\"border:1px solid #333; padding:12px;\">直流24V</td>\n      <td style=\"border:1px solid #333; padding:12px;\">18A</td>\n      <td style=\"border:1px solid #333; padding:12px;\">2000 转/分</td>\n    </tr>\n  </tbody>\n</table>\n"
     },
     "dimensions": {},
     "features": [],
-    "featured": false
+    "featured": true,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   },
   {
-    "id": "2",
+    "id": "12",
+    "name": {
+      "ko": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+      "en": "Wiper Motor (Large Excavator)",
+      "zh": "雨刮器（大挖）"
+    },
+    "slug": "product-12",
+    "sku": "SKU-12",
+    "description": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。"
+    },
+    "shortDescription": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。"
+    },
+    "categories": [
+      {
+        "id": "1",
+        "name": "와이퍼모터 어셈블리",
+        "slug": "wiper-assembly",
+        "description": "건설기계 및 산업차량용 와이퍼 시스템",
+        "icon": "wiper"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769745091857",
+        "src": "/ktech/images/products/1769745077017-__________________4.JPG",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118295",
+        "src": "/ktech/images/products/1769745103456-__________________1.JPG",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118319",
+        "src": "/ktech/images/products/1769745103482-__________________2.JPG",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118475",
+        "src": "/ktech/images/products/1769745103634-__________________3_____.png",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118577",
+        "src": "/ktech/images/products/1769745103738-__________1_____.png",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118670",
+        "src": "/ktech/images/products/1769745103826-__________2_____.png",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118750",
+        "src": "/ktech/images/products/1769745103907-__________3_____.png",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745118823",
+        "src": "/ktech/images/products/1769745103973-__________4_____.png",
+        "alt": "와이퍼모터 어셈블리 (대형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">시험 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 27V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">인가 전압 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 30V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">무부하 특성</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      속도 40±3 RPM / 전류 최대 1A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 부하 토크 (40 kgf·cm)</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      속도 36±3 RPM / 전류 최대 3A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">잠김 상태 토크</th>\n    <td style=\"border:1px solid #333; padding:10px;\">최소 250 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">회전 각도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">78° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">복귀 각도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">85.35° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">회전 방향</th>\n    <td style=\"border:1px solid #333; padding:10px;\">CW</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">절연 저항</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      DC 500V 메거 기준 최소 1 MΩ\n    </td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Test Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 27V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Applied Voltage Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 30V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">No-Load Characteristics</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      Speed 40±3 RPM / Current Max. 1A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">\n      Rated Load Torque (40 kgf·cm)\n    </th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      Speed 36±3 RPM / Current Max. 3A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Locked Torque</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Min. 250 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rotation Angle</th>\n    <td style=\"border:1px solid #333; padding:10px;\">78° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Return Angle</th>\n    <td style=\"border:1px solid #333; padding:10px;\">85.35° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rotation Direction</th>\n    <td style=\"border:1px solid #333; padding:10px;\">CW</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Insulation Resistance</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      Min. 1 MΩ with DC 500V Megger\n    </td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">测试电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 27V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">施加电压范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 30V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">无负载特性</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      转速 40±3 RPM / 电流 最大 1A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定负载扭矩（40 kgf·cm）</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      转速 36±3 RPM / 电流 最大 3A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">锁定状态扭矩</th>\n    <td style=\"border:1px solid #333; padding:10px;\">最小 250 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">转动角度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">78° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">复位角度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">85.35° ±5</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">回转方向</th>\n    <td style=\"border:1px solid #333; padding:10px;\">CW</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">绝缘电阻</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      DC 500V 兆欧表测试，最小 1 MΩ\n    </td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": true,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "13",
+    "name": {
+      "ko": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+      "zh": "雨刮器（小挖）",
+      "en": "Wiper Motor (Small Excavator)"
+    },
+    "slug": "product-13",
+    "sku": "SKU-13",
+    "description": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery."
+    },
+    "shortDescription": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery."
+    },
+    "categories": [
+      {
+        "id": "1",
+        "name": "와이퍼모터 어셈블리",
+        "slug": "wiper-assembly",
+        "description": "건설기계 및 산업차량용 와이퍼 시스템",
+        "icon": "wiper"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769745433491",
+        "src": "/ktech/images/products/1769745418650-__________________1.JPG",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745433602",
+        "src": "/ktech/images/products/1769745418760-__________________3_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745433775",
+        "src": "/ktech/images/products/1769745418912-__________________4_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745433871",
+        "src": "/ktech/images/products/1769745419026-__________1_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745433974",
+        "src": "/ktech/images/products/1769745419121-__________2_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745434078",
+        "src": "/ktech/images/products/1769745419215-__________3_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769745434135",
+        "src": "/ktech/images/products/1769745419291-__________4_____.png",
+        "alt": "와이퍼모터 어셈블리 (소형 굴삭기용)",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">시험 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.5±0.2V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 전압 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 10 ~ 14V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">무부하 특성</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      속도 45±3 RPM / 전류 최대 2A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 부하 토크 (20 kgf·cm)</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      속도 38±4 RPM / 전류 최대 4A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">잠김 상태 토크</th>\n    <td style=\"border:1px solid #333; padding:10px;\">최소 120 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">소음</th>\n    <td style=\"border:1px solid #333; padding:10px;\">최대 55 dB</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Test Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.5±0.2V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Voltage Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 10 ~ 14V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">No-Load Characteristics</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      Speed 45±3 RPM / Current Max. 2A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">\n      Rated Load Torque (20 kgf·cm)\n    </th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      Speed 38±4 RPM / Current Max. 4A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Locked Torque</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Min. 120 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Noise Level</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Max. 55 dB</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">测试电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.5±0.2V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作电压范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 10 ~ 14V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">无负载特性</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      转速 45±3 RPM / 电流 最大 2A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定负载扭矩（20 kgf·cm）</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      转速 38±4 RPM / 电流 最大 4A\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">锁定状态扭矩</th>\n    <td style=\"border:1px solid #333; padding:10px;\">最小 120 kgf·cm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">噪声</th>\n    <td style=\"border:1px solid #333; padding:10px;\">最大 55 dB</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": true,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "14",
+    "name": {
+      "ko": "와이퍼모터 컨트롤러",
+      "en": "Wiper Motor Controller",
+      "zh": "雨刮器控制器"
+    },
+    "slug": "product-14",
+    "sku": "SKU-14",
+    "description": {
+      "ko": "고객의 다양한 기능 요구에 맞춰 맞춤형 설계 및 비표준 사양 제작이 가능합니다.",
+      "en": "Custom design and non-standard specifications are available to meet diverse functional requirements.",
+      "zh": "根据不同的功能要求非标订制。"
+    },
+    "shortDescription": {
+      "ko": "고객의 다양한 기능 요구에 맞춰 맞춤형 설계 및 비표준 사양 제작이 가능합니다.",
+      "en": "Custom design and non-standard specifications are available to meet diverse functional requirements.",
+      "zh": "根据不同的功能要求非标订制。"
+    },
+    "categories": [
+      {
+        "id": "1",
+        "name": "와이퍼모터 어셈블리",
+        "slug": "wiper-assembly",
+        "description": "건설기계 및 산업차량용 와이퍼 시스템",
+        "icon": "wiper"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769664174373",
+        "src": "/ktech/images/products/1769664160738-__________1_____.png",
+        "alt": "와이퍼모터 컨트롤러",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769664174464",
+        "src": "/ktech/images/products/1769664160831-__________2_____.png",
+        "alt": "와이퍼모터 컨트롤러",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769664174541",
+        "src": "/ktech/images/products/1769664160906-__________3_____.png",
+        "alt": "와이퍼모터 컨트롤러",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769664174625",
+        "src": "/ktech/images/products/1769664160984-__________4_____.png",
+        "alt": "와이퍼모터 컨트롤러",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">동작 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 32 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">사용 온도 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ℃ ~ +85 ℃</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 32 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 °C ~ +85 °C</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 24 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20 ~ 32 V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ℃ ~ 85 ℃</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "15",
+    "name": {
+      "ko": "굴삭기 메인 하네스",
+      "en": "Excavator Main Wire Harness",
+      "zh": "挖掘机主线束"
+    },
+    "slug": "product-15",
+    "sku": "SKU-15",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "2",
+        "name": "와이어링 하네스 및 케이블",
+        "slug": "wiring-harness",
+        "description": "전장 케이블 및 커스텀 하네스",
+        "icon": "cable"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769665020464",
+        "src": "/ktech/images/products/1769665006823-__________1.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665020497",
+        "src": "/ktech/images/products/1769665006858-__________2.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665020556",
+        "src": "/ktech/images/products/1769665006916-__________3.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665020589",
+        "src": "/ktech/images/products/1769665006947-__________4.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665020621",
+        "src": "/ktech/images/products/1769665006982-__________5.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665020659",
+        "src": "/ktech/images/products/1769665007017-__________6.JPG",
+        "alt": "굴삭기 메인 하네스",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": true,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "16",
+    "name": {
+      "ko": "상부 컨트롤 하네스",
+      "en": "Cab / Upper Frame Control Wire Harness",
+      "zh": "上车控制线束"
+    },
+    "slug": "product-16",
+    "sku": "SKU-16",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "2",
+        "name": "와이어링 하네스 및 케이블",
+        "slug": "wiring-harness",
+        "description": "전장 케이블 및 커스텀 하네스",
+        "icon": "cable"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769665192050",
+        "src": "/ktech/images/products/1769665178408-______________1_web.jpg",
+        "alt": "상부 컨트롤 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665192085",
+        "src": "/ktech/images/products/1769665178445-______________2_web.jpg",
+        "alt": "상부 컨트롤 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665192125",
+        "src": "/ktech/images/products/1769665178484-______________3_web.jpg",
+        "alt": "상부 컨트롤 하네스",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "17",
+    "name": {
+      "ko": "굴삭기 엔진 하네스",
+      "en": "Excavator Engine Wire Harness",
+      "zh": "挖掘机发动机线束"
+    },
+    "slug": "product-17",
+    "sku": "SKU-17",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验，构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "2",
+        "name": "와이어링 하네스 및 케이블",
+        "slug": "wiring-harness",
+        "description": "전장 케이블 및 커스텀 하네스",
+        "icon": "cable"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769665510657",
+        "src": "/ktech/images/products/1769665497015-__________1_web.jpg",
+        "alt": "굴삭기 엔진 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665510689",
+        "src": "/ktech/images/products/1769665497047-__________2_web.jpg",
+        "alt": "굴삭기 엔진 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665510724",
+        "src": "/ktech/images/products/1769665497081-__________3_web.jpg",
+        "alt": "굴삭기 엔진 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665510788",
+        "src": "/ktech/images/products/1769665497140-__________4_web.jpg",
+        "alt": "굴삭기 엔진 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665510826",
+        "src": "/ktech/images/products/1769665497183-__________5_web.jpg",
+        "alt": "굴삭기 엔진 하네스",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "18",
+    "name": {
+      "ko": "굴삭기 붐 하네스",
+      "en": "Excavator Boom Wire Harness",
+      "zh": "挖掘机大臂线束"
+    },
+    "slug": "product-18",
+    "sku": "SKU-18",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "2",
+        "name": "와이어링 하네스 및 케이블",
+        "slug": "wiring-harness",
+        "description": "전장 케이블 및 커스텀 하네스",
+        "icon": "cable"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769665845066",
+        "src": "/ktech/images/products/1769665831420-_________1_____.png",
+        "alt": "굴삭기 붐 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665845141",
+        "src": "/ktech/images/products/1769665831495-_________2_____.png",
+        "alt": "굴삭기 붐 하네스",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769665845276",
+        "src": "/ktech/images/products/1769665831626-_________3_____.png",
+        "alt": "굴삭기 붐 하네스",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "19",
+    "name": {
+      "ko": "사이렌 앰프",
+      "en": "Siren Amp",
+      "zh": "扬声器组件"
+    },
+    "slug": "product-19",
+    "sku": "SKU-19",
+    "description": {
+      "ko": "다양한 장비에 적용 가능합니다.",
+      "en": "Compatible with a wide range of equipment applications.",
+      "zh": "适配多种设备应用。"
+    },
+    "shortDescription": {
+      "ko": "다양한 장비에 적용 가능합니다.",
+      "en": "Compatible with a wide range of equipment applications.",
+      "zh": " 适配多种设备应用。"
+    },
+    "categories": [
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769666092459",
+        "src": "/ktech/images/products/1769666078812-_____1_____.jpeg",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666092485",
+        "src": "/ktech/images/products/1769666078835-_____2.JPG",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666111684",
+        "src": "/ktech/images/products/1769666098037-_________.png",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666130114",
+        "src": "/ktech/images/products/1769666116467-______1.JPG",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666130147",
+        "src": "/ktech/images/products/1769666116487-______2.JPG",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666143987",
+        "src": "/ktech/images/products/1769666130340-_____1.JPG",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666144115",
+        "src": "/ktech/images/products/1769666130466-_____5_____.png",
+        "alt": "사이렌 앰프",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">입력 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.8V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">입력 전압 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V ~ 20V / 22V ~ 28.5V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최소 전류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 100mA</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 전류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">6A / 4A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">RMS 출력 전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W / 60W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 출력 전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">60W / 100W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">임피던스</th>\n    <td style=\"border:1px solid #333; padding:10px;\">8 Ohm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">퓨즈</th>\n    <td style=\"border:1px solid #333; padding:10px;\">10A</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">输入电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.8V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">输入电压范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V ~ 20V / 22V ~ 28.5V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最小电流</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 100mA</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大电流</th>\n    <td style=\"border:1px solid #333; padding:10px;\">6A / 4A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">RMS输出功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W / 60W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大输出功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">60W / 100W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">阻抗</th>\n    <td style=\"border:1px solid #333; padding:10px;\">8 Ohm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">保险丝</th>\n    <td style=\"border:1px solid #333; padding:10px;\">10A</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Input Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 13.8V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Input Voltage Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 12V ~ 20V / 22V ~ 28.5V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Minimum Current</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 100mA</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Current</th>\n    <td style=\"border:1px solid #333; padding:10px;\">6A / 4A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">RMS Output Power</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W / 60W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Output Power</th>\n    <td style=\"border:1px solid #333; padding:10px;\">60W / 100W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Impedance</th>\n    <td style=\"border:1px solid #333; padding:10px;\">8 Ohm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Fuse</th>\n    <td style=\"border:1px solid #333; padding:10px;\">10A</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": true,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "20",
     "name": {
       "ko": "워크 램프",
-      "zh": "工作灯",
-      "en": "Work Lamp"
+      "en": "Work Lamp",
+      "zh": "工作灯"
     },
-    "slug": "product-2",
-    "sku": "SKU-2",
+    "slug": "product-20",
+    "sku": "SKU-20",
     "description": {
       "ko": "첨단 조명 기술 및 고품질 광원을 적용하여 균일한 조도를 구현하며, 고객 요구에 맞춘 맞춤형 제품을 제공합니다.",
-      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。",
-      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements."
+      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements.",
+      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。"
     },
     "shortDescription": {
       "ko": "첨단 조명 기술 및 고품질 광원을 적용하여 균일한 조도를 구현하며, 고객 요구에 맞춘 맞춤형 제품을 제공합니다.",
-      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。",
-      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements."
+      "en": "Utilizing advanced lighting technology and high-quality light sources, we deliver uniform illumination and customized products tailored to customer requirements.",
+      "zh": "采用先进照明技术与高品质光源，光线均匀，根据客户要求订制产品。"
     },
     "categories": [
       {
@@ -125,129 +748,133 @@
     ],
     "images": [
       {
-        "id": "1769568108463",
-        "src": "/ktech/images/products/1769568095965-____1.JPG",
-        "alt": "워크램프",
+        "id": "1769666359056",
+        "src": "/ktech/images/products/1769666345408-____1.JPG",
+        "alt": "워크 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769568108489",
-        "src": "/ktech/images/products/1769568095991-____2.JPG",
-        "alt": "워크램프",
+        "id": "1769666359082",
+        "src": "/ktech/images/products/1769666345434-____2.JPG",
+        "alt": "워크 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769568108514",
-        "src": "/ktech/images/products/1769568096017-____3.JPG",
-        "alt": "워크램프",
+        "id": "1769666359119",
+        "src": "/ktech/images/products/1769666345472-____3.JPG",
+        "alt": "워크 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769568108545",
-        "src": "/ktech/images/products/1769568096043-____4.JPG",
-        "alt": "워크램프",
+        "id": "1769666359156",
+        "src": "/ktech/images/products/1769666345498-____4.JPG",
+        "alt": "워크 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769568108577",
-        "src": "/ktech/images/products/1769568096070-____5.JPG",
-        "alt": "워크램프",
+        "id": "1769666359173",
+        "src": "/ktech/images/products/1769666345526-____5.JPG",
+        "alt": "워크 램프",
         "width": 800,
         "height": 600
       }
     ],
     "specifications": [],
     "specificationsText": {
-      "ko": "전압: 24V\n\n소비전력: 70W\n\n광원종류: H3(할로겐)\n\n염수 분무 시험: 300H\n\n방수·방진등급: IP55",
-      "en": "Voltage: 24V\n\nPower: 70W\n\nBulb Type: H3(Halogen)\n\nSalt Spray Test: 300H\n\nIP Rating: IP55\n",
-      "zh": "电压：24V\n\n功率：70W\n\n灯泡类型：H3 （卤素）\n\n盐雾测试：300H\n\n防护等级：IP55"
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">소비전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">70W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">광원 종류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">H3 (할로겐)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">염수 분무 시험</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300H</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">방수·방진등급</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP55</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">70W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">灯泡类型</th>\n    <td style=\"border:1px solid #333; padding:10px;\">H3（卤素）</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">盐雾测试</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300H</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">防护等级</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP55</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Power</th>\n    <td style=\"border:1px solid #333; padding:10px;\">70W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Bulb Type</th>\n    <td style=\"border:1px solid #333; padding:10px;\">H3 (Halogen)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Salt Spray Test</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300H</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">IP Rating</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP55</td>\n  </tr>\n</table>\n"
     },
     "dimensions": {},
     "features": [],
-    "featured": false
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   },
   {
-    "id": "3",
+    "id": "21",
+    "name": {
+      "ko": "경고등 (사이드바)",
+      "en": "Warning Light (Side-bar)",
+      "zh": "警示灯（Side-bar）"
+    },
+    "slug": "product-21",
+    "sku": "SKU-21",
+    "description": {
+      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
+    },
+    "shortDescription": {
+      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
+    },
+    "categories": [
+      {
+        "id": "5",
+        "name": "사이렌앰프 및 램프",
+        "slug": "siren-amp",
+        "description": "경고등 및 사이렌 시스템",
+        "icon": "siren"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769666566100",
+        "src": "/ktech/images/products/1769666552451-___1.JPG",
+        "alt": "경고등 (사이드바)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666566122",
+        "src": "/ktech/images/products/1769666552473-___2.JPG",
+        "alt": "경고등 (사이드바)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666566161",
+        "src": "/ktech/images/products/1769666552513-___3.JPG",
+        "alt": "경고등 (사이드바)",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 전압 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">광원 종류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 전류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">3.5A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 소비전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 온도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 85℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">보호 등급</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">충격 보호 등급</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IK08 (렌즈부 한정)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">조명 색상</th>\n    <td style=\"border:1px solid #333; padding:10px;\">앰버 (Amber)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">점멸 방식</th>\n    <td style=\"border:1px solid #333; padding:10px;\">단일 점멸</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">점멸 빈도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">분당 120 ~ 240회</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">인증</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作电压范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">光源类型</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大电流</th>\n    <td style=\"border:1px solid #333; padding:10px;\">3.5A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 85℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">防护等级</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">抗冲击等级</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IK08（仅镜片）</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">照明颜色</th>\n    <td style=\"border:1px solid #333; padding:10px;\">琥珀色（Amber）</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">闪烁模式</th>\n    <td style=\"border:1px solid #333; padding:10px;\">单闪</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">闪烁频率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">120 ~ 240 次/分钟</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">认证</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Voltage Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Light Source Type</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Current</th>\n    <td style=\"border:1px solid #333; padding:10px;\">3.5A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Power Consumption</th>\n    <td style=\"border:1px solid #333; padding:10px;\">40W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 85°C</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Ingress Protection Rating</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Impact Protection Rating</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IK08 (Lens only)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Illumination Color</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Amber</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Flashing Mode</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Single Flash</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Flashing Frequency</th>\n    <td style=\"border:1px solid #333; padding:10px;\">120 ~ 240 flashes/min</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Certification</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "22",
     "name": {
       "ko": "비콘 램프",
-      "zh": "警示灯",
-      "en": " Beacon Lamp"
-    },
-    "slug": "product-3",
-    "sku": "SKU-3",
-    "description": {
-      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
-      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。",
-      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection."
-    },
-    "shortDescription": {
-      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
-      "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。",
-      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection."
-    },
-    "categories": [
-      {
-        "id": "5",
-        "name": "사이렌앰프 및 램프",
-        "slug": "siren-amp",
-        "description": "경고등 및 사이렌 시스템",
-        "icon": "siren"
-      }
-    ],
-    "images": [
-      {
-        "id": "1769573925865",
-        "src": "/ktech/images/products/1769573913326-____1.JPG",
-        "alt": "비콘 램프",
-        "width": 800,
-        "height": 600
-      },
-      {
-        "id": "1769573925887",
-        "src": "/ktech/images/products/1769573913350-____2.JPG",
-        "alt": "비콘 램프",
-        "width": 800,
-        "height": 600
-      },
-      {
-        "id": "1769573925910",
-        "src": "/ktech/images/products/1769573913372-____3.JPG",
-        "alt": "비콘 램프",
-        "width": 800,
-        "height": 600
-      }
-    ],
-    "specifications": [],
-    "specificationsText": {
-      "en": "Operating Voltage Range: 9–32V\n\nRated Voltage: 12V / 24V\n\nLight Source Type: LED\n\nMaximum Current: 2.8A / 1.3A\n\nMaximum Power Consumption: 20W\n\nOperating Temperature: –30 to 85°C\n\nIngress Protection Rating: IP67\n\nIllumination Color: Amber\n\nFlashing Mode: Double Flash\n\nFlashing Frequency: 120–240 flashes/min\n\nCertification: ECE R10 / R65 TA1",
-      "zh": "工作范围：9~32V  \n\n额定电压：12V/24V\n\n灯泡类型：LED\n\n最大电流：2.8A/1.3A\n\n最大功率：20W\n\n工作温度：-30~85℃\n\n防护等级：IP67  \n\n照明颜色：琥珀色\n\n闪烁类型：双闪\n\n闪烁频率：120~240/分钟\n\n认证： ECE R10/R65 TA1",
-      "ko": "작동 전압 범위: 9–32V\n\n정격 전압: 12V / 24V\n\n광원 종류: LED\n\n최대 전류: 2.8A / 1.3A\n\n최대 소비전력: 20W\n\n작동 온도: –30 ~ 85℃\n\n보호 등급: IP67\n\n조명 색상: 앰버(Amber)\n\n점멸 방식: 이중 점멸 (Double Flash)\n\n점멸 빈도: 분당 120–240회\n\n인증: ECE R10 / R65 TA1"
-    },
-    "dimensions": {},
-    "features": [],
-    "featured": false
-  },
-  {
-    "id": "4",
-    "name": {
-      "ko": "경고등",
-      "en": "Warning Light",
+      "en": "Beacon Lamp",
       "zh": "警示灯"
     },
-    "slug": "product-4",
-    "sku": "SKU-4",
+    "slug": "product-22",
+    "sku": "SKU-22",
     "description": {
-      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
-      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection.",
       "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
     },
     "shortDescription": {
-      "ko": "고휘도, 다양한 점멸 모드, 경량·휴대성, 에너지 효율, 방수·방진 기능을 갖춘 제품입니다.",
-      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, and dust- and water-resistant protection.",
+      "ko": "고휘도, 다양한 점멸모드, 경량·휴대성, 에너지 절감, 방수·방진 기능을 갖춘 제품입니다.",
+      "en": "High brightness with multiple flashing modes, featuring a lightweight and portable design, energy efficiency, dust- and water-resistant protection.",
       "zh": "高亮度、多种闪烁模式，轻便便携、节能环保、防水防尘。"
     },
     "categories": [
@@ -261,55 +888,141 @@
     ],
     "images": [
       {
-        "id": "1769574258483",
-        "src": "/ktech/images/products/1769574245944-___1.JPG",
-        "alt": "경고등",
+        "id": "1769666667862",
+        "src": "/ktech/images/products/1769666654211-____1.JPG",
+        "alt": "비콘 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574258503",
-        "src": "/ktech/images/products/1769574245965-___2.JPG",
-        "alt": "경고등",
+        "id": "1769666667883",
+        "src": "/ktech/images/products/1769666654233-____2.JPG",
+        "alt": "비콘 램프",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574258552",
-        "src": "/ktech/images/products/1769574246012-___3.JPG",
-        "alt": "경고등",
+        "id": "1769666667906",
+        "src": "/ktech/images/products/1769666654257-____3.JPG",
+        "alt": "비콘 램프",
         "width": 800,
         "height": 600
       }
     ],
     "specifications": [],
     "specificationsText": {
-      "ko": "작동 전압 범위: 932V\n\n정격 전압: 12V / 24V\n\n광원 종류: LED\n\n최대 전류: 3.5A\n\n최대 소비전력: 40W\n\n작동 온도: -4085℃\n\n보호 등급: IP67\n\n충격 보호 등급: IK08 (렌즈부 한정)\n\n조명 색상: 앰버(Amber)\n\n점멸 방식: 단일 점멸\n\n점멸 빈도: 분당 120~240회\n\n인증: ECE R10 / R65 TA1",
-      "en": "Operating Voltage Range: 9–32V\n\nRated Voltage: 12V / 24V\n\nLight Source Type: LED\n\nMaximum Current: 3.5A\n\nMaximum Power Consumption: 40W\n\nOperating Temperature: -40 to 85°C\n\nIngress Protection Rating: IP67\n\nImpact Protection Rating: IK08 (Lens only)\n\nIllumination Color: Amber\n\nFlashing Mode: Single Flash\n\nFlashing Frequency: 120–240 flashes/min\n\nCertification: ECE R10 / R65 TA1",
-      "zh": "工作范围：9~32V\n\n额定电压：12V/24V \n\n灯泡类型：LED\n\n最大电流：3.5A\n\n最大功率：40W\n\n工作温度：-40~85℃\n\n防护等级：IP67\n\n防护等级：IK08 (仅镜片)\n\n照明颜色：琥珀色\n\n闪烁类型：单闪 \n\n闪烁频率：120~240/分钟\n\n认证： ECE R10/R65 TA1"
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 전압 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">광원 종류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 전류</th>\n    <td style=\"border:1px solid #333; padding:10px;\">2.8A / 1.3A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최대 소비전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">20W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 온도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 85℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">보호 등급</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">조명 색상</th>\n    <td style=\"border:1px solid #333; padding:10px;\">앰버 (Amber)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">점멸 방식</th>\n    <td style=\"border:1px solid #333; padding:10px;\">이중 점멸 (Double Flash)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">점멸 빈도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">분당 120 ~ 240회</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">인증</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作电压范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">光源类型</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大电流</th>\n    <td style=\"border:1px solid #333; padding:10px;\">2.8A / 1.3A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最大功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">20W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 85℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">防护等级</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">照明颜色</th>\n    <td style=\"border:1px solid #333; padding:10px;\">琥珀色（Amber）</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">闪烁模式</th>\n    <td style=\"border:1px solid #333; padding:10px;\">双闪</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">闪烁频率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">120 ~ 240 次/分钟</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">认证</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Voltage Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">9 ~ 32V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Light Source Type</th>\n    <td style=\"border:1px solid #333; padding:10px;\">LED</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Current</th>\n    <td style=\"border:1px solid #333; padding:10px;\">2.8A / 1.3A</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Maximum Power Consumption</th>\n    <td style=\"border:1px solid #333; padding:10px;\">20W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 85°C</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Ingress Protection Rating</th>\n    <td style=\"border:1px solid #333; padding:10px;\">IP67</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Illumination Color</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Amber</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Flashing Mode</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Double Flash</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Flashing Frequency</th>\n    <td style=\"border:1px solid #333; padding:10px;\">120 ~ 240 flashes/min</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Certification</th>\n    <td style=\"border:1px solid #333; padding:10px;\">ECE R10 / R65 TA1</td>\n  </tr>\n</table>\n"
     },
     "dimensions": {},
     "features": [],
-    "featured": false
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   },
   {
-    "id": "5",
+    "id": "23",
     "name": {
-      "ko": "Strap-earth",
-      "en": "Strap-earth",
-      "zh": "接地线"
+      "ko": "연료 센서",
+      "en": "Fuel Sensor",
+      "zh": "燃油传感器"
     },
-    "slug": "product-5",
-    "sku": "SKU-5",
+    "slug": "product-23",
+    "sku": "SKU-23",
+    "description": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。"
+    },
+    "shortDescription": {
+      "ko": "건설장비 및 산업기계 등 다양한 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of applications, including construction equipment and industrial machinery.",
+      "zh": "在工程装备、产业机械等多样化的领域上适用。"
+    },
+    "categories": [
+      {
+        "id": "4",
+        "name": "연료센서",
+        "slug": "fuel-sensor",
+        "description": "연료량 측정 센서 시스템",
+        "icon": "sensor"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769666983290",
+        "src": "/ktech/images/products/1769666969638-____2.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666999029",
+        "src": "/ktech/images/products/1769666985375-____1.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666999045",
+        "src": "/ktech/images/products/1769666985393-____3.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666999079",
+        "src": "/ktech/images/products/1769666985425-____4.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666999099",
+        "src": "/ktech/images/products/1769666985444-____5.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769666999133",
+        "src": "/ktech/images/products/1769666985480-____6.JPG",
+        "alt": "연료 센서",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">유형</th>\n    <td style=\"border:1px solid #333; padding:10px;\">리드 스위치 방식</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">전체 길이</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300 ~ 1500 mm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 500V에서 1 MΩ 이상</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Type</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Reed Switch Type</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Overall Length</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300 ~ 1500 mm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Over 1 MΩ at DC 500V</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">类型</th>\n    <td style=\"border:1px solid #333; padding:10px;\">干簧管开关式</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">总长</th>\n    <td style=\"border:1px solid #333; padding:10px;\">300 ~ 1500 mm</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">在 DC 500V 下，1 MΩ 以上</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "24",
+    "name": {
+      "ko": "전기 박스 (전기함)",
+      "en": "Electrical Box",
+      "zh": "电器盒"
+    },
+    "slug": "product-24",
+    "sku": "SKU-24",
     "description": {
       "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
       "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
-      "zh": "对研发/试验/量产的全过程,保有20年之间的基础技术与专有技术。"
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
     },
     "shortDescription": {
       "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
       "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
-      "zh": "对研发/试验/量产的全过程,保有20年之间的基础技术与专有技术。"
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
     },
     "categories": [
       {
@@ -322,141 +1035,661 @@
     ],
     "images": [
       {
-        "id": "1769574578985",
-        "src": "/ktech/images/products/1769574566443-Strap-Earth_1.JPG",
-        "alt": "Strap-Earth 1.JPG",
+        "id": "1769667331438",
+        "src": "/ktech/images/products/1769667317783-_________1.JPG",
+        "alt": "전기 박스(전기함)",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574579004",
-        "src": "/ktech/images/products/1769574566463-Strap-Earth_2.JPG",
-        "alt": "Strap-Earth 2.JPG",
-        "width": 800,
-        "height": 600
-      },
-      {
-        "id": "1769574579025",
-        "src": "/ktech/images/products/1769574566485-Strap-Earth_3.JPG",
-        "alt": "Strap-Earth 3.JPG",
+        "id": "1769667331465",
+        "src": "/ktech/images/products/1769667317804-_________2.JPG",
+        "alt": "전기 박스(전기함)",
         "width": 800,
         "height": 600
       }
     ],
     "specifications": [],
-    "specificationsText": {
-      "zh": "/",
-      "en": "/",
-      "ko": "/"
-    },
+    "specificationsText": {},
     "dimensions": {},
     "features": [],
-    "featured": false
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   },
   {
-    "id": "6",
+    "id": "25",
     "name": {
-      "ko": "사이렌 앰프",
-      "en": "Siren Amp",
-      "zh": "扬声器组件"
+      "ko": "12V/24V 배터리 릴레이",
+      "en": "Battery Relay (12V/24V)",
+      "zh": "电瓶继电器（12V/24V）"
     },
-    "slug": "product-6",
-    "sku": "SKU-6",
+    "slug": "product-25",
+    "sku": "SKU-25",
     "description": {
-      "ko": "다양한 장비에 적용 가능합니다.",
-      "en": "Compatible with a wide range of equipment applications.",
-      "zh": "适配多种设备应用。"
+      "ko": "다양한 건설기계 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of construction machinery applications.",
+      "zh": "在工程机械多样化的领域上适用。"
     },
     "shortDescription": {
-      "ko": "다양한 장비에 적용 가능합니다.",
-      "en": "Compatible with a wide range of equipment applications.",
-      "zh": "适配多种设备应用。"
+      "ko": "다양한 건설기계 분야에 적용 가능합니다.",
+      "en": "Suitable for a wide range of construction machinery applications.",
+      "zh": "在工程机械多样化的领域上适用。"
     },
     "categories": [
       {
-        "id": "5",
-        "name": "사이렌앰프 및 램프",
-        "slug": "siren-amp",
-        "description": "경고등 및 사이렌 시스템",
-        "icon": "siren"
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
       }
     ],
     "images": [
       {
-        "id": "1769574766238",
-        "src": "/ktech/images/products/1769574753696-_____1.JPG",
-        "alt": "사이렌앰프1.JPG",
+        "id": "1769667484499",
+        "src": "/ktech/images/products/1769667470838-______1_web.jpg",
+        "alt": "배터리릴레이1_web.jpg",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574766257",
-        "src": "/ktech/images/products/1769574753716-_____2.JPG",
-        "alt": "사이렌앰프2.JPG",
+        "id": "1769667495752",
+        "src": "/ktech/images/products/1769667482093-______1_____.png",
+        "alt": "배터리릴레이1의 수정본.png",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574766295",
-        "src": "/ktech/images/products/1769574753753-_____3.JPG",
-        "alt": "사이렌앰프3.JPG",
+        "id": "1769667495797",
+        "src": "/ktech/images/products/1769667482133-______2_web.jpg",
+        "alt": "배터리릴레이2_web.jpg",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574766323",
-        "src": "/ktech/images/products/1769574753778-_____4.JPG",
-        "alt": "사이렌앰프4.JPG",
+        "id": "1769667495841",
+        "src": "/ktech/images/products/1769667482174-______3_web.jpg",
+        "alt": "배터리릴레이3_web.jpg",
         "width": 800,
         "height": 600
       },
       {
-        "id": "1769574766345",
-        "src": "/ktech/images/products/1769574753802-_____5.JPG",
-        "alt": "사이렌앰프5.JPG",
+        "id": "1769667495871",
+        "src": "/ktech/images/products/1769667482212-______4_web.jpg",
+        "alt": "배터리릴레이4_web.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667495944",
+        "src": "/ktech/images/products/1769667482286-______5_web.jpg",
+        "alt": "배터리릴레이5_web.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667495973",
+        "src": "/ktech/images/products/1769667482314-______6_web.jpg",
+        "alt": "배터리릴레이6_web.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667496003",
+        "src": "/ktech/images/products/1769667482345-______7_web.jpg",
+        "alt": "배터리릴레이7_web.jpg",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667496031",
+        "src": "/ktech/images/products/1769667482372-______8_web.jpg",
+        "alt": "배터리릴레이8_web.jpg",
         "width": 800,
         "height": 600
       }
     ],
     "specifications": [],
     "specificationsText": {
-      "ko": "입력 전압: DC 13.8V / 24V\n\n입력 전압 범위: DC 12V20V / 22V28.5V\n\n최소 전류: DC 100mA\n\n최대 전류: DC 6A / 4A\n\nRMS 출력 전력: 40W / 60W\n\n최대 출력 전력: 60W / 100W\n\n임피던스: 8 Ohm\n\n퓨즈: 10A",
-      "en": "Input Voltage: DC 13.8V / 24V\n\nInput Voltage Range: DC 12V20V / 22V28.5V\n\nMinimum Current: DC 100mA\n\nMaximum Current: DC 6A / 4A\n\nRMS Output Power: 40W / 60W\n\nMaximum Output Power: 60W / 100W\n\nImpedance: 8 Ohm\n\nFuse: 10A",
-      "zh": "输入电压：DC 13.8V /24V\n\n输入电压：DC 12V~20V /22V~28.5V\n\n最小电流：DC 100mA\n\n最大电流： DC 6A /4A\n\nRMS输出功率：40W/60W\n\n最大输出功率：60W/100W\n\n阻抗：8 Ohm\n\n保险丝：10A"
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 부하</th>\n    <td style=\"border:1px solid #333; padding:10px;\">100A (최대 순간 충격 전류 1000A)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">최소 작동 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">차단 전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 9V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">절연 저항</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 500V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">절연 내전압</th>\n    <td style=\"border:1px solid #333; padding:10px;\">전원 주파수 기준 1분 이상</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">사용 온도 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 80℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">보관 온도 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Load</th>\n    <td style=\"border:1px solid #333; padding:10px;\">100A (Maximum Inrush Current 1000A)</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Minimum Operating Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Release Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 9V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Insulation Resistance</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 500V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Dielectric Withstand Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Power frequency for over 1 minute</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 80°C</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Storage Temperature Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100°C</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">12V / 24V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定负载</th>\n    <td style=\"border:1px solid #333; padding:10px;\">100A（最大瞬间冲击电流 1000A）</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">最低工作电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 20V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">释放电压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 9V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">绝缘电阻</th>\n    <td style=\"border:1px solid #333; padding:10px;\">DC 500V</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">绝缘耐压</th>\n    <td style=\"border:1px solid #333; padding:10px;\">电源频率条件下，超过 1 分钟</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">使用温度范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-30 ~ 80℃</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">保存温度范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n"
     },
     "dimensions": {},
     "features": [],
-    "featured": false
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   },
   {
-    "id": "7",
+    "id": "26",
     "name": {
-      "ko": "테스트"
+      "ko": "운전석 시트 안전스위치",
+      "en": "Cab Seat Safety Switch",
+      "zh": "驾驶室座椅安全开关"
     },
-    "slug": "product-7",
-    "sku": "SKU-7",
+    "slug": "product-26",
+    "sku": "SKU-26",
     "description": {
-      "ko": "  <ul>                                                                                                          \n    <li>고품질 소재</li>                                                                                        \n    <li>내구성 우수</li>                                                                                        \n  </ul>                                                                                                         \n  <table border=\"1\">                                                                                            \n    <tr><td>크기</td><td>100x50mm</td></tr>                                                                     \n  </table>    "
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
     },
     "shortDescription": {
-      "ko": "테스트"
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
     },
     "categories": [
       {
-        "id": "1",
-        "name": "와이퍼 어셈블리",
-        "slug": "wiper-assembly",
-        "description": "건설기계 및 산업차량용 와이퍼 시스템",
-        "icon": "wiper"
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "1769667889698",
+        "src": "/ktech/images/products/1769667876039-___________1.JPG",
+        "alt": "운전석 시트 안전스위치",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667894278",
+        "src": "/ktech/images/products/1769667880618-___________2_____.png",
+        "alt": "운전석 시트 안전스위치",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667900106",
+        "src": "/ktech/images/products/1769667886448-___________3.JPG",
+        "alt": "운전석 시트 안전스위치",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769667905431",
+        "src": "/ktech/images/products/1769667891769-___________4.JPG",
+        "alt": "운전석 시트 안전스위치",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "27",
+    "name": {
+      "ko": "툴키트",
+      "en": "Tool Kit",
+      "zh": "工具箱"
+    },
+    "slug": "product-27",
+    "sku": "SKU-27",
+    "description": {
+      "ko": "공구의 종류가 다양하며 내구성이 뛰어납니다.",
+      "en": "A diverse range of tools with long-lasting durability.",
+      "zh": "工具种类多元化、经久耐用。"
+    },
+    "shortDescription": {
+      "ko": "공구의 종류가 다양하며 내구성이 뛰어납니다.",
+      "en": "A diverse range of tools with long-lasting durability.",
+      "zh": "工具种类多元化、经久耐用。"
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769668280484",
+        "src": "/ktech/images/products/1769668266821-___1.JPG",
+        "alt": "툴키트",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668280506",
+        "src": "/ktech/images/products/1769668266844-___2.JPG",
+        "alt": "툴키트",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668280560",
+        "src": "/ktech/images/products/1769668266899-___3.JPG",
+        "alt": "툴키트",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668280579",
+        "src": "/ktech/images/products/1769668266917-___4.JPG",
+        "alt": "툴키트",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "28",
+    "name": {
+      "ko": "파워 레지스터",
+      "en": "Power Resistor",
+      "zh": "散热电阻"
+    },
+    "slug": "product-28",
+    "sku": "SKU-28",
+    "description": {
+      "ko": "고정밀 · 저저항 설계로 우수한 방열 성능을 제공하며, 다양한 산업 분야에 폭넓게 적용됩니다.",
+      "en": "High-precision, low-resistance design with excellent heat dissipation performance, suitable for a wide range of applications.",
+      "zh": "高精度、低阻值散热性能好，应用广泛。"
+    },
+    "shortDescription": {
+      "ko": "고정밀 · 저저항 설계로 우수한 방열 성능을 제공하며, 다양한 산업 분야에 폭넓게 적용됩니다.",
+      "en": "High-precision, low-resistance design with excellent heat dissipation performance, suitable for a wide range of applications.",
+      "zh": "高精度、低阻值散热性能好，应用广泛。"
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769668415889",
+        "src": "/ktech/images/products/1769668402227-______1.JPG",
+        "alt": "파워 레지스터",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668415916",
+        "src": "/ktech/images/products/1769668402254-______2.JPG",
+        "alt": "파워 레지스터",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668415954",
+        "src": "/ktech/images/products/1769668402290-______3.JPG",
+        "alt": "파워 레지스터",
+        "width": 800,
+        "height": 600
+      }
+    ],
     "specifications": [],
     "specificationsText": {
-      "ko": "  <ul>                                                                                                          \n    <li>고품질 소재</li>                                                                                        \n    <li>내구성 우수</li>                                                                                        \n  </ul>                                                                                                         \n  <table border=\"1\">                                                                                            \n    <tr><td>크기</td><td>100x50mm</td></tr>                                                                     \n  </table>    "
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">정격 전력</th>\n    <td style=\"border:1px solid #333; padding:10px;\">50W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">저항값</th>\n    <td style=\"border:1px solid #333; padding:10px;\">34Ω ±5%</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">절연 저항</th>\n    <td style=\"border:1px solid #333; padding:10px;\">최소 20 MΩ</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">내전압 특성</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      AC 2000V에서 1분 후 저항값 변화율<br>\n      → 34Ω ±(0.2% + 0.0522)\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">사용 온도 범위</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-55 ℃ ~ +200 ℃</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">额定功率</th>\n    <td style=\"border:1px solid #333; padding:10px;\">50W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">电阻值</th>\n    <td style=\"border:1px solid #333; padding:10px;\">34Ω ±5%</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">绝缘电阻</th>\n    <td style=\"border:1px solid #333; padding:10px;\">最小 20 MΩ</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">耐压特性</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      AC 2000V 条件下通电 1 分钟后，阻值变化率：<br>\n      → 34Ω ±(0.2% + 0.0522)\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度范围</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-55 ℃ ~ +200 ℃</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rated Power</th>\n    <td style=\"border:1px solid #333; padding:10px;\">50 W</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Resistance</th>\n    <td style=\"border:1px solid #333; padding:10px;\">34 Ω ±5%</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Insulation Resistance</th>\n    <td style=\"border:1px solid #333; padding:10px;\">Minimum 20 MΩ</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Dielectric Withstanding Voltage</th>\n    <td style=\"border:1px solid #333; padding:10px;\">\n      After 1 minute at AC 2000 V,<br>\n      resistance change rate:<br>\n      → 34 Ω ±(0.2% + 0.0522)\n    </td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature Range</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-55 °C ~ +200 °C</td>\n  </tr>\n</table>\n"
     },
     "dimensions": {},
     "features": [],
-    "featured": true
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "29",
+    "name": {
+      "ko": "케이블",
+      "en": "Cables",
+      "zh": "电缆线"
+    },
+    "slug": "product-29",
+    "sku": "SKU-29",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "2",
+        "name": "와이어링 하네스 및 케이블",
+        "slug": "wiring-harness",
+        "description": "전장 케이블 및 커스텀 하네스",
+        "icon": "cable"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769668819579",
+        "src": "/ktech/images/products/1769668805913-___1.JPG",
+        "alt": "케이블",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668819604",
+        "src": "/ktech/images/products/1769668805938-___2.JPG",
+        "alt": "케이블",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668819646",
+        "src": "/ktech/images/products/1769668805980-___3.JPG",
+        "alt": "케이블",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668819677",
+        "src": "/ktech/images/products/1769668806008-___4.JPG",
+        "alt": "케이블",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769668819699",
+        "src": "/ktech/images/products/1769668806032-___5.JPG",
+        "alt": "케이블",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "30",
+    "name": {
+      "ko": "운전석 에어컨 송풍구 (원형)",
+      "en": "Cab Air Conditioning Air Vent (Round type)",
+      "zh": "驾驶室空调出风口（圆形）"
+    },
+    "slug": "product-30",
+    "sku": "SKU-30",
+    "description": {
+      "ko": "높은 구조 강도와 내식성을 갖추었으며, 고객 요구에 따라 다양한 규격으로 제작 가능합니다.",
+      "en": "Features high structural strength and corrosion resistance, with products customizable in various specifications.",
+      "zh": "结构强度高，耐腐蚀，可定制不同规格的产品。"
+    },
+    "shortDescription": {
+      "ko": "높은 구조 강도와 내식성을 갖추었으며, 고객 요구에 따라 다양한 규격으로 제작 가능합니다.",
+      "en": "Features high structural strength and corrosion resistance, with products customizable in various specifications.",
+      "zh": "结构强度高，耐腐蚀，可定制不同规格的产品。"
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769668984613",
+        "src": "/ktech/images/products/1769668970946-_________________1.JPG",
+        "alt": "운전석 에어컨 송풍구 (원형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669007760",
+        "src": "/ktech/images/products/1769668994090-_________________2.JPG",
+        "alt": "운전석 에어컨 송풍구 (원형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669011900",
+        "src": "/ktech/images/products/1769668998233-_________________2.JPG",
+        "alt": "운전석 에어컨 송풍구 (원형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669017512",
+        "src": "/ktech/images/products/1769669003844-_________________3.JPG",
+        "alt": "운전석 에어컨 송풍구 (원형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669022582",
+        "src": "/ktech/images/products/1769669008914-_________________1.JPG",
+        "alt": "운전석 에어컨 송풍구 (원형)",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">재질</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PA6</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 온도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Material</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PA6</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">材质</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PA6</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "31",
+    "name": {
+      "ko": "에어컨 운전석 송풍구 (장방형)",
+      "zh": "驾驶室空调出风口（长方形）",
+      "en": "Cab Air Conditioning Air Vent (Square type)"
+    },
+    "slug": "product-31",
+    "sku": "SKU-31",
+    "description": {
+      "zh": "结构强度高，耐腐蚀，可定制不同规格的产品。",
+      "en": "Features high structural strength and corrosion resistance, with products customizable in various specifications.",
+      "ko": "높은 구조 강도와 내식성을 갖추었으며, 고객 요구에 따라 다양한 규격으로 제작 가능합니다."
+    },
+    "shortDescription": {
+      "zh": "结构强度高，耐腐蚀，可定制不同规格的产品。",
+      "en": "Features high structural strength and corrosion resistance, with products customizable in various specifications.",
+      "ko": "높은 구조 강도와 내식성을 갖추었으며, 고객 요구에 따라 다양한 규격으로 제작 가능합니다."
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769669227617",
+        "src": "/ktech/images/products/1769669213948-_______________1.JPG",
+        "alt": "에어컨 운전석 송풍구 (장방형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669227634",
+        "src": "/ktech/images/products/1769669213966-_______________2.JPG",
+        "alt": "에어컨 운전석 송풍구 (장방형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669227678",
+        "src": "/ktech/images/products/1769669214005-_______________3.JPG",
+        "alt": "에어컨 운전석 송풍구 (장방형)",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669227700",
+        "src": "/ktech/images/products/1769669214029-_______________4.JPG",
+        "alt": "에어컨 운전석 송풍구 (장방형)",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">재질</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PP</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">회전 각도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">90° / 120°</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">작동 온도</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n",
+      "en": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Material</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PP</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Rotation Angle</th>\n    <td style=\"border:1px solid #333; padding:10px;\">90° / 120°</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">Operating Temperature</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100°C</td>\n  </tr>\n</table>\n",
+      "zh": "<table style=\"width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px;\">\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">材质</th>\n    <td style=\"border:1px solid #333; padding:10px;\">PP</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">旋转角度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">90° / 120°</td>\n  </tr>\n  <tr>\n    <th style=\"border:1px solid #333; padding:10px; text-align:left;\">工作温度</th>\n    <td style=\"border:1px solid #333; padding:10px;\">-40 ~ 100℃</td>\n  </tr>\n</table>\n"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "32",
+    "name": {
+      "ko": "리저버 탱크",
+      "en": "Reservoir tank",
+      "zh": "水箱"
+    },
+    "slug": "product-32",
+    "sku": "SKU-32",
+    "description": {
+      "ko": "경량 설계와 실용적인 외관을 갖추었으며, 높은 강도와 우수한 내식·내열 성능으로 안정적인 사용이 가능합니다. 누수 방지와 진동 내구성을 확보해 수질을 깨끗하게 유지합니다.",
+      "en": "Featuring a lightweight design, it offers high strength with excellent corrosion and heat resistance, while ensuring leak prevention, vibration durability, and clean water quality.",
+      "zh": "外观简洁、重量轻、强度高，具备优异的耐腐蚀性和耐高温性能，同时确保水质洁净、防渗漏及良好的抗震性能。"
+    },
+    "shortDescription": {
+      "ko": "경량 설계와 실용적인 외관을 갖추었으며, 높은 강도와 우수한 내식·내열 성능으로 안정적인 사용이 가능합니다. 누수 방지와 진동 내구성을 확보해 수질을 깨끗하게 유지합니다.",
+      "en": "Featuring a lightweight design, it offers high strength with excellent corrosion and heat resistance, while ensuring leak prevention, vibration durability, and clean water quality.",
+      "zh": "外观简洁、重量轻、强度高，具备优异的耐腐蚀性和耐高温性能，同时确保水质洁净、防渗漏及良好的抗震性能。"
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769669641659",
+        "src": "/ktech/images/products/1769669627984-_____1.JPG",
+        "alt": "리저버 탱크",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669641686",
+        "src": "/ktech/images/products/1769669628014-_____2.JPG",
+        "alt": "리저버 탱크",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {},
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
+  },
+  {
+    "id": "33",
+    "name": {
+      "ko": "Strap-earth",
+      "en": "Strap-earth",
+      "zh": "接地线"
+    },
+    "slug": "product-33",
+    "sku": "SKU-33",
+    "description": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "shortDescription": {
+      "ko": "연구개발·시험·양산 전 과정에서 20년 이상 축적된 기초 기술과 독자적 전문 기술을 보유하고 있습니다.",
+      "en": "We leverage over 20 years of core and proprietary technologies throughout the entire R&D, testing, and mass production process.",
+      "zh": "基于二十余年的研发、测试与量产经验， 构建成熟稳定的核心基础技术与专有技术。"
+    },
+    "categories": [
+      {
+        "id": "6",
+        "name": "액세서리",
+        "slug": "accessories",
+        "description": "기타 부품 및 액세서리",
+        "icon": "accessory"
+      }
+    ],
+    "images": [
+      {
+        "id": "1769669594138",
+        "src": "/ktech/images/products/1769669580453-Strap-Earth_1.JPG",
+        "alt": "Strap-earth",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669594173",
+        "src": "/ktech/images/products/1769669580497-Strap-Earth_2.JPG",
+        "alt": "Strap-earth",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "id": "1769669594204",
+        "src": "/ktech/images/products/1769669580532-Strap-Earth_3.JPG",
+        "alt": "Strap-earth",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "specifications": [],
+    "specificationsText": {
+      "ko": "10~100㎡ 범위 내에서 고객 요구에 따라 다양한 규격의 제품을 맞춤 제작합니다.",
+      "en": "Custom products are available in specifications covering 10–100 m², tailored to customer requirements.",
+      "zh": "从10~100平方，根据客户的需求去订制不同规格的产品。"
+    },
+    "dimensions": {},
+    "features": [],
+    "featured": false,
+    "descriptionHtml": {},
+    "specificationsHtml": {}
   }
 ]
