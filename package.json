@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3005",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "next build && pm2 restart ktech-nextjs"
   },
   "dependencies": {
     "framer-motion": "^12.26.2",

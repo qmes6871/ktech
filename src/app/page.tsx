@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HeroSlider } from '@/components/HeroSlider';
+import { QualityImageSlider } from '@/components/QualityImageSlider';
 import { CertificateSlider } from '@/components/CertificateSlider';
 import {
   AnimatedSection,
@@ -21,87 +22,6 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Quality · Technology · Commitment Section - Modern glassmorphism */}
-      <section className="pt-24 lg:pt-32 py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50 to-transparent"></div>
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 0.5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.5 }}
-          className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full blur-3xl"
-        />
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
-            <div className="order-2 lg:order-1">
-              <AnimatedText delay={0}>
-                <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
-                  <span className="w-8 md:w-12 h-[2px] bg-blue-600"></span>
-                  <span className="text-blue-600 font-semibold tracking-wider text-xs md:text-sm">{t('home.qualitySection')}</span>
-                </div>
-              </AnimatedText>
-              <AnimatedText delay={0.1}>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-                  {t('home.qualityTitle1')}<br />
-                  <span className="text-blue-600">{t('home.qualityTitle2')}</span>
-                </h2>
-              </AnimatedText>
-              <AnimatedText delay={0.2}>
-                <div className="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
-                  <p>
-                    {t('home.qualityDesc')}
-                  </p>
-                </div>
-              </AnimatedText>
-              <AnimatedText delay={0.3}>
-                <Link
-                  href="/about"
-                  className="group inline-flex items-center mt-6 md:mt-8 text-blue-600 font-semibold text-base md:text-lg hover:text-blue-700 transition-colors"
-                >
-                  {t('common.learnMore')}
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </AnimatedText>
-            </div>
-            <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2 relative">
-              <div className="relative h-[280px] sm:h-[350px] md:h-[500px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/ktech/images/company/construction-site.png"
-                  alt="KTECH"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              {/* Floating card - hidden on small mobile */}
-              <motion.div
-                initial={{ opacity: 0, x: -50, y: 50 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                whileHover={{ scale: 1.05 }}
-                className="hidden sm:block absolute -bottom-4 md:-bottom-6 -left-2 md:-left-6 bg-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-xl border border-gray-100"
-              >
-                <div className="flex items-center gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg md:rounded-xl flex items-center justify-center">
-                    <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xl md:text-2xl font-bold text-gray-900">30+</p>
-                    <p className="text-gray-500 text-xs md:text-sm">{t('common.yearsExperience')}</p>
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section - Modern with gradient overlay */}
       <section className="relative min-h-[100vh] flex items-center">
         <HeroSlider />
@@ -179,6 +99,82 @@ export default function HomePage() {
             />
           </motion.div>
         </motion.div>
+      </section>
+
+      {/* Quality · Technology · Commitment Section - Modern glassmorphism */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50 to-transparent"></div>
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 0.5 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5 }}
+          className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full blur-3xl"
+        />
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
+            <div className="order-2 lg:order-1">
+              <AnimatedText delay={0}>
+                <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
+                  <span className="w-8 md:w-12 h-[2px] bg-blue-600"></span>
+                  <span className="text-blue-600 font-semibold tracking-wider text-xs md:text-sm">{t('home.qualitySection')}</span>
+                </div>
+              </AnimatedText>
+              <AnimatedText delay={0.1}>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+                  {t('home.qualityTitle1')}<br />
+                  <span className="text-blue-600">{t('home.qualityTitle2')}</span>
+                </h2>
+              </AnimatedText>
+              <AnimatedText delay={0.2}>
+                <div className="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
+                  <p>
+                    {t('home.qualityDesc')}
+                  </p>
+                </div>
+              </AnimatedText>
+              <AnimatedText delay={0.3}>
+                <Link
+                  href="/about"
+                  className="group inline-flex items-center mt-6 md:mt-8 text-blue-600 font-semibold text-base md:text-lg hover:text-blue-700 transition-colors"
+                >
+                  {t('common.learnMore')}
+                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </AnimatedText>
+            </div>
+            <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2 relative">
+              <div className="relative h-[280px] sm:h-[350px] md:h-[500px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
+                <QualityImageSlider />
+              </div>
+              {/* Floating card - hidden on small mobile */}
+              <motion.div
+                initial={{ opacity: 0, x: -50, y: 50 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                whileHover={{ scale: 1.05 }}
+                className="hidden sm:block absolute -bottom-4 md:-bottom-6 -left-2 md:-left-6 bg-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-xl border border-gray-100"
+              >
+                <div className="flex items-center gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg md:rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">30+</p>
+                    <p className="text-gray-500 text-xs md:text-sm">{t('common.yearsExperience')}</p>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatedSection>
+          </div>
+        </div>
       </section>
 
       {/* KTECH이 선택받는 이유 Section - Modern cards */}

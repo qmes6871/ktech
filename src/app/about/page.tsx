@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
@@ -9,6 +8,7 @@ import {
   AnimatedCard,
 } from '@/components/animations/AnimatedSection';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { AboutImageSlider } from '@/components/AboutImageSlider';
 
 export default function AboutPage() {
   const { t } = useLanguage();
@@ -87,12 +87,7 @@ export default function AboutPage() {
             </div>
             <AnimatedSection direction="right" delay={0.2} className="relative">
               <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/ktech/images/company/construction-site.png"
-                  alt="KTECH"
-                  fill
-                  className="object-cover"
-                />
+                <AboutImageSlider />
               </div>
               <motion.div
                 initial={{ opacity: 0, x: -50, y: 50 }}
