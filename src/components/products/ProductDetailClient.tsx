@@ -12,8 +12,22 @@ interface ProductDetailClientProps {
   product: Product;
 }
 
+const categoryKeyMap: Record<string, string> = {
+  'wiper-assembly': 'nav.wiperAssembly',
+  'wiring-harness': 'nav.wiringHarness',
+  'air-compressor': 'nav.airCompressor',
+  'fuel-sensor': 'nav.fuelSensor',
+  'siren-amp': 'nav.sirenAmp',
+  'accessories': 'nav.accessories',
+};
+
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
+
+  const getCategoryName = (slug: string) => {
+    const key = categoryKeyMap[slug];
+    return key ? t(key) : slug;
+  };
   const name = resolveLocalized(product.name, language);
   const description = resolveLocalized(product.description, language);
   const descriptionHtml = resolveLocalized(product.descriptionHtml, language);
@@ -46,14 +60,14 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex items-center space-x-2 text-sm mb-6"
+            className="flex items-center flex-wrap space-x-2 text-sm mb-6"
           >
             <Link href="/" className="text-blue-200 hover:text-white transition-colors">
-              홈
+              {t('products.home')}
             </Link>
             <span className="text-blue-300">/</span>
             <Link href="/products" className="text-blue-200 hover:text-white transition-colors">
-              제품소개
+              {t('products.title')}
             </Link>
             {product.categories[0] && (
               <>
@@ -62,7 +76,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                   href={`/products?category=${product.categories[0].slug}`}
                   className="text-blue-200 hover:text-white transition-colors"
                 >
-                  {product.categories[0].name}
+                  {getCategoryName(product.categories[0].slug)}
                 </Link>
               </>
             )}
@@ -83,7 +97,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 href={`/products?category=${cat.slug}`}
                 className="inline-flex items-center gap-1 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-blue-200 text-xs hover:bg-white/20 transition-colors"
               >
-                {cat.name}
+                {getCategoryName(cat.slug)}
               </Link>
             ))}
           </motion.div>
@@ -92,7 +106,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white break-keep"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white break-words"
           >
             {name}
           </motion.h1>
@@ -122,7 +136,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="mb-4"
               >
-                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 break-keep">
+                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 break-words">
                   {name}
                 </h2>
               </motion.div>
@@ -137,7 +151,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 >
                   <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                     <span className="w-1 h-5 bg-blue-600 rounded-full"></span>
-                    제품 특징
+                    {t('products.features')}
                   </h3>
                   <div
                     className="text-gray-600 leading-relaxed prose prose-sm max-w-none"
@@ -156,7 +170,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 >
                   <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                     <span className="w-1 h-5 bg-blue-600 rounded-full"></span>
-                    제품 상세 규격
+                    {t('products.specifications')}
                   </h3>
                   <ProductSpecs
                     specs={product.specifications}
@@ -179,7 +193,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                       href="/support"
                       className="w-full block bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3.5 px-6 rounded-xl font-medium text-center hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50"
                     >
-                      견적 문의하기
+                      {t('products.requestQuote')}
                     </Link>
                   </motion.div>
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="flex-1">
@@ -187,7 +201,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                       href="/support"
                       className="w-full block border-2 border-gray-200 text-gray-700 py-3.5 px-6 rounded-xl font-medium text-center hover:bg-gray-50 hover:border-gray-300 transition-all"
                     >
-                      전화 상담
+                      {t('products.phoneConsult')}
                     </Link>
                   </motion.div>
                 </div>
@@ -212,7 +226,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              모든 제품 보기
+              {t('products.viewAllProducts')}
             </Link>
           </motion.div>
           {product.categories[0] && (
@@ -224,7 +238,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
-                {product.categories[0].name} 더보기
+                {getCategoryName(product.categories[0].slug)} {t('products.moreInCategory')}
               </Link>
             </motion.div>
           )}

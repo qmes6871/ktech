@@ -4,6 +4,10 @@ import path from 'path';
 import type { Product } from '@/lib/types';
 import { normalizeProduct } from '@/lib/products';
 
+// 캐싱 비활성화
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 const PRODUCTS_FILE = path.join(process.cwd(), 'src/data/products.json');
 
 async function getProducts(): Promise<Product[]> {
@@ -43,6 +47,9 @@ export async function GET(request: NextRequest) {
         }
       );
     }
+
+    // order 기준 정렬
+    filteredProducts.sort((a, b) => (a.order || 999) - (b.order || 999));
 
     return NextResponse.json(filteredProducts);
   } catch (error) {

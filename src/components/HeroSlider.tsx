@@ -6,10 +6,6 @@ import { useState, useEffect } from 'react';
 const heroImages = [
   '/ktech/images/hero/1.png',
   '/ktech/images/hero/2.png',
-  '/ktech/images/hero/3.jpg',
-  '/ktech/images/hero/4.jpg',
-  '/ktech/images/hero/5.jpg',
-  '/ktech/images/hero/6.jpg',
 ];
 
 export function HeroSlider() {

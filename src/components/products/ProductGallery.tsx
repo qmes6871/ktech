@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ProductImage } from '@/lib/types';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ProductGalleryProps {
   images: ProductImage[];
@@ -12,11 +13,12 @@ interface ProductGalleryProps {
 export function ProductGallery({ images, productName }: ProductGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const selectedImage = images[selectedIndex];
+  const { t } = useLanguage();
 
   if (!images.length) {
     return (
       <div className="aspect-square bg-gray-100 rounded-xl flex items-center justify-center">
-        <span className="text-gray-400">이미지가 없습니다</span>
+        <span className="text-gray-400">{t('products.noImage')}</span>
       </div>
     );
   }

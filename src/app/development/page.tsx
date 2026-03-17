@@ -14,7 +14,7 @@ export default function DevelopmentPage() {
   return (
     <div className="pt-16 lg:pt-24">
       {/* Hero Section - Full screen with animated background */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-40">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
           <div className="absolute inset-0 opacity-30">
@@ -89,7 +89,7 @@ export default function DevelopmentPage() {
               {[
                 { value: '30+', label: 'YEARS EXPERIENCE' },
                 { value: 'ISO', label: 'CERTIFIED' },
-                { value: '100+', label: 'GLOBAL PARTNERS' },
+                { value: '100+', label: 'TARGET GLOBAL PARTNERS' },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -176,13 +176,6 @@ export default function DevelopmentPage() {
                 <p className="text-blue-100/80 text-lg leading-relaxed">
                   {t('developmentPage.wiperDesc')}
                 </p>
-              </div>
-
-              <div className="relative z-10 flex items-center gap-2 text-white/70 group-hover:text-white transition-colors mt-6">
-                <span className="text-sm font-medium">{t('developmentPage.viewDetails')}</span>
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
               </div>
             </motion.div>
 
@@ -312,7 +305,7 @@ export default function DevelopmentPage() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
               {t('developmentPage.strategyTitle')}
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed whitespace-pre-line">
               {t('developmentPage.strategyDesc')}
               <span className="text-cyan-400 font-semibold">{t('developmentPage.strategyHighlight')}</span>
               {t('developmentPage.strategyDesc2')}
@@ -401,11 +394,12 @@ export default function DevelopmentPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 break-keep"
+              className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 break-keep"
             >
               {t('developmentPage.closingStatement')}
               <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">{t('developmentPage.closingHighlight')}</span>
               {t('developmentPage.closingStatement2')}
+              {t('developmentPage.closingStatement3') && <><br />{t('developmentPage.closingStatement3')}</>}
             </motion.h2>
           </div>
         </div>
@@ -432,7 +426,7 @@ export default function DevelopmentPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold text-white mb-6"
+            className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-6 whitespace-nowrap"
           >
             {t('developmentPage.ctaTitle')}
           </motion.h2>

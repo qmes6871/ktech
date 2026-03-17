@@ -10,6 +10,7 @@ export default function ProductsPage() {
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState<string | null>(null);
+  const [reordering, setReordering] = useState<string | null>(null);
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('');
 
@@ -70,6 +71,32 @@ export default function ProductsPage() {
     }
   };
 
+  const handleReorder = async (productId: string, direction: 'up' | 'down') => {
+    setReordering(productId);
+    try {
+      const response = await fetch('/api/admin/products/reorder', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ productId, direction }),
+        cache: 'no-store',
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.products) {
+        // 새 배열로 복사하여 React가 변경을 감지하도록 함
+        setProducts([...data.products]);
+      } else {
+        alert(data.error || '순서 변경에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('Reorder failed:', error);
+      alert('순서 변경에 실패했습니다.');
+    } finally {
+      setReordering(null);
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
@@ -117,7 +144,13 @@ export default function ProductsPage() {
           로딩 중...
         </div>
       ) : (
-        <ProductTable products={products} onDelete={handleDelete} deleting={deleting} />
+        <ProductTable
+          products={products}
+          onDelete={handleDelete}
+          deleting={deleting}
+          onReorder={handleReorder}
+          reordering={reordering}
+        />
       )}
 
       {/* 제품 수 */}

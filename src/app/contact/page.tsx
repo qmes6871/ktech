@@ -53,8 +53,8 @@ export default function ContactPage() {
                   <div className="ml-4">
                     <h3 className="font-medium text-gray-900">{t('contact.phoneLabel')}</h3>
                     <p className="text-gray-600 text-sm mt-1">
-                      {t('contact.phoneMain')}: 031-000-0000<br />
-                      {t('contact.faxLabel')}: 031-000-0001
+                      {t('contact.phoneMain')}: +82-42-931-9031<br />
+                      {t('contact.faxLabel')}: +82-42-931-9034
                     </p>
                   </div>
                 </div>

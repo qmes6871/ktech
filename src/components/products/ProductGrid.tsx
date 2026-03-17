@@ -1,5 +1,8 @@
+'use client';
+
 import { Product } from '@/lib/types';
 import { ProductCard } from './ProductCard';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ProductGridProps {
   products: Product[];
@@ -7,10 +10,12 @@ interface ProductGridProps {
 }
 
 export function ProductGrid({ products, title }: ProductGridProps) {
+  const { t } = useLanguage();
+
   if (products.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-500">등록된 제품이 없습니다.</p>
+        <p className="text-gray-500">{t('products.noProductsRegistered')}</p>
       </div>
     );
   }

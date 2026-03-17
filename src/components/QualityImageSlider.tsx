@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-  '/ktech/images/hero/1.png',
-  '/ktech/images/hero/2.png',
-  '/ktech/images/hero/3.jpg',
-  '/ktech/images/hero/4.jpg',
-  '/ktech/images/hero/5.jpg',
-  '/ktech/images/hero/6.jpg',
+  '/ktech/images/hero/1.jpeg',
+  '/ktech/images/hero/2.jpeg',
+  '/ktech/images/hero/3.jpeg',
+  '/ktech/images/hero/4.jpeg',
+  '/ktech/images/hero/5.jpeg',
+  '/ktech/images/hero/6.jpeg',
 ];
 
 export function QualityImageSlider() {
@@ -18,7 +18,7 @@ export function QualityImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);

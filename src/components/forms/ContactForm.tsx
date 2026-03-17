@@ -2,12 +2,14 @@
 
 import { useState } from 'react';
 import { ContactFormData } from '@/lib/types';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ContactFormProps {
   productName?: string;
 }
 
 export function ContactForm({ productName }: ContactFormProps) {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -50,11 +52,11 @@ export function ContactForm({ productName }: ContactFormProps) {
         });
       } else {
         const data = await response.json();
-        setErrorMessage(data.error || '전송에 실패했습니다.');
+        setErrorMessage(data.error || t('contact.formErrorSend'));
         setStatus('error');
       }
     } catch {
-      setErrorMessage('네트워크 오류가 발생했습니다.');
+      setErrorMessage(t('contact.formErrorNetwork'));
       setStatus('error');
     }
   };
@@ -64,7 +66,7 @@ export function ContactForm({ productName }: ContactFormProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            성명 <span className="text-red-500">*</span>
+            {t('contact.formName')} <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -74,12 +76,12 @@ export function ContactForm({ productName }: ContactFormProps) {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-            placeholder="홍길동"
+            placeholder={t('contact.formNamePlaceholder')}
           />
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            이메일 <span className="text-red-500">*</span>
+            {t('contact.formEmail')} <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -94,7 +96,7 @@ export function ContactForm({ productName }: ContactFormProps) {
         </div>
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            연락처
+            {t('contact.formPhone')}
           </label>
           <input
             type="tel"
@@ -103,12 +105,12 @@ export function ContactForm({ productName }: ContactFormProps) {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-            placeholder="010-0000-0000"
+            placeholder={t('contact.formPhonePlaceholder')}
           />
         </div>
         <div>
           <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-            회사명
+            {t('contact.formCompany')}
           </label>
           <input
             type="text"
@@ -117,14 +119,14 @@ export function ContactForm({ productName }: ContactFormProps) {
             value={formData.company}
             onChange={handleChange}
             className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-            placeholder="(주)회사명"
+            placeholder={t('contact.formCompanyPlaceholder')}
           />
         </div>
       </div>
 
       <div>
         <label htmlFor="productInterest" className="block text-sm font-medium text-gray-700 mb-1">
-          관심 제품
+          {t('contact.formProductInterest')}
         </label>
         <input
           type="text"
@@ -133,13 +135,13 @@ export function ContactForm({ productName }: ContactFormProps) {
           value={formData.productInterest}
           onChange={handleChange}
           className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-          placeholder="관심있는 제품명을 입력해주세요"
+          placeholder={t('contact.formProductPlaceholder')}
         />
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          문의 내용 <span className="text-red-500">*</span>
+          {t('contact.formMessage')} <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
@@ -149,7 +151,7 @@ export function ContactForm({ productName }: ContactFormProps) {
           value={formData.message}
           onChange={handleChange}
           className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-none"
-          placeholder="문의하실 내용을 자세히 적어주세요."
+          placeholder={t('contact.formMessagePlaceholder')}
         />
       </div>
 
@@ -164,17 +166,17 @@ export function ContactForm({ productName }: ContactFormProps) {
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
             </svg>
-            전송 중...
+            {t('contact.formSubmitting')}
           </span>
         ) : (
-          '문의하기'
+          t('contact.formSubmit')
         )}
       </button>
 
       {status === 'success' && (
         <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
           <p className="text-green-700 text-center">
-            문의가 성공적으로 전송되었습니다. 빠른 시일 내에 답변 드리겠습니다.
+            {t('contact.formSuccess')}
           </p>
         </div>
       )}
@@ -182,7 +184,7 @@ export function ContactForm({ productName }: ContactFormProps) {
       {status === 'error' && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
           <p className="text-red-700 text-center">
-            {errorMessage || '전송 중 오류가 발생했습니다. 다시 시도해주세요.'}
+            {errorMessage || t('contact.formError')}
           </p>
         </div>
       )}

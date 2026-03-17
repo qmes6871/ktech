@@ -9,9 +9,11 @@ interface ProductTableProps {
   products: Product[];
   onDelete: (id: string) => void;
   deleting: string | null;
+  onReorder?: (productId: string, direction: 'up' | 'down') => void;
+  reordering?: string | null;
 }
 
-export function ProductTable({ products, onDelete, deleting }: ProductTableProps) {
+export function ProductTable({ products, onDelete, deleting, onReorder, reordering }: ProductTableProps) {
   if (products.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow p-8 text-center text-gray-500">
@@ -25,6 +27,9 @@ export function ProductTable({ products, onDelete, deleting }: ProductTableProps
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>
+            <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
+              순서
+            </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
               제품
             </th>
@@ -40,8 +45,36 @@ export function ProductTable({ products, onDelete, deleting }: ProductTableProps
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <tr key={product.id} className="hover:bg-gray-50">
+              {/* 순서 조정 버튼 */}
+              <td className="px-4 py-4 whitespace-nowrap">
+                <div className="flex items-center justify-center gap-1">
+                  <button
+                    onClick={() => onReorder?.(product.id, 'up')}
+                    disabled={index === 0 || reordering === product.id}
+                    className="p-1 rounded hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                    title="위로 이동"
+                  >
+                    <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                    </svg>
+                  </button>
+                  <span className="text-sm font-medium text-gray-500 w-6 text-center">
+                    {product.order || index + 1}
+                  </span>
+                  <button
+                    onClick={() => onReorder?.(product.id, 'down')}
+                    disabled={index === products.length - 1 || reordering === product.id}
+                    className="p-1 rounded hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                    title="아래로 이동"
+                  >
+                    <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+              </td>
               <td className="px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
                   <div className="h-12 w-12 flex-shrink-0">

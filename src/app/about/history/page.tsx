@@ -11,61 +11,92 @@ export default function HistoryPage() {
   const historyData = [
     {
       year: t('historyPage.present'),
-      title: t('historyPage.globalPartnership'),
+      title: t('historyPage.presentTitle'),
       events: [
-        t('historyPage.koreaChina'),
-        t('historyPage.iso9001'),
-        t('historyPage.iso14001'),
-        t('historyPage.globalOem'),
+        t('historyPage.presentEvent1'),
+        t('historyPage.presentEvent2'),
+        t('historyPage.presentEvent3'),
       ],
       highlight: true,
     },
     {
       year: t('historyPage.year2019'),
-      title: t('historyPage.businessExpansion'),
+      title: t('historyPage.year2019Title'),
       events: [
-        t('historyPage.nameChange'),
-        t('historyPage.constructionParts'),
+        t('historyPage.year2019Event1'),
+        t('historyPage.year2019Event2'),
       ],
     },
     {
-      year: t('historyPage.year2015'),
-      title: t('historyPage.techStrength'),
+      year: t('historyPage.year2016'),
+      title: t('historyPage.year2016Title'),
       events: [
-        t('historyPage.wiringExpansion'),
-        t('historyPage.qualityUpgrade'),
+        t('historyPage.year2016Event1'),
+      ],
+    },
+    {
+      year: t('historyPage.year2013'),
+      title: t('historyPage.year2013Title'),
+      events: [
+        t('historyPage.year2013Event1'),
+      ],
+    },
+    {
+      year: t('historyPage.year2011'),
+      title: t('historyPage.year2011Title'),
+      events: [
+        t('historyPage.year2011Event1'),
+        t('historyPage.year2011Event2'),
       ],
     },
     {
       year: t('historyPage.year2010'),
-      title: t('historyPage.marketExpansion'),
+      title: t('historyPage.year2010Title'),
       events: [
-        t('historyPage.industrialEntry'),
-        t('historyPage.domesticOem'),
+        t('historyPage.year2010Event1'),
+        t('historyPage.year2010Event2'),
+        t('historyPage.year2010Event3'),
+      ],
+    },
+    {
+      year: t('historyPage.year2009'),
+      title: t('historyPage.year2009Title'),
+      events: [
+        t('historyPage.year2009Event1'),
+        t('historyPage.year2009Event2'),
+      ],
+    },
+    {
+      year: t('historyPage.year2008'),
+      title: t('historyPage.year2008Title'),
+      events: [
+        t('historyPage.year2008Event1'),
+        t('historyPage.year2008Event2'),
+        t('historyPage.year2008Event3'),
       ],
     },
     {
       year: t('historyPage.year2007'),
-      title: t('historyPage.facilityExpansion'),
+      title: t('historyPage.year2007Title'),
       events: [
-        t('historyPage.chinaExpansion'),
-        t('historyPage.airCompressor'),
+        t('historyPage.year2007Event1'),
       ],
     },
     {
       year: t('historyPage.year2004'),
-      title: t('historyPage.koreaHq'),
+      title: t('historyPage.year2004Title'),
       events: [
-        t('historyPage.kbEstablished'),
-        t('historyPage.domesticSupport'),
+        t('historyPage.year2004Event1'),
+        t('historyPage.year2004Event2'),
+        t('historyPage.year2004Event3'),
       ],
     },
     {
       year: t('historyPage.year1998'),
-      title: t('historyPage.companyFounded'),
+      title: t('historyPage.year1998Title'),
       events: [
-        t('historyPage.chinaFounded'),
-        t('historyPage.manufacturingStart'),
+        t('historyPage.year1998Event1'),
+        t('historyPage.year1998Event2'),
       ],
       isFirst: true,
     },
@@ -281,12 +312,14 @@ export default function HistoryPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              {t('historyPage.ctaTitle')}
+              {t('historyPage.ctaTitle')}<br className="md:hidden" />
+              {t('historyPage.ctaTitle2')}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              {t('historyPage.ctaDesc')}
+              {t('historyPage.ctaDesc')}<br className="md:hidden" />
+              {t('historyPage.ctaDesc2')}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>

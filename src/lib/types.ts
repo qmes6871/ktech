@@ -42,6 +42,7 @@ export interface Product {
   };
   features?: string[];
   featured?: boolean;
+  order?: number;
 }
 
 export interface ContactFormData {

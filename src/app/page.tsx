@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section - Modern with gradient overlay */}
-      <section className="relative min-h-[100vh] flex items-center">
+      <section className="relative min-h-[100vh] flex items-center pt-16 lg:pt-24">
         <HeroSlider />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
@@ -31,7 +31,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-block mb-4 md:mb-6 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
+              className="hero-badge inline-block mb-4 md:mb-6 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
             >
               <span className="text-xs md:text-sm font-medium tracking-wider">{t('home.badge')}</span>
             </motion.div>
@@ -39,7 +39,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight"
+              className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight"
             >
               {t('home.heroTitle1')}
               <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
@@ -363,13 +363,14 @@ export default function HomePage() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-[1.4rem] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               {t('home.ctaTitle')}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              {t('home.ctaDesc')}
+              {t('home.ctaDesc')}<br className="hidden md:block" />
+              {t('home.ctaDesc2')}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>

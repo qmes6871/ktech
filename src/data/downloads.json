@@ -1,0 +1,78 @@
+[
+  {
+    "id": "3",
+    "category": "certification",
+    "name": {
+      "ko": "ISO 14001 인증서",
+      "en": "ISO 14001 Certificate",
+      "zh": "ISO 14001 认证"
+    },
+    "description": {
+      "ko": "",
+      "en": "",
+      "zh": ""
+    },
+    "fileName": "ISO 14001 Certificate_KTECH.pdf",
+    "fileUrl": "/ktech/downloads/certification/1772082529364-ISO_14001_Certificate_KTECH.pdf",
+    "fileSize": "433KB",
+    "uploadDate": "2026-02-26",
+    "isActive": true
+  },
+  {
+    "id": "4",
+    "category": "certification",
+    "name": {
+      "ko": "ISO 9001 인증서",
+      "en": "ISO 9001 Certificate",
+      "zh": "ISO 9001 认证"
+    },
+    "description": {
+      "ko": "",
+      "en": "",
+      "zh": ""
+    },
+    "fileName": "ISO 9001 Certificate_KTECH.pdf",
+    "fileUrl": "/ktech/downloads/certification/1772082538127-ISO_9001_Certificate_KTECH.pdf",
+    "fileSize": "432KB",
+    "uploadDate": "2026-02-26",
+    "isActive": true
+  },
+  {
+    "id": "5",
+    "category": "certification",
+    "name": {
+      "ko": "이노비즈(Inno-Biz) 인증서",
+      "en": "Inno-Biz Certificate",
+      "zh": "Inno-Biz 技术创新型企业认证"
+    },
+    "description": {
+      "ko": "Certified as a Korean Technology Innovation SME (Inno-Biz) by the Ministry of SMEs and Startups.",
+      "en": "",
+      "zh": ""
+    },
+    "fileName": "Inno Biz(이노비즈) Certificate_KTECH.pdf",
+    "fileUrl": "/ktech/downloads/certification/1772082547076-Inno_Biz_이노비즈__Certificate_KTECH.pdf",
+    "fileSize": "298KB",
+    "uploadDate": "2026-02-26",
+    "isActive": true
+  },
+  {
+    "id": "6",
+    "category": "certification",
+    "name": {
+      "ko": "기업부설연구소 인증서",
+      "en": "Corporate R&D Center Certificate",
+      "zh": "企业研发中心认证"
+    },
+    "description": {
+      "ko": "",
+      "en": "",
+      "zh": ""
+    },
+    "fileName": "Corporate R&D Center Certificate_KTECH.jpg",
+    "fileUrl": "/ktech/downloads/certification/1772082556995-Corporate_R_D_Center_Certificate_KTECH.jpg",
+    "fileSize": "1.6MB",
+    "uploadDate": "2026-02-26",
+    "isActive": true
+  }
+]

@@ -55,6 +55,18 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  // Update body class and html lang attribute when language changes
+  useEffect(() => {
+    if (isClient) {
+      // Remove existing language classes
+      document.body.classList.remove('lang-ko', 'lang-en', 'lang-zh');
+      // Add current language class
+      document.body.classList.add(`lang-${language}`);
+      // Update html lang attribute
+      document.documentElement.lang = language;
+    }
+  }, [language, isClient]);
+
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('ktech-language', lang);

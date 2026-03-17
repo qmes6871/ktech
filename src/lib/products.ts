@@ -31,12 +31,17 @@ function getCategoriesData(): Category[] {
   return JSON.parse(data) as Category[];
 }
 
+// order 기준 정렬 헬퍼
+function sortByOrder(products: Product[]): Product[] {
+  return [...products].sort((a, b) => (a.order || 999) - (b.order || 999));
+}
+
 export function getAllProducts(): Product[] {
-  return getProductsData();
+  return sortByOrder(getProductsData());
 }
 
 export function getFeaturedProducts(): Product[] {
-  return getProductsData().filter(product => product.featured);
+  return sortByOrder(getProductsData().filter(product => product.featured));
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
@@ -44,9 +49,9 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductsByCategory(categorySlug: string): Product[] {
-  return getProductsData().filter(product =>
+  return sortByOrder(getProductsData().filter(product =>
     product.categories.some(cat => cat.slug === categorySlug)
-  );
+  ));
 }
 
 export function getAllCategories(): Category[] {

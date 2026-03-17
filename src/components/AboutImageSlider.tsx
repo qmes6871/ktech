@@ -15,7 +15,7 @@ export function AboutImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % companyImages.length);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);

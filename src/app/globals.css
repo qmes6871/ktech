@@ -8,13 +8,65 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-noto-sans-kr), system-ui, sans-serif;
+  --font-sans: var(--font-noto-sans-kr), var(--font-noto-sans-sc), system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-noto-sans-kr), var(--font-noto-sans-sc), system-ui, -apple-system, sans-serif;
+}
+
+/* Chinese language specific font styling */
+[lang="zh"] body,
+body[data-lang="zh"],
+.lang-zh {
+  font-family: var(--font-noto-sans-sc), var(--font-noto-sans-kr), system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure consistent font weight for Chinese text */
+.lang-zh h1, .lang-zh h2, .lang-zh h3, .lang-zh h4, .lang-zh h5, .lang-zh h6 {
+  font-weight: 700;
+}
+
+.lang-zh .font-bold {
+  font-weight: 700;
+}
+
+.lang-zh .font-semibold {
+  font-weight: 600;
+}
+
+.lang-zh .font-medium {
+  font-weight: 500;
+}
+
+/* English language specific styling */
+.lang-en {
   font-family: var(--font-noto-sans-kr), system-ui, -apple-system, sans-serif;
+}
+
+/* English hero section adjustments for PC */
+@media (min-width: 1024px) {
+  .lang-en .hero-title {
+    font-size: 3rem !important;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lang-en .hero-title {
+    font-size: 3.25rem !important;
+    line-height: 1.2;
+  }
+}
+
+/* English badge positioning adjustment */
+.lang-en .hero-badge {
+  margin-bottom: 1.5rem;
 }
 
 /* Custom scrollbar */
