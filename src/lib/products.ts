@@ -33,7 +33,7 @@ function getCategoriesData(): Category[] {
 
 // order 기준 정렬 헬퍼
 function sortByOrder(products: Product[]): Product[] {
-  return [...products].sort((a, b) => (a.order || 999) - (b.order || 999));
+  return [...products].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 }
 
 export function getAllProducts(): Product[] {

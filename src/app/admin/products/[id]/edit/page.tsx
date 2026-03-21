@@ -17,8 +17,8 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
     const fetchData = async () => {
       try {
         const [productRes, categoriesRes] = await Promise.all([
-          fetch(`/api/admin/products/${id}`),
-          fetch('/api/admin/categories'),
+          fetch(`/ktech/api/admin/products/${id}`),
+          fetch('/ktech/api/admin/categories'),
         ]);
 
         if (!productRes.ok) {

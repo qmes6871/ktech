@@ -34,7 +34,7 @@ export default function DownloadsPage() {
   useEffect(() => {
     const fetchDownloads = async () => {
       try {
-        const response = await fetch('/api/admin/downloads?activeOnly=true');
+        const response = await fetch('/ktech/api/admin/downloads?activeOnly=true');
         const data = await response.json();
         setDownloads(data);
       } catch (error) {
@@ -110,6 +110,13 @@ export default function DownloadsPage() {
 
   const getLocalizedName = (name: { ko: string; en: string; zh: string }) => {
     return name[language] || name.ko || '';
+  };
+
+  // fileUrl에서 다운로드 API URL 생성 (한글 파일명 지원)
+  const getDownloadUrl = (fileUrl: string) => {
+    // /ktech/downloads/category/filename → category/filename
+    const relativePath = fileUrl.replace(/^\/ktech\/downloads\//, '');
+    return `/ktech/api/downloads?file=${encodeURIComponent(relativePath)}`;
   };
 
   return (
@@ -200,8 +207,8 @@ export default function DownloadsPage() {
                             {category.files.map((file) => (
                               <a
                                 key={file.id}
-                                href={file.fileUrl}
-                                download
+                                href={getDownloadUrl(file.fileUrl)}
+                                download={file.fileName}
                                 className={`flex items-center justify-between p-3 rounded-lg border ${colors.border} ${colors.hover} transition-colors`}
                               >
                                 <div className="flex items-center gap-3">

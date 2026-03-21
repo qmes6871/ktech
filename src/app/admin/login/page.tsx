@@ -20,7 +20,7 @@ export default function AdminLoginPage() {
     setDebug('Sending request...');
 
     try {
-      const res = await fetch('/api/admin/login', {
+      const res = await fetch('/ktech/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, password }),
@@ -36,7 +36,7 @@ export default function AdminLoginPage() {
       }
 
       setDebug('Login success, redirecting...');
-      window.location.href = '/admin/products';
+      window.location.href = '/ktech/admin/products';
     } catch (err) {
       setDebug('Error: ' + String(err));
       setError('서버 연결 실패');

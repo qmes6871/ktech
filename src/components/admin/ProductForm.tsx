@@ -93,7 +93,7 @@ export function ProductForm({ product, categories, isEdit = false }: ProductForm
         const formDataObj = new FormData();
         formDataObj.append('file', file);
 
-        const response = await fetch('/api/admin/upload', {
+        const response = await fetch('/ktech/api/admin/upload', {
           method: 'POST',
           body: formDataObj,
         });
@@ -148,8 +148,8 @@ export function ProductForm({ product, categories, isEdit = false }: ProductForm
 
     try {
       const url = isEdit
-        ? `/api/admin/products/${product?.id}`
-        : '/api/admin/products';
+        ? `/ktech/api/admin/products/${product?.id}`
+        : '/ktech/api/admin/products';
 
       const response = await fetch(url, {
         method: isEdit ? 'PUT' : 'POST',

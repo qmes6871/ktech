@@ -49,9 +49,15 @@ export async function GET(request: NextRequest) {
     }
 
     // order 기준 정렬
-    filteredProducts.sort((a, b) => (a.order || 999) - (b.order || 999));
+    filteredProducts.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
-    return NextResponse.json(filteredProducts);
+    return NextResponse.json(filteredProducts, {
+      headers: {
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
+        'Pragma': 'no-cache',
+        'Expires': '0',
+      },
+    });
   } catch (error) {
     console.error('Error fetching products:', error);
     return NextResponse.json(

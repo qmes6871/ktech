@@ -80,68 +80,65 @@ export async function POST(request: NextRequest) {
     console.log('Message:', message);
     console.log('================================');
 
-    // Try to send email notification (optional, don't block on failure)
+    // 이메일 알림은 비동기로 발송 (응답을 차단하지 않음)
     if (process.env.SMTP_HOST && process.env.SMTP_USER && !process.env.SMTP_HOST.includes('example')) {
-      try {
-        const transporter = nodemailer.createTransport({
-          host: process.env.SMTP_HOST,
-          port: parseInt(process.env.SMTP_PORT || '587'),
-          secure: process.env.SMTP_SECURE === 'true',
-          auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
-          },
-        });
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: parseInt(process.env.SMTP_PORT || '587'),
+        secure: process.env.SMTP_SECURE === 'true',
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
 
-        const mailOptions = {
-          from: process.env.SMTP_FROM || process.env.SMTP_USER,
-          to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
-          replyTo: email,
-          subject: `[케이텍 문의] ${category || productInterest ? `${category || productInterest} - ` : ''}${name}님의 문의`,
-          html: `
-            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-              <h2 style="color: #1d4ed8; border-bottom: 2px solid #1d4ed8; padding-bottom: 10px;">
-                새로운 문의가 접수되었습니다
-              </h2>
-              <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold; width: 120px;">성명</td>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${name}</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">이메일</td>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;"><a href="mailto:${email}">${email}</a></td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">연락처</td>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${phone || '-'}</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">회사명</td>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${company || '-'}</td>
-                </tr>
-                <tr>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">문의 유형</td>
-                  <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${category || productInterest || '-'}</td>
-                </tr>
-              </table>
-              <div style="margin-top: 20px;">
-                <h3 style="color: #374151;">문의 내용</h3>
-                <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; white-space: pre-wrap;">${message}</div>
-              </div>
-              <p style="color: #6b7280; font-size: 12px; margin-top: 30px;">
-                이 메일은 케이텍 웹사이트 문의 양식을 통해 자동 발송되었습니다.
-              </p>
+      const mailOptions = {
+        from: process.env.SMTP_FROM || process.env.SMTP_USER,
+        to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
+        replyTo: email,
+        subject: `[케이텍 문의] ${category || productInterest ? `${category || productInterest} - ` : ''}${name}님의 문의`,
+        html: `
+          <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #1d4ed8; border-bottom: 2px solid #1d4ed8; padding-bottom: 10px;">
+              새로운 문의가 접수되었습니다
+            </h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold; width: 120px;">성명</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${name}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">이메일</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;"><a href="mailto:${email}">${email}</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">연락처</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${phone || '-'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">회사명</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${company || '-'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold;">문의 유형</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e5e7eb;">${category || productInterest || '-'}</td>
+              </tr>
+            </table>
+            <div style="margin-top: 20px;">
+              <h3 style="color: #374151;">문의 내용</h3>
+              <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; white-space: pre-wrap;">${message}</div>
             </div>
-          `,
-        };
+            <p style="color: #6b7280; font-size: 12px; margin-top: 30px;">
+              이 메일은 케이텍 웹사이트 문의 양식을 통해 자동 발송되었습니다.
+            </p>
+          </div>
+        `,
+      };
 
-        await transporter.sendMail(mailOptions);
-        console.log('Email notification sent successfully');
-      } catch (emailError) {
-        console.error('Failed to send email notification:', emailError);
-        // Don't fail the request, inquiry is already saved
-      }
+      // fire-and-forget: 이메일 발송 결과를 기다리지 않고 즉시 응답
+      transporter.sendMail(mailOptions)
+        .then(() => console.log('Email notification sent successfully'))
+        .catch((err: unknown) => console.error('Failed to send email notification:', err));
     }
 
     return NextResponse.json({

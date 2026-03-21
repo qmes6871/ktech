@@ -10,7 +10,7 @@ export function AdminHeader() {
   const handleLogout = async () => {
     setLoggingOut(true);
     try {
-      await fetch('/api/admin/logout', {
+      await fetch('/ktech/api/admin/logout', {
         method: 'POST',
       });
       router.push('/admin/login');

@@ -20,11 +20,22 @@ async function saveProducts(products: Product[]): Promise<void> {
   await fs.writeFile(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf-8');
 }
 
+/**
+ * 제품 목록을 order 기준으로 정렬하고, order 값을 1부터 순차적으로 재부여.
+ * 중복·갭·누락 문제를 모두 해결.
+ */
+function normalizeOrder(products: Product[]): void {
+  products.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+  products.forEach((p, i) => {
+    p.order = i + 1;
+  });
+}
+
 // POST: 제품 순서 변경
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { productId, direction } = body;
+    const { productId, direction, category } = body;
 
     if (!productId || !direction) {
       return NextResponse.json(
@@ -35,17 +46,15 @@ export async function POST(request: NextRequest) {
 
     const products = await getProducts();
 
-    // order 필드가 없는 제품에 기본값 부여
-    products.forEach((p, i) => {
-      if (p.order === undefined) {
-        p.order = i + 1;
-      }
-    });
+    // order 정규화: 정렬 후 1, 2, 3, ... 순차 부여
+    normalizeOrder(products);
 
-    // order 기준으로 정렬
-    products.sort((a, b) => (a.order || 0) - (b.order || 0));
+    // 카테고리 필터가 있으면 해당 카테고리 내에서만 순서 교환
+    const targetProducts = category
+      ? products.filter(p => p.categories.some(c => c.slug === category))
+      : products;
 
-    const currentIndex = products.findIndex(p => p.id === productId);
+    const currentIndex = targetProducts.findIndex(p => p.id === productId);
     if (currentIndex === -1) {
       return NextResponse.json(
         { error: '제품을 찾을 수 없습니다.' },
@@ -53,10 +62,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const targetIndex = direction === 'up' ? currentIndex - 1 : currentIndex + 1;
+    const swapIndex = direction === 'up' ? currentIndex - 1 : currentIndex + 1;
 
     // 범위 체크
-    if (targetIndex < 0 || targetIndex >= products.length) {
+    if (swapIndex < 0 || swapIndex >= targetProducts.length) {
       return NextResponse.json(
         { error: '더 이상 이동할 수 없습니다.' },
         { status: 400 }
@@ -64,18 +73,24 @@ export async function POST(request: NextRequest) {
     }
 
     // 순서 교환
-    const currentOrder = products[currentIndex].order || currentIndex + 1;
-    const targetOrder = products[targetIndex].order || targetIndex + 1;
+    const currentProduct = targetProducts[currentIndex];
+    const swapProduct = targetProducts[swapIndex];
 
-    products[currentIndex].order = targetOrder;
-    products[targetIndex].order = currentOrder;
+    const currentOrder = currentProduct.order!;
+    const swapOrder = swapProduct.order!;
 
+    // 전체 products 배열에서 해당 제품을 찾아 order 값 교환
+    const currentInAll = products.find(p => p.id === currentProduct.id)!;
+    const swapInAll = products.find(p => p.id === swapProduct.id)!;
+
+    currentInAll.order = swapOrder;
+    swapInAll.order = currentOrder;
+
+    // 정렬된 상태로 저장 (파일 순서 = order 순서)
+    products.sort((a, b) => a.order! - b.order!);
     await saveProducts(products);
 
-    // 정렬된 결과 반환
-    products.sort((a, b) => (a.order || 0) - (b.order || 0));
-
-    return NextResponse.json({ success: true, products });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error reordering products:', error);
     return NextResponse.json(
@@ -108,10 +123,9 @@ export async function PUT(request: NextRequest) {
       }
     });
 
+    // 정렬된 상태로 저장
+    products.sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
     await saveProducts(products);
-
-    // 정렬된 결과 반환
-    products.sort((a, b) => (a.order || 0) - (b.order || 0));
 
     return NextResponse.json({ success: true, products });
   } catch (error) {

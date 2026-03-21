@@ -33,7 +33,7 @@ export default function InquiriesPage() {
 
   const fetchInquiries = async () => {
     try {
-      const response = await fetch('/api/admin/inquiries');
+      const response = await fetch('/ktech/api/admin/inquiries');
       const data = await response.json();
       setInquiries(data);
     } catch (error) {
@@ -45,7 +45,7 @@ export default function InquiriesPage() {
 
   const handleMarkAsRead = async (id: string, isRead: boolean) => {
     try {
-      await fetch(`/api/admin/inquiries/${id}`, {
+      await fetch(`/ktech/api/admin/inquiries/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ isRead }),
@@ -65,7 +65,7 @@ export default function InquiriesPage() {
     if (!confirm('정말 삭제하시겠습니까?')) return;
 
     try {
-      await fetch(`/api/admin/inquiries/${id}`, {
+      await fetch(`/ktech/api/admin/inquiries/${id}`, {
         method: 'DELETE',
       });
       setInquiries(inquiries.filter(inq => inq.id !== id));

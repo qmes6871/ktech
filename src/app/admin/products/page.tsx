@@ -19,8 +19,12 @@ export default function ProductsPage() {
       const params = new URLSearchParams();
       if (search) params.append('search', search);
       if (categoryFilter) params.append('category', categoryFilter);
+      params.append('_t', Date.now().toString());
 
-      const response = await fetch(`/api/admin/products?${params}`);
+      const response = await fetch(`/ktech/api/admin/products?${params}`, {
+        cache: 'no-store',
+        headers: { 'Cache-Control': 'no-cache' },
+      });
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -32,7 +36,7 @@ export default function ProductsPage() {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('/api/admin/categories');
+      const response = await fetch('/ktech/api/admin/categories');
       const data = await response.json();
       setCategories(data);
     } catch (error) {
@@ -53,7 +57,7 @@ export default function ProductsPage() {
 
     setDeleting(id);
     try {
-      const response = await fetch(`/api/admin/products/${id}`, {
+      const response = await fetch(`/ktech/api/admin/products/${id}`, {
         method: 'DELETE',
       });
 
@@ -74,18 +78,17 @@ export default function ProductsPage() {
   const handleReorder = async (productId: string, direction: 'up' | 'down') => {
     setReordering(productId);
     try {
-      const response = await fetch('/api/admin/products/reorder', {
+      const response = await fetch('/ktech/api/admin/products/reorder', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ productId, direction }),
-        cache: 'no-store',
+        body: JSON.stringify({ productId, direction, category: categoryFilter || undefined }),
       });
 
       const data = await response.json();
 
-      if (response.ok && data.products) {
-        // 새 배열로 복사하여 React가 변경을 감지하도록 함
-        setProducts([...data.products]);
+      if (response.ok) {
+        // 순서 변경 후 최신 데이터를 다시 가져옴 (캐시 우회)
+        await fetchProducts();
       } else {
         alert(data.error || '순서 변경에 실패했습니다.');
       }

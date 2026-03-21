@@ -11,7 +11,7 @@ export default function NewProductPage() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('/api/admin/categories');
+        const response = await fetch('/ktech/api/admin/categories');
         const data = await response.json();
         setCategories(data);
       } catch (error) {

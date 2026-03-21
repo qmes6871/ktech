@@ -52,7 +52,7 @@ export function ProductTable({ products, onDelete, deleting, onReorder, reorderi
                 <div className="flex items-center justify-center gap-1">
                   <button
                     onClick={() => onReorder?.(product.id, 'up')}
-                    disabled={index === 0 || reordering === product.id}
+                    disabled={index === 0 || !!reordering}
                     className="p-1 rounded hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                     title="위로 이동"
                   >
@@ -65,7 +65,7 @@ export function ProductTable({ products, onDelete, deleting, onReorder, reorderi
                   </span>
                   <button
                     onClick={() => onReorder?.(product.id, 'down')}
-                    disabled={index === products.length - 1 || reordering === product.id}
+                    disabled={index === products.length - 1 || !!reordering}
                     className="p-1 rounded hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                     title="아래로 이동"
                   >

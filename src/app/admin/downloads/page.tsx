@@ -51,7 +51,7 @@ export default function DownloadsAdminPage() {
       const params = new URLSearchParams();
       if (categoryFilter) params.append('category', categoryFilter);
 
-      const response = await fetch(`/api/admin/downloads?${params}`);
+      const response = await fetch(`/ktech/api/admin/downloads?${params}`);
       const data = await response.json();
       setDownloads(data);
     } catch (error) {
@@ -75,7 +75,7 @@ export default function DownloadsAdminPage() {
       uploadFormData.append('file', file);
       uploadFormData.append('category', formData.category);
 
-      const response = await fetch('/api/admin/downloads/upload', {
+      const response = await fetch('/ktech/api/admin/downloads/upload', {
         method: 'POST',
         body: uploadFormData,
       });
@@ -110,8 +110,8 @@ export default function DownloadsAdminPage() {
 
     try {
       const url = editingItem
-        ? `/api/admin/downloads/${editingItem.id}`
-        : '/api/admin/downloads';
+        ? `/ktech/api/admin/downloads/${editingItem.id}`
+        : '/ktech/api/admin/downloads';
 
       const response = await fetch(url, {
         method: editingItem ? 'PUT' : 'POST',
@@ -137,7 +137,7 @@ export default function DownloadsAdminPage() {
     if (!confirm('정말 이 자료를 삭제하시겠습니까?')) return;
 
     try {
-      const response = await fetch(`/api/admin/downloads/${id}`, {
+      const response = await fetch(`/ktech/api/admin/downloads/${id}`, {
         method: 'DELETE',
       });
 
